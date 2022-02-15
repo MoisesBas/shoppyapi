@@ -1,0 +1,11 @@
+D:\ACE ACE\ShoppyEx\ShoppyEx.Payment.Infrastructure\bin\Debug\net6.0\ShoppyEx.Payment.Infrastructure.deps.json
+D:\ACE ACE\ShoppyEx\ShoppyEx.Payment.Infrastructure\bin\Debug\net6.0\ShoppyEx.Payment.Infrastructure.dll
+D:\ACE ACE\ShoppyEx\ShoppyEx.Payment.Infrastructure\bin\Debug\net6.0\ref\ShoppyEx.Payment.Infrastructure.dll
+D:\ACE ACE\ShoppyEx\ShoppyEx.Payment.Infrastructure\bin\Debug\net6.0\ShoppyEx.Payment.Infrastructure.pdb
+D:\ACE ACE\ShoppyEx\ShoppyEx.Payment.Infrastructure\obj\Debug\net6.0\ShoppyEx.Payment.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\ACE ACE\ShoppyEx\ShoppyEx.Payment.Infrastructure\obj\Debug\net6.0\ShoppyEx.Payment.Infrastructure.AssemblyInfoInputs.cache
+D:\ACE ACE\ShoppyEx\ShoppyEx.Payment.Infrastructure\obj\Debug\net6.0\ShoppyEx.Payment.Infrastructure.AssemblyInfo.cs
+D:\ACE ACE\ShoppyEx\ShoppyEx.Payment.Infrastructure\obj\Debug\net6.0\ShoppyEx.Payment.Infrastructure.csproj.CoreCompileInputs.cache
+D:\ACE ACE\ShoppyEx\ShoppyEx.Payment.Infrastructure\obj\Debug\net6.0\ShoppyEx.Payment.Infrastructure.dll
+D:\ACE ACE\ShoppyEx\ShoppyEx.Payment.Infrastructure\obj\Debug\net6.0\ref\ShoppyEx.Payment.Infrastructure.dll
+D:\ACE ACE\ShoppyEx\ShoppyEx.Payment.Infrastructure\obj\Debug\net6.0\ShoppyEx.Payment.Infrastructure.pdb

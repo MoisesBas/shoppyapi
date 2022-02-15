@@ -1,0 +1,91 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "fc3759df-0834-4092-bac2-e51d74825217": {
+      "ProjectGuid": "fc3759df-0834-4092-bac2-e51d74825217",
+      "DisplayName": "ShoppyEx.SharedKernel.SeedWork",
+      "ColorIndex": 0
+    },
+    "20196e77-2c1b-42d4-b70e-53021e3bdcc3": {
+      "ProjectGuid": "20196e77-2c1b-42d4-b70e-53021e3bdcc3",
+      "DisplayName": "ShoppyEx.Customer.Api",
+      "ColorIndex": 1
+    },
+    "f86bd71b-40d8-4fd9-a6ea-fd941c2fce25": {
+      "ProjectGuid": "f86bd71b-40d8-4fd9-a6ea-fd941c2fce25",
+      "DisplayName": "GrpcService1",
+      "ColorIndex": 2
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "339f02e7-a9c2-4a88-81bc-c20355a7bdce": {
+      "ProjectGuid": "339f02e7-a9c2-4a88-81bc-c20355a7bdce",
+      "DisplayName": "ShoppyEx.Product.Api",
+      "ColorIndex": 3
+    },
+    "34c0d9e3-9e7a-439b-8aab-96b0ed870f97": {
+      "ProjectGuid": "34c0d9e3-9e7a-439b-8aab-96b0ed870f97",
+      "DisplayName": "ShoppyEx.Aggregator.Api",
+      "ColorIndex": 4
+    },
+    "417f85bb-9619-4eba-abf5-3f57475d7f78": {
+      "ProjectGuid": "417f85bb-9619-4eba-abf5-3f57475d7f78",
+      "DisplayName": "ShoppyEx.Product.Infrastructure",
+      "ColorIndex": 5
+    },
+    "e6b30060-3817-4e8d-9785-b664ce0bd54a": {
+      "ProjectGuid": "e6b30060-3817-4e8d-9785-b664ce0bd54a",
+      "DisplayName": "ShoppyEx.Order.Api",
+      "ColorIndex": 6
+    },
+    "02df0464-67a7-4eb2-b05e-955c84fbbac9": {
+      "ProjectGuid": "02df0464-67a7-4eb2-b05e-955c84fbbac9",
+      "DisplayName": "ShoppyEx.Order.Infrastructure",
+      "ColorIndex": 7
+    },
+    "ee9ecf94-d0eb-4158-b21e-98d93fdd6024": {
+      "ProjectGuid": "ee9ecf94-d0eb-4158-b21e-98d93fdd6024",
+      "DisplayName": "ShoppyEx.Order.Core",
+      "ColorIndex": 8
+    },
+    "37accc01-f35d-47a7-a0fa-bdf246521719": {
+      "ProjectGuid": "37accc01-f35d-47a7-a0fa-bdf246521719",
+      "DisplayName": "ShoppyEx.Product.Core",
+      "ColorIndex": 9
+    },
+    "6c67e62c-e4ef-4b44-bcdd-5c45aaa1ca09": {
+      "ProjectGuid": "6c67e62c-e4ef-4b44-bcdd-5c45aaa1ca09",
+      "DisplayName": "ShoppyEx.Customer.Core",
+      "ColorIndex": 10
+    },
+    "ac587306-eac7-4449-923e-56be2ab59b1f": {
+      "ProjectGuid": "ac587306-eac7-4449-923e-56be2ab59b1f",
+      "DisplayName": "ShoppyEx.Customer.Infrastructure",
+      "ColorIndex": 11
+    },
+    "a2d8abfb-35ff-489a-9547-240a3bf126fd": {
+      "ProjectGuid": "a2d8abfb-35ff-489a-9547-240a3bf126fd",
+      "DisplayName": "ShoppyEx.Payment.Core",
+      "ColorIndex": 12
+    },
+    "fb1b05e2-1dc2-4552-a90c-beaad664ea1a": {
+      "ProjectGuid": "fb1b05e2-1dc2-4552-a90c-beaad664ea1a",
+      "DisplayName": "ShoppyEx.Payment.Infrastructure",
+      "ColorIndex": 13
+    },
+    "03eb97f2-92fe-4b74-8565-1ced132390ae": {
+      "ProjectGuid": "03eb97f2-92fe-4b74-8565-1ced132390ae",
+      "DisplayName": "ShoppyEx.Indentity.Core",
+      "ColorIndex": 14
+    },
+    "008ecf42-cbaf-46db-80dc-7f1301372a55": {
+      "ProjectGuid": "008ecf42-cbaf-46db-80dc-7f1301372a55",
+      "DisplayName": "ShoppyEx.Identity.Infrastructure",
+      "ColorIndex": 15
+    }
+  },
+  "NextColorIndex": 0
+}

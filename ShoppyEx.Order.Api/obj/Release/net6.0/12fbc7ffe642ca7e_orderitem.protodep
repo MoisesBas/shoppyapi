@@ -1,0 +1,3 @@
+obj\Release\net6.0\Protos/Orderitem.cs \
+obj\Release\net6.0\Protos/OrderitemGrpc.cs: C:/Users/moise/.nuget/packages/grpc.tools/2.42.0/build/native/include/google/protobuf/wrappers.proto\
+ Protos/orderitem.proto

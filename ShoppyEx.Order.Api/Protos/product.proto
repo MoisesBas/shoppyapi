@@ -1,0 +1,42 @@
+﻿syntax = "proto3";
+import "google/protobuf/wrappers.proto";
+import "protos/tag.proto";
+import "protos/category.proto";
+
+
+option csharp_namespace = "ShoppyEx.Order.Api";
+
+package protos.package;
+
+service ProductGrpc {  	
+   
+    rpc GetProductById(ProductByIdRequestMessage) returns (ProductResponseMessage) {}
+    rpc GetProductAll(ProductPageQueryRequestMessage) returns (ProductListMessage) {}
+}
+message ProductPageQueryRequestMessage {
+
+}
+message ProductByIdRequestMessage {    
+    google.protobuf.StringValue Id = 1;
+}
+
+message ProductListMessage {
+    google.protobuf.Int32Value TotalCount = 1;
+    repeated ProductResponseMessage Items = 2;
+}
+
+ 
+   message ProductResponseMessage {    
+    google.protobuf.StringValue Id = 1;
+    google.protobuf.StringValue Name = 2;
+    google.protobuf.StringValue Description = 3;
+    google.protobuf.Int32Value Count = 4;
+    google.protobuf.StringValue Price = 5;
+    google.protobuf.Int32Value UnitsInStock = 6;
+    google.protobuf.Int32Value UnitsOnOrder = 7;
+    CategoryResponseMessage  Category = 8;
+    TagResponseMessage Tag = 9;
+}
+
+
+

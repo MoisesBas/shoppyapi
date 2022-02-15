@@ -1,0 +1,11 @@
+D:\ACE ACE\ShoppyEx\ShoppyEx.SharedKernel.SeedWork\bin\Debug\net6.0\ShoppyEx.SharedKernel.SeedWork.deps.json
+D:\ACE ACE\ShoppyEx\ShoppyEx.SharedKernel.SeedWork\bin\Debug\net6.0\ShoppyEx.SharedKernel.SeedWork.dll
+D:\ACE ACE\ShoppyEx\ShoppyEx.SharedKernel.SeedWork\bin\Debug\net6.0\ref\ShoppyEx.SharedKernel.SeedWork.dll
+D:\ACE ACE\ShoppyEx\ShoppyEx.SharedKernel.SeedWork\bin\Debug\net6.0\ShoppyEx.SharedKernel.SeedWork.pdb
+D:\ACE ACE\ShoppyEx\ShoppyEx.SharedKernel.SeedWork\obj\Debug\net6.0\ShoppyEx.SharedKernel.SeedWork.GeneratedMSBuildEditorConfig.editorconfig
+D:\ACE ACE\ShoppyEx\ShoppyEx.SharedKernel.SeedWork\obj\Debug\net6.0\ShoppyEx.SharedKernel.SeedWork.AssemblyInfoInputs.cache
+D:\ACE ACE\ShoppyEx\ShoppyEx.SharedKernel.SeedWork\obj\Debug\net6.0\ShoppyEx.SharedKernel.SeedWork.AssemblyInfo.cs
+D:\ACE ACE\ShoppyEx\ShoppyEx.SharedKernel.SeedWork\obj\Debug\net6.0\ShoppyEx.SharedKernel.SeedWork.csproj.CoreCompileInputs.cache
+D:\ACE ACE\ShoppyEx\ShoppyEx.SharedKernel.SeedWork\obj\Debug\net6.0\ShoppyEx.SharedKernel.SeedWork.dll
+D:\ACE ACE\ShoppyEx\ShoppyEx.SharedKernel.SeedWork\obj\Debug\net6.0\ref\ShoppyEx.SharedKernel.SeedWork.dll
+D:\ACE ACE\ShoppyEx\ShoppyEx.SharedKernel.SeedWork\obj\Debug\net6.0\ShoppyEx.SharedKernel.SeedWork.pdb

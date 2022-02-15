@@ -1,0 +1,60 @@
+﻿syntax = "proto3";
+import "google/protobuf/wrappers.proto";
+import "protos/orderitem.proto";
+
+
+option csharp_namespace = "ShoppyEx.Order.Api";
+
+package protos.package;
+
+service OrderGrpc {   	
+    rpc AddOrder(OrderCreateRequestMessage) returns (OrderIdResponseMessage){}
+    rpc GetOrderById(OrderIdRequestMessage) returns (OrderCreateResponseMessage) {}
+    rpc GetOrderByCustomerId(GetOrderByCustomerIdRequestMessage) returns (OrderListMessage) {}
+}
+
+message GetOrderByCustomerIdRequestMessage {    
+    google.protobuf.StringValue CustomerId = 1;
+}
+message OrderCreateRequestMessage {   
+    google.protobuf.StringValue CustomerId = 1;
+    google.protobuf.StringValue OrderDate = 2;
+    google.protobuf.StringValue TotalPrice = 3;
+    google.protobuf.StringValue Address = 4;
+    google.protobuf.StringValue City = 5;
+    google.protobuf.StringValue Region = 6;
+    google.protobuf.StringValue PostalCode = 7;
+    google.protobuf.StringValue Country = 8;
+    google.protobuf.StringValue CreditCard = 9;
+    google.protobuf.Int32Value CreditCardTypeID = 10;
+    google.protobuf.Int32Value CardExpMo = 11;
+    google.protobuf.Int32Value CardExpYr = 12;
+    repeated OrderItemRequestMessage    OrderItems = 13;   
+}
+
+message OrderListMessage {
+    google.protobuf.Int32Value TotalCount = 1;
+    repeated OrderCreateResponseMessage Items = 2;
+}
+message OrderCreateResponseMessage {   
+    google.protobuf.StringValue Id = 1;
+    google.protobuf.StringValue CustomerId = 2;
+    google.protobuf.StringValue OrderDate = 3;
+    google.protobuf.StringValue TotalPrice = 4;
+    google.protobuf.StringValue Address = 5;
+    google.protobuf.StringValue City = 6;
+    google.protobuf.StringValue Region = 7;
+    google.protobuf.StringValue PostalCode = 8;
+    google.protobuf.StringValue Country = 9;
+    repeated OrderItemResponseMessage    OrderItems = 10;
+}
+
+message OrderIdRequestMessage {    
+    google.protobuf.StringValue Id = 1;
+}
+message OrderIdResponseMessage {    
+    google.protobuf.StringValue Id = 1;
+}
+
+
+

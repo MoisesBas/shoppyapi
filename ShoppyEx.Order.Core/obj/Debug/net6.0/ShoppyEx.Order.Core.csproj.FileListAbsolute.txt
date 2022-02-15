@@ -1,0 +1,15 @@
+D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Core\bin\Debug\net6.0\ShoppyEx.Order.Core.deps.json
+D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Core\bin\Debug\net6.0\ShoppyEx.Order.Core.dll
+D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Core\bin\Debug\net6.0\ref\ShoppyEx.Order.Core.dll
+D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Core\bin\Debug\net6.0\ShoppyEx.Order.Core.pdb
+D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Core\bin\Debug\net6.0\ShoppyEx.SharedKernel.SeedWork.dll
+D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Core\bin\Debug\net6.0\ShoppyEx.SharedKernel.SeedWork.pdb
+D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Core\obj\Debug\net6.0\ShoppyEx.Order.Core.csproj.AssemblyReference.cache
+D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Core\obj\Debug\net6.0\ShoppyEx.Order.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Core\obj\Debug\net6.0\ShoppyEx.Order.Core.AssemblyInfoInputs.cache
+D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Core\obj\Debug\net6.0\ShoppyEx.Order.Core.AssemblyInfo.cs
+D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Core\obj\Debug\net6.0\ShoppyEx.Order.Core.csproj.CoreCompileInputs.cache
+D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Core\obj\Debug\net6.0\ShoppyEx.Order.Core.csproj.CopyComplete
+D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Core\obj\Debug\net6.0\ShoppyEx.Order.Core.dll
+D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Core\obj\Debug\net6.0\ref\ShoppyEx.Order.Core.dll
+D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Core\obj\Debug\net6.0\ShoppyEx.Order.Core.pdb

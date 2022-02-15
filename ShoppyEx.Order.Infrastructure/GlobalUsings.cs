@@ -1,0 +1,11 @@
+﻿global using Microsoft.Extensions.DependencyInjection;
+global using ShoppyEx.Order.Infrastructure.Persistence;
+global using ShoppyEx.SharedKernel.SeedWork;
+global using ShoppyEx.SharedKernel.SeedWork.Events;
+global using ShoppyEx.SharedKernel.SeedWork.EventSourcing;
+global using ShoppyEx.SharedKernel.SeedWork.Extensions;
+global using ShoppyEx.Order.Infrastructure.UnitOfWork;
+global using Microsoft.EntityFrameworkCore;
+global using Microsoft.EntityFrameworkCore.Metadata.Builders;
+global using Microsoft.EntityFrameworkCore.Design;
+global using Microsoft.Extensions.Configuration;

@@ -1,0 +1,31 @@
+﻿syntax = "proto3";
+import "google/protobuf/wrappers.proto";
+
+option csharp_namespace = "ShoppyEx.Product.Api";
+
+package protos.package;
+
+service CategoryGrpc {  	
+   
+    rpc GetCategoryById(CategoryByIdRequestMessage) returns (CategoryResponseMessage) {}
+    rpc GetCategoryAll(CategoryPageQueryRequestMessage) returns (CategoryListMessage) {}
+}
+message CategoryPageQueryRequestMessage {
+
+}
+message CategoryByIdRequestMessage {    
+    google.protobuf.StringValue Id = 1;
+}
+
+message CategoryListMessage {
+    google.protobuf.Int32Value TotalCount = 1;
+    repeated CategoryResponseMessage Items = 2;
+}
+
+message CategoryResponseMessage {    
+    google.protobuf.StringValue Id = 1;
+    google.protobuf.StringValue Name = 2;    
+}
+
+
+

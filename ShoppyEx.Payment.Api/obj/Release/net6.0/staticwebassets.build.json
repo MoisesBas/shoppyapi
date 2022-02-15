@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "c467MRHHPbP91sSygQvfBEkcabYkjgCyr2croEGEkzQ=",
+  "Source": "ShoppyEx.Payment.Api",
+  "BasePath": "_content/ShoppyEx.Payment.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "ifGJFLMeWEgXpNCNZjN9lJ6SGmn/LKp6TfJKIlAFuvI=",
+  "Source": "ShoppyEx.Product.Api",
+  "BasePath": "_content/ShoppyEx.Product.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

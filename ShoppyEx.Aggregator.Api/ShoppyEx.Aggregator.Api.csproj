@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>bd3c9f45-e392-4208-b5d7-2b295fa52595</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <OutputType>Exe</OutputType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Protos\category.proto" />
+    <None Remove="Protos\order.proto" />
+    <None Remove="Protos\orderitem.proto" />
+    <None Remove="Protos\product.proto" />
+    <None Remove="Protos\tag.proto" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.14.0" />
+    <PackageReference Include="Grpc.AspNetCore" Version="2.42.0" />
+    <PackageReference Include="AspNetCore.HealthChecks.UI.Client" Version="5.0.1" />
+    <PackageReference Include="AspNetCore.HealthChecks.Uris" Version="5.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ShoppyEx.SharedKernel.SeedWork\ShoppyEx.SharedKernel.SeedWork.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Protobuf Include="Protos\category.proto" GrpcServices="Client" />
+    <Protobuf Include="Protos\customer.proto" GrpcServices="Client" />
+    <Protobuf Include="Protos\address.proto" GrpcServices="Client" />
+    <Protobuf Include="Protos\order.proto" GrpcServices="Client" />
+    <Protobuf Include="Protos\orderitem.proto" GrpcServices="Client" />
+    <Protobuf Include="Protos\product.proto" GrpcServices="Client" />
+    <Protobuf Include="Protos\tag.proto" GrpcServices="Client" />
+  </ItemGroup>
+
+</Project>

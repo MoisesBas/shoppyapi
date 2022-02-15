@@ -1,0 +1,24 @@
+﻿syntax = "proto3";
+import "google/protobuf/wrappers.proto";
+
+option csharp_namespace = "ShoppyEx.Customer.Api.Protos";
+
+package protos.package;
+service AddressGrpc { 
+}
+
+message AddressResponseMessage {    
+    google.protobuf.StringValue Id = 1;
+    google.protobuf.StringValue City = 2;
+    google.protobuf.StringValue Country = 3;
+    google.protobuf.StringValue Address = 4;
+    google.protobuf.StringValue Region = 5;
+    google.protobuf.StringValue PostalCode = 6;   
+}
+message AddressRequestMessage {       
+    google.protobuf.StringValue City = 1;
+    google.protobuf.StringValue Country = 2;
+    google.protobuf.StringValue Address = 3;
+    google.protobuf.StringValue Region = 4;
+    google.protobuf.StringValue PostalCode = 5;      
+}

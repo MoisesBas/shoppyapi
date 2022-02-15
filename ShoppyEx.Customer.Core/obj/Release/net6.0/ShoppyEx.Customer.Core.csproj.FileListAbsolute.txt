@@ -1,0 +1,14 @@
+D:\ACE ACE\ShoppyEx\ShoppyEx.Customer.Core\bin\Release\net6.0\ShoppyEx.Customer.Core.deps.json
+D:\ACE ACE\ShoppyEx\ShoppyEx.Customer.Core\bin\Release\net6.0\ShoppyEx.Customer.Core.dll
+D:\ACE ACE\ShoppyEx\ShoppyEx.Customer.Core\bin\Release\net6.0\ref\ShoppyEx.Customer.Core.dll
+D:\ACE ACE\ShoppyEx\ShoppyEx.Customer.Core\bin\Release\net6.0\ShoppyEx.Customer.Core.pdb
+D:\ACE ACE\ShoppyEx\ShoppyEx.Customer.Core\bin\Release\net6.0\ShoppyEx.SharedKernel.SeedWork.dll
+D:\ACE ACE\ShoppyEx\ShoppyEx.Customer.Core\bin\Release\net6.0\ShoppyEx.SharedKernel.SeedWork.pdb
+D:\ACE ACE\ShoppyEx\ShoppyEx.Customer.Core\obj\Release\net6.0\ShoppyEx.Customer.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\ACE ACE\ShoppyEx\ShoppyEx.Customer.Core\obj\Release\net6.0\ShoppyEx.Customer.Core.AssemblyInfoInputs.cache
+D:\ACE ACE\ShoppyEx\ShoppyEx.Customer.Core\obj\Release\net6.0\ShoppyEx.Customer.Core.AssemblyInfo.cs
+D:\ACE ACE\ShoppyEx\ShoppyEx.Customer.Core\obj\Release\net6.0\ShoppyEx.Customer.Core.csproj.CoreCompileInputs.cache
+D:\ACE ACE\ShoppyEx\ShoppyEx.Customer.Core\obj\Release\net6.0\ShoppyEx.Customer.Core.csproj.CopyComplete
+D:\ACE ACE\ShoppyEx\ShoppyEx.Customer.Core\obj\Release\net6.0\ShoppyEx.Customer.Core.dll
+D:\ACE ACE\ShoppyEx\ShoppyEx.Customer.Core\obj\Release\net6.0\ref\ShoppyEx.Customer.Core.dll
+D:\ACE ACE\ShoppyEx\ShoppyEx.Customer.Core\obj\Release\net6.0\ShoppyEx.Customer.Core.pdb

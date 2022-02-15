@@ -1,0 +1,22 @@
+﻿syntax = "proto3";
+import "google/protobuf/wrappers.proto";
+
+option csharp_namespace = "ShoppyEx.Order.Api";
+
+package protos.package;
+service OrderItemGrpc { 
+}
+
+message OrderItemResponseMessage {    
+    google.protobuf.StringValue Id = 1;
+    google.protobuf.StringValue OrderId = 2;
+    google.protobuf.StringValue ProductId = 3;
+    google.protobuf.Int32Value  Quantity = 4;
+    google.protobuf.StringValue Price = 5;   
+}
+message OrderItemRequestMessage {       
+    google.protobuf.StringValue OrderId = 1;
+    google.protobuf.StringValue ProductId = 2;
+    google.protobuf.Int32Value  Quantity = 3;
+    google.protobuf.StringValue Price = 4;
+}
