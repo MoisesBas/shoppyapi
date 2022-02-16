@@ -1,5 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using ShoppyEx.Aggregator.Api.Protos;
+﻿using ShoppyEx.Product.Api;
+
 namespace ShoppyEx.Aggregator.Api.Controllers;
 
 [ApiController]
@@ -8,10 +8,14 @@ namespace ShoppyEx.Aggregator.Api.Controllers;
 [Produces(MediaTypeNames.Application.Json)]
 public class ProductController : ControllerBase
 {
+   
     private readonly ProductGrpc.ProductGrpcClient _productGrpcClient;
-    public ProductController(ProductGrpc.ProductGrpcClient productGrpcClient)
+    private string  _baseUrl = string.Empty;
+    public ProductController(ProductGrpc.ProductGrpcClient productGrpcClient,
+        IHttpContextAccessor context)
     {
         _productGrpcClient = productGrpcClient;
+        _baseUrl = $"{(context.HttpContext.Request).Scheme}://{(context.HttpContext.Request).Host}";
     }
 
     [HttpGet]
@@ -20,16 +24,26 @@ public class ProductController : ControllerBase
     [ApiExplorerSettings(GroupName = Swagger.DocVersions.v1_0)]
     public async Task<IActionResult> GetProductById(Guid id, CancellationToken cancellationToken = default)
     {
-        return Ok(await _productGrpcClient.GetProductByIdAsync(new ProductByIdRequestMessage { Id = id.ToString() }, cancellationToken: cancellationToken));
+        var items = await _productGrpcClient.GetProductByIdAsync(new GetProductByIdQuery { Id = id.ToString() }, cancellationToken: cancellationToken);
+        items.PictureUrl = $"{_baseUrl}/{items.PictureUrl}";
+
+        return Ok(items);
     }
 
     [HttpGet]
     [Route(AspNet.Mvc.ActionTemplate)]
     [MapToApiVersion(Swagger.Versions.v1_0)]
     [ApiExplorerSettings(GroupName = Swagger.DocVersions.v1_0)]
-    public async Task<IActionResult> GetProductAll(CancellationToken cancellationToken = default)
+    public async Task<IActionResult> GetProductAll([FromQuery] ProductGetAllQuery model, CancellationToken cancellationToken = default)
     {
-        return Ok(await _productGrpcClient.GetProductAllAsync(new ProductPageQueryRequestMessage() { }, cancellationToken: cancellationToken));
+        return Ok(await _productGrpcClient.GetProductAllAsync(new ProductsGetAllQuery() {
+        PageIndex = model.PageIndex,
+        PageSize = model.PageSize,
+        Search = model.Search,
+        Sort = model.Sort,
+        ProductBrandId = model.ProductBrandId.ToString(),
+        ProductTypeId = model.ProductTypeId.ToString(),
+        }, cancellationToken: cancellationToken));
     }
 }
 

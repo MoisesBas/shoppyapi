@@ -2804,11 +2804,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\ACE ACE\\ShoppyEx\\ShoppyEx.Product.Infrastructure\\ShoppyEx.Product.Infrastructure.csproj",
+      "projectUniqueName": "E:\\ShoppyEx\\API\\ShoppyEx.Product.Infrastructure\\ShoppyEx.Product.Infrastructure.csproj",
       "projectName": "ShoppyEx.Product.Infrastructure",
-      "projectPath": "D:\\ACE ACE\\ShoppyEx\\ShoppyEx.Product.Infrastructure\\ShoppyEx.Product.Infrastructure.csproj",
+      "projectPath": "E:\\ShoppyEx\\API\\ShoppyEx.Product.Infrastructure\\ShoppyEx.Product.Infrastructure.csproj",
       "packagesPath": "C:\\Users\\moise\\.nuget\\packages\\",
-      "outputPath": "D:\\ACE ACE\\ShoppyEx\\ShoppyEx.Product.Infrastructure\\obj\\",
+      "outputPath": "E:\\ShoppyEx\\API\\ShoppyEx.Product.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\moise\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2826,11 +2826,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\ACE ACE\\ShoppyEx\\ShoppyEx.Product.Core\\ShoppyEx.Product.Core.csproj": {
-              "projectPath": "D:\\ACE ACE\\ShoppyEx\\ShoppyEx.Product.Core\\ShoppyEx.Product.Core.csproj"
+            "E:\\ShoppyEx\\API\\ShoppyEx.Product.Core\\ShoppyEx.Product.Core.csproj": {
+              "projectPath": "E:\\ShoppyEx\\API\\ShoppyEx.Product.Core\\ShoppyEx.Product.Core.csproj"
             },
-            "D:\\ACE ACE\\ShoppyEx\\ShoppyEx.SharedKernel.SeedWork\\ShoppyEx.SharedKernel.SeedWork.csproj": {
-              "projectPath": "D:\\ACE ACE\\ShoppyEx\\ShoppyEx.SharedKernel.SeedWork\\ShoppyEx.SharedKernel.SeedWork.csproj"
+            "E:\\ShoppyEx\\API\\ShoppyEx.SharedKernel.SeedWork\\ShoppyEx.SharedKernel.SeedWork.csproj": {
+              "projectPath": "E:\\ShoppyEx\\API\\ShoppyEx.SharedKernel.SeedWork\\ShoppyEx.SharedKernel.SeedWork.csproj"
             }
           }
         }

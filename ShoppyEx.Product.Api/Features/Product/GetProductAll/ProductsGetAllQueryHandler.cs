@@ -3,32 +3,60 @@ using AutoMapper.QueryableExtensions;
 using Microsoft.EntityFrameworkCore;
 using ShoppyEx.Product.Infrastructure.UnitOfWork;
 using ShoppyEx.SharedKernel.SeedWork.CQRS.Query;
+using System.Linq;
 
 namespace ShoppyEx.Product.Api.Features.Product.GetProductAll;
 
-public sealed class ProductsGetAllQueryHandler : QueryHandler<ProductsGetAllQuery, IList<ProductModel>> 
+public sealed class ProductsGetAllQueryHandler : QueryHandler<ProductsGetAllQuery, IList<ProductResponseDto>>
 {
     private readonly IProductUnitOfWork _unitOfWork;
     private readonly IMapper _mapper;
-   
+
 
     public ProductsGetAllQueryHandler(
         IProductUnitOfWork unitOfWork, IMapper mapper)
     {
-        _unitOfWork = unitOfWork;       
+        _unitOfWork = unitOfWork;
         _mapper = mapper;
     }
 
-    public override async Task<IList<ProductModel>> ExecuteQuery(ProductsGetAllQuery query, 
+    public override async Task<IList<ProductResponseDto>> ExecuteQuery(ProductsGetAllQuery query,
         CancellationToken cancellationToken)
     {
-       
-        var products = await _unitOfWork.Set<Core.Domain.Product.Product>()
-                      .Include(x => x.Category).Include(x => x.Tag)
-                      .ProjectTo<ProductModel>(_mapper.ConfigurationProvider)
-                      .ToListAsync(cancellationToken)
-                      .ConfigureAwait(false);        
+        var results = QueryProducts(query);
+                      SortProducts(query, results);
+        var items = await MapProducts(results, cancellationToken);
+        return items;
+    }
 
-        return products;
+    private async Task<IList<ProductResponseDto>> MapProducts(IQueryable<Core.Domain.Product.Product> results, CancellationToken cancellationToken)
+    {
+        return await results.ProjectTo<ProductResponseDto>(_mapper.ConfigurationProvider)
+                                 .ToListAsync(cancellationToken);
+    }
+
+    private static IQueryable<Core.Domain.Product.Product> SortProducts(ProductsGetAllQuery query, IQueryable<Core.Domain.Product.Product> results)
+    {
+        if (!string.IsNullOrEmpty(query.Sort))
+        {
+            results = query.Sort switch
+            {
+                "priceAsc" => results.OrderBy(x => x.Price),
+                "priceDesc" => results.OrderByDescending(x => x.Price),
+                _ => results.OrderBy(x => x.Name)
+            };
+        }
+
+        return results;
+    }
+
+    private IQueryable<Core.Domain.Product.Product> QueryProducts(ProductsGetAllQuery query)
+    {
+        return _unitOfWork.Set<Core.Domain.Product.Product>()
+                                        .Include(x => x.ProductBrand).Include(x => x.ProductType)
+                                        .Where(x => (string.IsNullOrEmpty(query.Search) || x.Name.ToLower().Contains(query.Search))
+                                                      && (!query.ProductBrandId.HasValue || x.ProductBrandId.Value == query.ProductBrandId)
+                                                      && (!query.ProductTypeId.HasValue || x.ProductTypeId.Value == query.ProductTypeId))
+                                        .Skip((query.PageIndex - 1) * query.PageSize).Take(query.PageSize).AsQueryable();
     }
 }

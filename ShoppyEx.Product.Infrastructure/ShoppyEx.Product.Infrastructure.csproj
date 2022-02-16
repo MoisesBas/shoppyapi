@@ -26,5 +26,16 @@
     <ProjectReference Include="..\ShoppyEx.Product.Core\ShoppyEx.Product.Core.csproj" />
     <ProjectReference Include="..\ShoppyEx.SharedKernel.SeedWork\ShoppyEx.SharedKernel.SeedWork.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <None Update="DataSeed\brands.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="DataSeed\products.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="DataSeed\types.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
 
 </Project>

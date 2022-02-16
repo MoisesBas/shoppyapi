@@ -22,6 +22,92 @@ namespace ShoppyEx.Order.Infrastructure.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
+            modelBuilder.Entity("ShoppyEx.Order.Core.Domain.Basket.Basket", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("CustomerId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("DeliveryId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<decimal>("ShippingPrice")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("DeliveryId");
+
+                    b.ToTable("tblBasket", "dbo");
+                });
+
+            modelBuilder.Entity("ShoppyEx.Order.Core.Domain.Basket.BasketItem", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("BasketId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Brand")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PictureUrl")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal>("Price")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<Guid>("ProductId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("ProductName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Type")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("BasketId");
+
+                    b.ToTable("tblBasketItem", "dbo");
+                });
+
+            modelBuilder.Entity("ShoppyEx.Order.Core.Domain.Order.Delivery", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("DeliveryTime")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal>("Price")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<string>("ShortName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("tblDelivery", "dbo");
+                });
+
             modelBuilder.Entity("ShoppyEx.Order.Core.Domain.Order.Order", b =>
                 {
                     b.Property<Guid>("Id")
@@ -32,9 +118,6 @@ namespace ShoppyEx.Order.Infrastructure.Migrations
 
                     b.Property<DateTime>("OrderDate")
                         .HasColumnType("datetime2");
-
-                    b.Property<Guid>("PaymentMethodId")
-                        .HasColumnType("uniqueidentifier");
 
                     b.Property<int>("Status")
                         .HasColumnType("int");
@@ -53,14 +136,22 @@ namespace ShoppyEx.Order.Infrastructure.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<decimal>("BasePrice")
-                        .HasColumnType("decimal(18,2)");
-
                     b.Property<Guid>("OrderId")
                         .HasColumnType("uniqueidentifier");
 
+                    b.Property<string>("PictureUrl")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal>("Price")
+                        .HasColumnType("decimal(18,2)");
+
                     b.Property<Guid>("ProductId")
                         .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("ProductName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("Quantity")
                         .HasColumnType("int");
@@ -72,30 +163,50 @@ namespace ShoppyEx.Order.Infrastructure.Migrations
                     b.ToTable("tblOrderItem", "dbo");
                 });
 
+            modelBuilder.Entity("ShoppyEx.Order.Core.Domain.Basket.Basket", b =>
+                {
+                    b.HasOne("ShoppyEx.Order.Core.Domain.Order.Delivery", "Delivery")
+                        .WithMany("Baskets")
+                        .HasForeignKey("DeliveryId")
+                        .OnDelete(DeleteBehavior.ClientCascade)
+                        .IsRequired()
+                        .HasConstraintName("FK_Baskets_Delivery_DeliveryId");
+
+                    b.Navigation("Delivery");
+                });
+
+            modelBuilder.Entity("ShoppyEx.Order.Core.Domain.Basket.BasketItem", b =>
+                {
+                    b.HasOne("ShoppyEx.Order.Core.Domain.Basket.Basket", "Basket")
+                        .WithMany("BasketItems")
+                        .HasForeignKey("BasketId")
+                        .OnDelete(DeleteBehavior.ClientCascade)
+                        .IsRequired()
+                        .HasConstraintName("FK_BasketItems_Basket_BasketId");
+
+                    b.Navigation("Basket");
+                });
+
             modelBuilder.Entity("ShoppyEx.Order.Core.Domain.Order.Order", b =>
                 {
-                    b.OwnsOne("ShoppyEx.Order.Core.Domain.Order.OrderAddress", "Address", b1 =>
+                    b.OwnsOne("ShoppyEx.Order.Core.Domain.Order.Address", "Address", b1 =>
                         {
                             b1.Property<Guid>("OrderId")
                                 .HasColumnType("uniqueidentifier");
-
-                            b1.Property<string>("Address")
-                                .IsRequired()
-                                .HasColumnType("nvarchar(max)");
 
                             b1.Property<string>("City")
                                 .IsRequired()
                                 .HasColumnType("nvarchar(max)");
 
-                            b1.Property<string>("Country")
+                            b1.Property<string>("State")
                                 .IsRequired()
                                 .HasColumnType("nvarchar(max)");
 
-                            b1.Property<string>("PostalCode")
+                            b1.Property<string>("Street")
                                 .IsRequired()
                                 .HasColumnType("nvarchar(max)");
 
-                            b1.Property<string>("Region")
+                            b1.Property<string>("Zipcode")
                                 .IsRequired()
                                 .HasColumnType("nvarchar(max)");
 
@@ -121,6 +232,16 @@ namespace ShoppyEx.Order.Infrastructure.Migrations
                         .HasConstraintName("FK_OrderItems_Order_OrderId");
 
                     b.Navigation("Order");
+                });
+
+            modelBuilder.Entity("ShoppyEx.Order.Core.Domain.Basket.Basket", b =>
+                {
+                    b.Navigation("BasketItems");
+                });
+
+            modelBuilder.Entity("ShoppyEx.Order.Core.Domain.Order.Delivery", b =>
+                {
+                    b.Navigation("Baskets");
                 });
 
             modelBuilder.Entity("ShoppyEx.Order.Core.Domain.Order.Order", b =>

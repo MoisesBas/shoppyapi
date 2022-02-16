@@ -9,6 +9,21 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Features\OrderItem\**" />
+    <Compile Remove="Features\Order\**" />
+    <Content Remove="Features\OrderItem\**" />
+    <Content Remove="Features\Order\**" />
+    <EmbeddedResource Remove="Features\OrderItem\**" />
+    <EmbeddedResource Remove="Features\Order\**" />
+    <None Remove="Features\OrderItem\**" />
+    <None Remove="Features\Order\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Services\OrderService.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Remove="Protos\address.proto" />
     <None Remove="Protos\category.proto" />
     <None Remove="Protos\customer.proto" />
@@ -41,6 +56,10 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ShoppyEx.Order.Infrastructure\ShoppyEx.Order.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Features\" />
   </ItemGroup>
 
 </Project>

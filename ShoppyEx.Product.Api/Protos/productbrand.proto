@@ -1,0 +1,27 @@
+﻿syntax = "proto3";
+import "google/protobuf/wrappers.proto";
+
+option csharp_namespace = "ShoppyEx.Product.Api";
+
+package protos.package;
+
+service ProductBrandGrpc {  	  
+   
+    rpc GetProductBrandAll(GetProductBrandQuery) returns (ProductBrandListMessage) {}
+}
+message GetProductBrandQuery {
+
+}
+
+message ProductBrandListMessage {
+    google.protobuf.Int32Value TotalCount = 1;
+    repeated ProductBrandResponse Items = 2;
+}
+
+message ProductBrandResponse {    
+    google.protobuf.StringValue Id = 1;
+    google.protobuf.StringValue Name = 2;    
+}
+
+
+

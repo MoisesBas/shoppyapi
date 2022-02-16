@@ -2,7 +2,6 @@ using HealthChecks.UI.Client;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Microsoft.EntityFrameworkCore;
 using ShoppyEx.Order.Api.Services;
-using ShoppyEx.Order.Infrastructure.DataSeed;
 using ShoppyEx.Order.Infrastructure.IoC;
 using ShoppyEx.Order.Infrastructure.Persistence;
 using ShoppyEx.SharedKernel.SeedWork.Extensions;
@@ -34,13 +33,13 @@ builder.Services.AddHealthChecks();
 
 //builder.WebHost.AddKestrel(builder.Configuration);
 var app = builder.Build();
-app.Services.Run<ApplicationDbContext>(false);
-app.Services.SeedOrderApi(false);
+app.Services.Run<ApplicationDbContext>(true);
+//app.Services.SeedOrderApi(false);
 
 app.UseRouting();
 app.UseEndpoints(endpoint =>
 {
-    endpoint.MapGrpcService<OrderService>();
+    //endpoint.MapGrpcService<OrderService>();
     endpoint.MapHealthChecks("/hc", new HealthCheckOptions()
     {
         Predicate = _ => true,

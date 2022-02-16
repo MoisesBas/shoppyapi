@@ -22,7 +22,7 @@ namespace ShoppyEx.Product.Infrastructure.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
-            modelBuilder.Entity("ShoppyEx.Product.Core.Domain.Category.Category", b =>
+            modelBuilder.Entity("ShoppyEx.Product.Core.Domain.Brand.ProductBrand", b =>
                 {
                     b.Property<Guid>("Id")
                         .HasColumnType("uniqueidentifier");
@@ -33,19 +33,13 @@ namespace ShoppyEx.Product.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("tblCategory", "dbo");
+                    b.ToTable("tblProductBrand", "dbo");
                 });
 
             modelBuilder.Entity("ShoppyEx.Product.Core.Domain.Product.Product", b =>
                 {
                     b.Property<Guid>("Id")
                         .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid>("CategoryId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<int>("Count")
-                        .HasColumnType("int");
 
                     b.Property<string>("Description")
                         .IsRequired()
@@ -55,32 +49,29 @@ namespace ShoppyEx.Product.Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Picture")
+                    b.Property<string>("PictureUrl")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<decimal>("Price")
                         .HasColumnType("decimal(18,2)");
 
-                    b.Property<Guid>("TagId")
+                    b.Property<Guid>("ProductBrandId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<int>("UnitsInStock")
-                        .HasColumnType("int");
-
-                    b.Property<int>("UnitsOnOrder")
-                        .HasColumnType("int");
+                    b.Property<Guid>("ProductTypeId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("CategoryId");
+                    b.HasIndex("ProductBrandId");
 
-                    b.HasIndex("TagId");
+                    b.HasIndex("ProductTypeId");
 
                     b.ToTable("tblProduct", "dbo");
                 });
 
-            modelBuilder.Entity("ShoppyEx.Product.Core.Domain.Tag.Tag", b =>
+            modelBuilder.Entity("ShoppyEx.Product.Core.Domain.Type.ProductType", b =>
                 {
                     b.Property<Guid>("Id")
                         .HasColumnType("uniqueidentifier");
@@ -91,7 +82,7 @@ namespace ShoppyEx.Product.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("tblTag", "dbo");
+                    b.ToTable("tblProductType", "dbo");
                 });
 
             modelBuilder.Entity("ShoppyEx.SharedKernel.SeedWork.Events.StoredEvent", b =>
@@ -125,31 +116,31 @@ namespace ShoppyEx.Product.Infrastructure.Migrations
 
             modelBuilder.Entity("ShoppyEx.Product.Core.Domain.Product.Product", b =>
                 {
-                    b.HasOne("ShoppyEx.Product.Core.Domain.Category.Category", "Category")
+                    b.HasOne("ShoppyEx.Product.Core.Domain.Brand.ProductBrand", "ProductBrand")
                         .WithMany("Products")
-                        .HasForeignKey("CategoryId")
+                        .HasForeignKey("ProductBrandId")
                         .OnDelete(DeleteBehavior.ClientCascade)
                         .IsRequired()
-                        .HasConstraintName("FK_Products_Category_CategoryId");
+                        .HasConstraintName("FK_Products_ProductBrand_ProductBrandId");
 
-                    b.HasOne("ShoppyEx.Product.Core.Domain.Tag.Tag", "Tag")
+                    b.HasOne("ShoppyEx.Product.Core.Domain.Type.ProductType", "ProductType")
                         .WithMany("Products")
-                        .HasForeignKey("TagId")
+                        .HasForeignKey("ProductTypeId")
                         .OnDelete(DeleteBehavior.ClientCascade)
                         .IsRequired()
-                        .HasConstraintName("FK_Products_Tag_TagId");
+                        .HasConstraintName("FK_Products_ProductType_ProductTypeId");
 
-                    b.Navigation("Category");
+                    b.Navigation("ProductBrand");
 
-                    b.Navigation("Tag");
+                    b.Navigation("ProductType");
                 });
 
-            modelBuilder.Entity("ShoppyEx.Product.Core.Domain.Category.Category", b =>
+            modelBuilder.Entity("ShoppyEx.Product.Core.Domain.Brand.ProductBrand", b =>
                 {
                     b.Navigation("Products");
                 });
 
-            modelBuilder.Entity("ShoppyEx.Product.Core.Domain.Tag.Tag", b =>
+            modelBuilder.Entity("ShoppyEx.Product.Core.Domain.Type.ProductType", b =>
                 {
                     b.Navigation("Products");
                 });

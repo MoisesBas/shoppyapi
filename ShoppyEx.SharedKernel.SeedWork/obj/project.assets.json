@@ -1486,11 +1486,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\ACE ACE\\ShoppyEx\\ShoppyEx.SharedKernel.SeedWork\\ShoppyEx.SharedKernel.SeedWork.csproj",
+      "projectUniqueName": "E:\\ShoppyEx\\API\\ShoppyEx.SharedKernel.SeedWork\\ShoppyEx.SharedKernel.SeedWork.csproj",
       "projectName": "ShoppyEx.SharedKernel.SeedWork",
-      "projectPath": "D:\\ACE ACE\\ShoppyEx\\ShoppyEx.SharedKernel.SeedWork\\ShoppyEx.SharedKernel.SeedWork.csproj",
+      "projectPath": "E:\\ShoppyEx\\API\\ShoppyEx.SharedKernel.SeedWork\\ShoppyEx.SharedKernel.SeedWork.csproj",
       "packagesPath": "C:\\Users\\moise\\.nuget\\packages\\",
-      "outputPath": "D:\\ACE ACE\\ShoppyEx\\ShoppyEx.SharedKernel.SeedWork\\obj\\",
+      "outputPath": "E:\\ShoppyEx\\API\\ShoppyEx.SharedKernel.SeedWork\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\moise\\AppData\\Roaming\\NuGet\\NuGet.Config",

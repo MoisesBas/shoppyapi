@@ -10,11 +10,16 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Protos\category.proto" />
+    <Compile Remove="Controllers\CategoryController.cs" />
+    <Compile Remove="Controllers\TagController.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Remove="Protos\order.proto" />
     <None Remove="Protos\orderitem.proto" />
     <None Remove="Protos\product.proto" />
-    <None Remove="Protos\tag.proto" />
+    <None Remove="Protos\productbrand.proto" />
+    <None Remove="Protos\producttype.proto" />
   </ItemGroup>
 
   <ItemGroup>
@@ -29,13 +34,142 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Protobuf Include="Protos\category.proto" GrpcServices="Client" />
     <Protobuf Include="Protos\customer.proto" GrpcServices="Client" />
     <Protobuf Include="Protos\address.proto" GrpcServices="Client" />
     <Protobuf Include="Protos\order.proto" GrpcServices="Client" />
     <Protobuf Include="Protos\orderitem.proto" GrpcServices="Client" />
     <Protobuf Include="Protos\product.proto" GrpcServices="Client" />
-    <Protobuf Include="Protos\tag.proto" GrpcServices="Client" />
+    <Protobuf Include="Protos\productbrand.proto" GrpcServices="Client" />
+    <Protobuf Include="Protos\producttype.proto" GrpcServices="Client" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="images\products\adidas_football-1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="images\products\adidas_football-2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="images\products\adidas_football-3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="images\products\adidas_shoe-1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="images\products\adidas_shoe-2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="images\products\adidas_shoe-3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="images\products\asics_shoe-1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="images\products\asics_shoe-2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="images\products\asics_shoe-3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="images\products\babolat-kitback-1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="images\products\babolat-kitback-2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="images\products\babolat-kitback-3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="images\products\babolat-racket-1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="images\products\babolat-racket-2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="images\products\babolat-racket-3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="images\products\babolat.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="images\products\babolat_shoe-1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="images\products\babolat_shoe-2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="images\products\babolat_shoe-3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="images\products\Nike-Football-1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="images\products\Nike-Football-2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="images\products\Nike-Football-3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="images\products\puma_shoe-1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="images\products\puma_shoe-2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="images\products\puma_shoe-3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="images\products\victor-racket-1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="images\products\victor-racket-2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="images\products\victor-racket-3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="images\products\victor_shoe-1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="images\products\victor_shoe-2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="images\products\yonex-badminton-1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="images\products\yonex-badminton-2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="images\products\yonex-badminton-3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="images\products\yonex-kitback-1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="images\products\yonex-kitback-2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="images\products\yonex-kitback-3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="images\products\yonex-racket-1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="images\products\yonex-racket-2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="images\products\yonex-racket-3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="images\products\yonex_shoe-1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="images\products\yonex_shoe-2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="images\products\yonex_shoe-3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>

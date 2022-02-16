@@ -7,26 +7,26 @@ using ShoppyEx.SharedKernel.SeedWork.CQRS.Query;
 namespace ShoppyEx.Product.Api.Features.Product.GetProductById
 {
 
-    public sealed class GetProductByIdQueryHandler : QueryHandler<GetProductByIdQuery, ProductModel>
+    public sealed class GetProductBrandQueryHandler : QueryHandler<GetProductByIdQuery, ProductResponseDto>
     {
         private readonly IProductUnitOfWork _unitOfWork;
         private readonly IMapper _mapper;
-        public GetProductByIdQueryHandler(
+        public GetProductBrandQueryHandler(
             IProductUnitOfWork unitOfWork, IMapper mapper)
         {
             _unitOfWork = unitOfWork;
             _mapper = mapper;
         }
 
-        public override async Task<ProductModel> ExecuteQuery(GetProductByIdQuery query, CancellationToken cancellationToken)
+        public override async Task<ProductResponseDto> ExecuteQuery(GetProductByIdQuery query, CancellationToken cancellationToken)
         {
             var productId = new ProductId(query.Id);
             var item = await _unitOfWork.Set<Core.Domain.Product.Product>()
-                .Include(x=>x.Tag)
-                .Include(x=>x.Category)
-                .FirstOrDefaultAsync(x=>x.Id == productId, cancellationToken).ConfigureAwait(false); ;
-            if(item == null) return default;            
-            return _mapper.Map<ProductModel>(item);
+                .Include(x => x.ProductType)
+                .Include(x => x.ProductBrand)
+                .FirstOrDefaultAsync(x => x.Id == productId, cancellationToken).ConfigureAwait(false); ;
+            if (item != null) return _mapper.Map<ProductResponseDto>(item);
+            return default;
         }
     }
 }

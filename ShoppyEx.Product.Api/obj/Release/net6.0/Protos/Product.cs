@@ -25,52 +25,56 @@ namespace ShoppyEx.Product.Api {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "ChRQcm90b3MvcHJvZHVjdC5wcm90bxIOcHJvdG9zLnBhY2thZ2UaHmdvb2ds",
-            "ZS9wcm90b2J1Zi93cmFwcGVycy5wcm90bxoQcHJvdG9zL3RhZy5wcm90bxoV",
-            "cHJvdG9zL2NhdGVnb3J5LnByb3RvIiAKHlByb2R1Y3RQYWdlUXVlcnlSZXF1",
-            "ZXN0TWVzc2FnZSJFChlQcm9kdWN0QnlJZFJlcXVlc3RNZXNzYWdlEigKAklk",
-            "GAEgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlInwKElByb2R1",
-            "Y3RMaXN0TWVzc2FnZRIvCgpUb3RhbENvdW50GAEgASgLMhsuZ29vZ2xlLnBy",
-            "b3RvYnVmLkludDMyVmFsdWUSNQoFSXRlbXMYAiADKAsyJi5wcm90b3MucGFj",
-            "a2FnZS5Qcm9kdWN0UmVzcG9uc2VNZXNzYWdlIswDChZQcm9kdWN0UmVzcG9u",
-            "c2VNZXNzYWdlEigKAklkGAEgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmlu",
-            "Z1ZhbHVlEioKBE5hbWUYAiABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5n",
-            "VmFsdWUSMQoLRGVzY3JpcHRpb24YAyABKAsyHC5nb29nbGUucHJvdG9idWYu",
-            "U3RyaW5nVmFsdWUSKgoFQ291bnQYBCABKAsyGy5nb29nbGUucHJvdG9idWYu",
-            "SW50MzJWYWx1ZRIrCgVQcmljZRgFIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5T",
-            "dHJpbmdWYWx1ZRIxCgxVbml0c0luU3RvY2sYBiABKAsyGy5nb29nbGUucHJv",
-            "dG9idWYuSW50MzJWYWx1ZRIxCgxVbml0c09uT3JkZXIYByABKAsyGy5nb29n",
-            "bGUucHJvdG9idWYuSW50MzJWYWx1ZRI5CghDYXRlZ29yeRgIIAEoCzInLnBy",
-            "b3Rvcy5wYWNrYWdlLkNhdGVnb3J5UmVzcG9uc2VNZXNzYWdlEi8KA1RhZxgJ",
-            "IAEoCzIiLnByb3Rvcy5wYWNrYWdlLlRhZ1Jlc3BvbnNlTWVzc2FnZTLbAQoL",
-            "UHJvZHVjdEdycGMSZQoOR2V0UHJvZHVjdEJ5SWQSKS5wcm90b3MucGFja2Fn",
-            "ZS5Qcm9kdWN0QnlJZFJlcXVlc3RNZXNzYWdlGiYucHJvdG9zLnBhY2thZ2Uu",
-            "UHJvZHVjdFJlc3BvbnNlTWVzc2FnZSIAEmUKDUdldFByb2R1Y3RBbGwSLi5w",
-            "cm90b3MucGFja2FnZS5Qcm9kdWN0UGFnZVF1ZXJ5UmVxdWVzdE1lc3NhZ2Ua",
-            "Ii5wcm90b3MucGFja2FnZS5Qcm9kdWN0TGlzdE1lc3NhZ2UiAEIXqgIUU2hv",
-            "cHB5RXguUHJvZHVjdC5BcGliBnByb3RvMw=="));
+            "ZS9wcm90b2J1Zi93cmFwcGVycy5wcm90bxoZcHJvdG9zL3Byb2R1Y3RicmFu",
+            "ZC5wcm90bxoYcHJvdG9zL3Byb2R1Y3R0eXBlLnByb3RvIj8KE0dldFByb2R1",
+            "Y3RCeUlkUXVlcnkSKAoCSWQYASABKAsyHC5nb29nbGUucHJvdG9idWYuU3Ry",
+            "aW5nVmFsdWUiuQIKE1Byb2R1Y3RzR2V0QWxsUXVlcnkSLgoJUGFnZUluZGV4",
+            "GAEgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkludDMyVmFsdWUSLQoIUGFnZVNp",
+            "emUYAiABKAsyGy5nb29nbGUucHJvdG9idWYuSW50MzJWYWx1ZRI0Cg5Qcm9k",
+            "dWN0QnJhbmRJZBgDIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1",
+            "ZRIzCg1Qcm9kdWN0VHlwZUlkGAQgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0",
+            "cmluZ1ZhbHVlEioKBFNvcnQYBSABKAsyHC5nb29nbGUucHJvdG9idWYuU3Ry",
+            "aW5nVmFsdWUSLAoGU2VhcmNoGAYgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0",
+            "cmluZ1ZhbHVlInwKElByb2R1Y3RMaXN0TWVzc2FnZRIvCgpUb3RhbENvdW50",
+            "GAEgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkludDMyVmFsdWUSNQoFSXRlbXMY",
+            "AiADKAsyJi5wcm90b3MucGFja2FnZS5Qcm9kdWN0UmVzcG9uc2VNZXNzYWdl",
+            "IucCChZQcm9kdWN0UmVzcG9uc2VNZXNzYWdlEigKAklkGAEgASgLMhwuZ29v",
+            "Z2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEioKBE5hbWUYAiABKAsyHC5nb29n",
+            "bGUucHJvdG9idWYuU3RyaW5nVmFsdWUSMQoLRGVzY3JpcHRpb24YAyABKAsy",
+            "HC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSKwoFUHJpY2UYBCABKAsy",
+            "HC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSMAoKUGljdHVyZVVybBgF",
+            "IAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRIxCgtQcm9kdWN0",
+            "VHlwZRgGIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRIyCgxQ",
+            "cm9kdWN0QnJhbmQYByABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFs",
+            "dWUyygEKC1Byb2R1Y3RHcnBjEloKDUdldFByb2R1Y3RBbGwSIy5wcm90b3Mu",
+            "cGFja2FnZS5Qcm9kdWN0c0dldEFsbFF1ZXJ5GiIucHJvdG9zLnBhY2thZ2Uu",
+            "UHJvZHVjdExpc3RNZXNzYWdlIgASXwoOR2V0UHJvZHVjdEJ5SWQSIy5wcm90",
+            "b3MucGFja2FnZS5HZXRQcm9kdWN0QnlJZFF1ZXJ5GiYucHJvdG9zLnBhY2th",
+            "Z2UuUHJvZHVjdFJlc3BvbnNlTWVzc2FnZSIAQheqAhRTaG9wcHlFeC5Qcm9k",
+            "dWN0LkFwaWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::ShoppyEx.Product.Api.TagReflection.Descriptor, global::ShoppyEx.Product.Api.CategoryReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::ShoppyEx.Product.Api.ProductbrandReflection.Descriptor, global::ShoppyEx.Product.Api.ProducttypeReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::ShoppyEx.Product.Api.ProductPageQueryRequestMessage), global::ShoppyEx.Product.Api.ProductPageQueryRequestMessage.Parser, null, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::ShoppyEx.Product.Api.ProductByIdRequestMessage), global::ShoppyEx.Product.Api.ProductByIdRequestMessage.Parser, new[]{ "Id" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ShoppyEx.Product.Api.GetProductByIdQuery), global::ShoppyEx.Product.Api.GetProductByIdQuery.Parser, new[]{ "Id" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ShoppyEx.Product.Api.ProductsGetAllQuery), global::ShoppyEx.Product.Api.ProductsGetAllQuery.Parser, new[]{ "PageIndex", "PageSize", "ProductBrandId", "ProductTypeId", "Sort", "Search" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::ShoppyEx.Product.Api.ProductListMessage), global::ShoppyEx.Product.Api.ProductListMessage.Parser, new[]{ "TotalCount", "Items" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::ShoppyEx.Product.Api.ProductResponseMessage), global::ShoppyEx.Product.Api.ProductResponseMessage.Parser, new[]{ "Id", "Name", "Description", "Count", "Price", "UnitsInStock", "UnitsOnOrder", "Category", "Tag" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::ShoppyEx.Product.Api.ProductResponseMessage), global::ShoppyEx.Product.Api.ProductResponseMessage.Parser, new[]{ "Id", "Name", "Description", "Price", "PictureUrl", "ProductType", "ProductBrand" }, null, null, null, null)
           }));
     }
     #endregion
 
   }
   #region Messages
-  public sealed partial class ProductPageQueryRequestMessage : pb::IMessage<ProductPageQueryRequestMessage>
+  public sealed partial class GetProductByIdQuery : pb::IMessage<GetProductByIdQuery>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<ProductPageQueryRequestMessage> _parser = new pb::MessageParser<ProductPageQueryRequestMessage>(() => new ProductPageQueryRequestMessage());
+    private static readonly pb::MessageParser<GetProductByIdQuery> _parser = new pb::MessageParser<GetProductByIdQuery>(() => new GetProductByIdQuery());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<ProductPageQueryRequestMessage> Parser { get { return _parser; } }
+    public static pb::MessageParser<GetProductByIdQuery> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -86,7 +90,7 @@ namespace ShoppyEx.Product.Api {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public ProductPageQueryRequestMessage() {
+    public GetProductByIdQuery() {
       OnConstruction();
     }
 
@@ -94,167 +98,15 @@ namespace ShoppyEx.Product.Api {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public ProductPageQueryRequestMessage(ProductPageQueryRequestMessage other) : this() {
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public ProductPageQueryRequestMessage Clone() {
-      return new ProductPageQueryRequestMessage(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override bool Equals(object other) {
-      return Equals(other as ProductPageQueryRequestMessage);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(ProductPageQueryRequestMessage other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int CalculateSize() {
-      int size = 0;
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(ProductPageQueryRequestMessage other) {
-      if (other == null) {
-        return;
-      }
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-        }
-      }
-    }
-    #endif
-
-  }
-
-  public sealed partial class ProductByIdRequestMessage : pb::IMessage<ProductByIdRequestMessage>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
-    private static readonly pb::MessageParser<ProductByIdRequestMessage> _parser = new pb::MessageParser<ProductByIdRequestMessage>(() => new ProductByIdRequestMessage());
-    private pb::UnknownFieldSet _unknownFields;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<ProductByIdRequestMessage> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::ShoppyEx.Product.Api.ProductReflection.Descriptor.MessageTypes[1]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public ProductByIdRequestMessage() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public ProductByIdRequestMessage(ProductByIdRequestMessage other) : this() {
+    public GetProductByIdQuery(GetProductByIdQuery other) : this() {
       Id = other.Id;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public ProductByIdRequestMessage Clone() {
-      return new ProductByIdRequestMessage(this);
+    public GetProductByIdQuery Clone() {
+      return new GetProductByIdQuery(this);
     }
 
     /// <summary>Field number for the "Id" field.</summary>
@@ -274,12 +126,12 @@ namespace ShoppyEx.Product.Api {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
-      return Equals(other as ProductByIdRequestMessage);
+      return Equals(other as GetProductByIdQuery);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(ProductByIdRequestMessage other) {
+    public bool Equals(GetProductByIdQuery other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -350,7 +202,7 @@ namespace ShoppyEx.Product.Api {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(ProductByIdRequestMessage other) {
+    public void MergeFrom(GetProductByIdQuery other) {
       if (other == null) {
         return;
       }
@@ -400,6 +252,428 @@ namespace ShoppyEx.Product.Api {
             string value = _single_id_codec.Read(ref input);
             if (id_ == null || value != "") {
               Id = value;
+            }
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class ProductsGetAllQuery : pb::IMessage<ProductsGetAllQuery>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<ProductsGetAllQuery> _parser = new pb::MessageParser<ProductsGetAllQuery>(() => new ProductsGetAllQuery());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<ProductsGetAllQuery> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::ShoppyEx.Product.Api.ProductReflection.Descriptor.MessageTypes[1]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ProductsGetAllQuery() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ProductsGetAllQuery(ProductsGetAllQuery other) : this() {
+      PageIndex = other.PageIndex;
+      PageSize = other.PageSize;
+      ProductBrandId = other.ProductBrandId;
+      ProductTypeId = other.ProductTypeId;
+      Sort = other.Sort;
+      Search = other.Search;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ProductsGetAllQuery Clone() {
+      return new ProductsGetAllQuery(this);
+    }
+
+    /// <summary>Field number for the "PageIndex" field.</summary>
+    public const int PageIndexFieldNumber = 1;
+    private static readonly pb::FieldCodec<int?> _single_pageIndex_codec = pb::FieldCodec.ForStructWrapper<int>(10);
+    private int? pageIndex_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int? PageIndex {
+      get { return pageIndex_; }
+      set {
+        pageIndex_ = value;
+      }
+    }
+
+
+    /// <summary>Field number for the "PageSize" field.</summary>
+    public const int PageSizeFieldNumber = 2;
+    private static readonly pb::FieldCodec<int?> _single_pageSize_codec = pb::FieldCodec.ForStructWrapper<int>(18);
+    private int? pageSize_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int? PageSize {
+      get { return pageSize_; }
+      set {
+        pageSize_ = value;
+      }
+    }
+
+
+    /// <summary>Field number for the "ProductBrandId" field.</summary>
+    public const int ProductBrandIdFieldNumber = 3;
+    private static readonly pb::FieldCodec<string> _single_productBrandId_codec = pb::FieldCodec.ForClassWrapper<string>(26);
+    private string productBrandId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string ProductBrandId {
+      get { return productBrandId_; }
+      set {
+        productBrandId_ = value;
+      }
+    }
+
+
+    /// <summary>Field number for the "ProductTypeId" field.</summary>
+    public const int ProductTypeIdFieldNumber = 4;
+    private static readonly pb::FieldCodec<string> _single_productTypeId_codec = pb::FieldCodec.ForClassWrapper<string>(34);
+    private string productTypeId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string ProductTypeId {
+      get { return productTypeId_; }
+      set {
+        productTypeId_ = value;
+      }
+    }
+
+
+    /// <summary>Field number for the "Sort" field.</summary>
+    public const int SortFieldNumber = 5;
+    private static readonly pb::FieldCodec<string> _single_sort_codec = pb::FieldCodec.ForClassWrapper<string>(42);
+    private string sort_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Sort {
+      get { return sort_; }
+      set {
+        sort_ = value;
+      }
+    }
+
+
+    /// <summary>Field number for the "Search" field.</summary>
+    public const int SearchFieldNumber = 6;
+    private static readonly pb::FieldCodec<string> _single_search_codec = pb::FieldCodec.ForClassWrapper<string>(50);
+    private string search_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Search {
+      get { return search_; }
+      set {
+        search_ = value;
+      }
+    }
+
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as ProductsGetAllQuery);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(ProductsGetAllQuery other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (PageIndex != other.PageIndex) return false;
+      if (PageSize != other.PageSize) return false;
+      if (ProductBrandId != other.ProductBrandId) return false;
+      if (ProductTypeId != other.ProductTypeId) return false;
+      if (Sort != other.Sort) return false;
+      if (Search != other.Search) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (pageIndex_ != null) hash ^= PageIndex.GetHashCode();
+      if (pageSize_ != null) hash ^= PageSize.GetHashCode();
+      if (productBrandId_ != null) hash ^= ProductBrandId.GetHashCode();
+      if (productTypeId_ != null) hash ^= ProductTypeId.GetHashCode();
+      if (sort_ != null) hash ^= Sort.GetHashCode();
+      if (search_ != null) hash ^= Search.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (pageIndex_ != null) {
+        _single_pageIndex_codec.WriteTagAndValue(output, PageIndex);
+      }
+      if (pageSize_ != null) {
+        _single_pageSize_codec.WriteTagAndValue(output, PageSize);
+      }
+      if (productBrandId_ != null) {
+        _single_productBrandId_codec.WriteTagAndValue(output, ProductBrandId);
+      }
+      if (productTypeId_ != null) {
+        _single_productTypeId_codec.WriteTagAndValue(output, ProductTypeId);
+      }
+      if (sort_ != null) {
+        _single_sort_codec.WriteTagAndValue(output, Sort);
+      }
+      if (search_ != null) {
+        _single_search_codec.WriteTagAndValue(output, Search);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (pageIndex_ != null) {
+        _single_pageIndex_codec.WriteTagAndValue(ref output, PageIndex);
+      }
+      if (pageSize_ != null) {
+        _single_pageSize_codec.WriteTagAndValue(ref output, PageSize);
+      }
+      if (productBrandId_ != null) {
+        _single_productBrandId_codec.WriteTagAndValue(ref output, ProductBrandId);
+      }
+      if (productTypeId_ != null) {
+        _single_productTypeId_codec.WriteTagAndValue(ref output, ProductTypeId);
+      }
+      if (sort_ != null) {
+        _single_sort_codec.WriteTagAndValue(ref output, Sort);
+      }
+      if (search_ != null) {
+        _single_search_codec.WriteTagAndValue(ref output, Search);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (pageIndex_ != null) {
+        size += _single_pageIndex_codec.CalculateSizeWithTag(PageIndex);
+      }
+      if (pageSize_ != null) {
+        size += _single_pageSize_codec.CalculateSizeWithTag(PageSize);
+      }
+      if (productBrandId_ != null) {
+        size += _single_productBrandId_codec.CalculateSizeWithTag(ProductBrandId);
+      }
+      if (productTypeId_ != null) {
+        size += _single_productTypeId_codec.CalculateSizeWithTag(ProductTypeId);
+      }
+      if (sort_ != null) {
+        size += _single_sort_codec.CalculateSizeWithTag(Sort);
+      }
+      if (search_ != null) {
+        size += _single_search_codec.CalculateSizeWithTag(Search);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(ProductsGetAllQuery other) {
+      if (other == null) {
+        return;
+      }
+      if (other.pageIndex_ != null) {
+        if (pageIndex_ == null || other.PageIndex != 0) {
+          PageIndex = other.PageIndex;
+        }
+      }
+      if (other.pageSize_ != null) {
+        if (pageSize_ == null || other.PageSize != 0) {
+          PageSize = other.PageSize;
+        }
+      }
+      if (other.productBrandId_ != null) {
+        if (productBrandId_ == null || other.ProductBrandId != "") {
+          ProductBrandId = other.ProductBrandId;
+        }
+      }
+      if (other.productTypeId_ != null) {
+        if (productTypeId_ == null || other.ProductTypeId != "") {
+          ProductTypeId = other.ProductTypeId;
+        }
+      }
+      if (other.sort_ != null) {
+        if (sort_ == null || other.Sort != "") {
+          Sort = other.Sort;
+        }
+      }
+      if (other.search_ != null) {
+        if (search_ == null || other.Search != "") {
+          Search = other.Search;
+        }
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            int? value = _single_pageIndex_codec.Read(input);
+            if (pageIndex_ == null || value != 0) {
+              PageIndex = value;
+            }
+            break;
+          }
+          case 18: {
+            int? value = _single_pageSize_codec.Read(input);
+            if (pageSize_ == null || value != 0) {
+              PageSize = value;
+            }
+            break;
+          }
+          case 26: {
+            string value = _single_productBrandId_codec.Read(input);
+            if (productBrandId_ == null || value != "") {
+              ProductBrandId = value;
+            }
+            break;
+          }
+          case 34: {
+            string value = _single_productTypeId_codec.Read(input);
+            if (productTypeId_ == null || value != "") {
+              ProductTypeId = value;
+            }
+            break;
+          }
+          case 42: {
+            string value = _single_sort_codec.Read(input);
+            if (sort_ == null || value != "") {
+              Sort = value;
+            }
+            break;
+          }
+          case 50: {
+            string value = _single_search_codec.Read(input);
+            if (search_ == null || value != "") {
+              Search = value;
+            }
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            int? value = _single_pageIndex_codec.Read(ref input);
+            if (pageIndex_ == null || value != 0) {
+              PageIndex = value;
+            }
+            break;
+          }
+          case 18: {
+            int? value = _single_pageSize_codec.Read(ref input);
+            if (pageSize_ == null || value != 0) {
+              PageSize = value;
+            }
+            break;
+          }
+          case 26: {
+            string value = _single_productBrandId_codec.Read(ref input);
+            if (productBrandId_ == null || value != "") {
+              ProductBrandId = value;
+            }
+            break;
+          }
+          case 34: {
+            string value = _single_productTypeId_codec.Read(ref input);
+            if (productTypeId_ == null || value != "") {
+              ProductTypeId = value;
+            }
+            break;
+          }
+          case 42: {
+            string value = _single_sort_codec.Read(ref input);
+            if (sort_ == null || value != "") {
+              Sort = value;
+            }
+            break;
+          }
+          case 50: {
+            string value = _single_search_codec.Read(ref input);
+            if (search_ == null || value != "") {
+              Search = value;
             }
             break;
           }
@@ -670,12 +944,10 @@ namespace ShoppyEx.Product.Api {
       Id = other.Id;
       Name = other.Name;
       Description = other.Description;
-      Count = other.Count;
       Price = other.Price;
-      UnitsInStock = other.UnitsInStock;
-      UnitsOnOrder = other.UnitsOnOrder;
-      category_ = other.category_ != null ? other.category_.Clone() : null;
-      tag_ = other.tag_ != null ? other.tag_.Clone() : null;
+      PictureUrl = other.PictureUrl;
+      ProductType = other.ProductType;
+      ProductBrand = other.ProductBrand;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -727,23 +999,9 @@ namespace ShoppyEx.Product.Api {
     }
 
 
-    /// <summary>Field number for the "Count" field.</summary>
-    public const int CountFieldNumber = 4;
-    private static readonly pb::FieldCodec<int?> _single_count_codec = pb::FieldCodec.ForStructWrapper<int>(34);
-    private int? count_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int? Count {
-      get { return count_; }
-      set {
-        count_ = value;
-      }
-    }
-
-
     /// <summary>Field number for the "Price" field.</summary>
-    public const int PriceFieldNumber = 5;
-    private static readonly pb::FieldCodec<string> _single_price_codec = pb::FieldCodec.ForClassWrapper<string>(42);
+    public const int PriceFieldNumber = 4;
+    private static readonly pb::FieldCodec<string> _single_price_codec = pb::FieldCodec.ForClassWrapper<string>(34);
     private string price_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -755,57 +1013,47 @@ namespace ShoppyEx.Product.Api {
     }
 
 
-    /// <summary>Field number for the "UnitsInStock" field.</summary>
-    public const int UnitsInStockFieldNumber = 6;
-    private static readonly pb::FieldCodec<int?> _single_unitsInStock_codec = pb::FieldCodec.ForStructWrapper<int>(50);
-    private int? unitsInStock_;
+    /// <summary>Field number for the "PictureUrl" field.</summary>
+    public const int PictureUrlFieldNumber = 5;
+    private static readonly pb::FieldCodec<string> _single_pictureUrl_codec = pb::FieldCodec.ForClassWrapper<string>(42);
+    private string pictureUrl_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int? UnitsInStock {
-      get { return unitsInStock_; }
+    public string PictureUrl {
+      get { return pictureUrl_; }
       set {
-        unitsInStock_ = value;
+        pictureUrl_ = value;
       }
     }
 
 
-    /// <summary>Field number for the "UnitsOnOrder" field.</summary>
-    public const int UnitsOnOrderFieldNumber = 7;
-    private static readonly pb::FieldCodec<int?> _single_unitsOnOrder_codec = pb::FieldCodec.ForStructWrapper<int>(58);
-    private int? unitsOnOrder_;
+    /// <summary>Field number for the "ProductType" field.</summary>
+    public const int ProductTypeFieldNumber = 6;
+    private static readonly pb::FieldCodec<string> _single_productType_codec = pb::FieldCodec.ForClassWrapper<string>(50);
+    private string productType_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int? UnitsOnOrder {
-      get { return unitsOnOrder_; }
+    public string ProductType {
+      get { return productType_; }
       set {
-        unitsOnOrder_ = value;
+        productType_ = value;
       }
     }
 
 
-    /// <summary>Field number for the "Category" field.</summary>
-    public const int CategoryFieldNumber = 8;
-    private global::ShoppyEx.Product.Api.CategoryResponseMessage category_;
+    /// <summary>Field number for the "ProductBrand" field.</summary>
+    public const int ProductBrandFieldNumber = 7;
+    private static readonly pb::FieldCodec<string> _single_productBrand_codec = pb::FieldCodec.ForClassWrapper<string>(58);
+    private string productBrand_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::ShoppyEx.Product.Api.CategoryResponseMessage Category {
-      get { return category_; }
+    public string ProductBrand {
+      get { return productBrand_; }
       set {
-        category_ = value;
+        productBrand_ = value;
       }
     }
 
-    /// <summary>Field number for the "Tag" field.</summary>
-    public const int TagFieldNumber = 9;
-    private global::ShoppyEx.Product.Api.TagResponseMessage tag_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::ShoppyEx.Product.Api.TagResponseMessage Tag {
-      get { return tag_; }
-      set {
-        tag_ = value;
-      }
-    }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -825,12 +1073,10 @@ namespace ShoppyEx.Product.Api {
       if (Id != other.Id) return false;
       if (Name != other.Name) return false;
       if (Description != other.Description) return false;
-      if (Count != other.Count) return false;
       if (Price != other.Price) return false;
-      if (UnitsInStock != other.UnitsInStock) return false;
-      if (UnitsOnOrder != other.UnitsOnOrder) return false;
-      if (!object.Equals(Category, other.Category)) return false;
-      if (!object.Equals(Tag, other.Tag)) return false;
+      if (PictureUrl != other.PictureUrl) return false;
+      if (ProductType != other.ProductType) return false;
+      if (ProductBrand != other.ProductBrand) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -841,12 +1087,10 @@ namespace ShoppyEx.Product.Api {
       if (id_ != null) hash ^= Id.GetHashCode();
       if (name_ != null) hash ^= Name.GetHashCode();
       if (description_ != null) hash ^= Description.GetHashCode();
-      if (count_ != null) hash ^= Count.GetHashCode();
       if (price_ != null) hash ^= Price.GetHashCode();
-      if (unitsInStock_ != null) hash ^= UnitsInStock.GetHashCode();
-      if (unitsOnOrder_ != null) hash ^= UnitsOnOrder.GetHashCode();
-      if (category_ != null) hash ^= Category.GetHashCode();
-      if (tag_ != null) hash ^= Tag.GetHashCode();
+      if (pictureUrl_ != null) hash ^= PictureUrl.GetHashCode();
+      if (productType_ != null) hash ^= ProductType.GetHashCode();
+      if (productBrand_ != null) hash ^= ProductBrand.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -874,25 +1118,17 @@ namespace ShoppyEx.Product.Api {
       if (description_ != null) {
         _single_description_codec.WriteTagAndValue(output, Description);
       }
-      if (count_ != null) {
-        _single_count_codec.WriteTagAndValue(output, Count);
-      }
       if (price_ != null) {
         _single_price_codec.WriteTagAndValue(output, Price);
       }
-      if (unitsInStock_ != null) {
-        _single_unitsInStock_codec.WriteTagAndValue(output, UnitsInStock);
+      if (pictureUrl_ != null) {
+        _single_pictureUrl_codec.WriteTagAndValue(output, PictureUrl);
       }
-      if (unitsOnOrder_ != null) {
-        _single_unitsOnOrder_codec.WriteTagAndValue(output, UnitsOnOrder);
+      if (productType_ != null) {
+        _single_productType_codec.WriteTagAndValue(output, ProductType);
       }
-      if (category_ != null) {
-        output.WriteRawTag(66);
-        output.WriteMessage(Category);
-      }
-      if (tag_ != null) {
-        output.WriteRawTag(74);
-        output.WriteMessage(Tag);
+      if (productBrand_ != null) {
+        _single_productBrand_codec.WriteTagAndValue(output, ProductBrand);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -913,25 +1149,17 @@ namespace ShoppyEx.Product.Api {
       if (description_ != null) {
         _single_description_codec.WriteTagAndValue(ref output, Description);
       }
-      if (count_ != null) {
-        _single_count_codec.WriteTagAndValue(ref output, Count);
-      }
       if (price_ != null) {
         _single_price_codec.WriteTagAndValue(ref output, Price);
       }
-      if (unitsInStock_ != null) {
-        _single_unitsInStock_codec.WriteTagAndValue(ref output, UnitsInStock);
+      if (pictureUrl_ != null) {
+        _single_pictureUrl_codec.WriteTagAndValue(ref output, PictureUrl);
       }
-      if (unitsOnOrder_ != null) {
-        _single_unitsOnOrder_codec.WriteTagAndValue(ref output, UnitsOnOrder);
+      if (productType_ != null) {
+        _single_productType_codec.WriteTagAndValue(ref output, ProductType);
       }
-      if (category_ != null) {
-        output.WriteRawTag(66);
-        output.WriteMessage(Category);
-      }
-      if (tag_ != null) {
-        output.WriteRawTag(74);
-        output.WriteMessage(Tag);
+      if (productBrand_ != null) {
+        _single_productBrand_codec.WriteTagAndValue(ref output, ProductBrand);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -952,23 +1180,17 @@ namespace ShoppyEx.Product.Api {
       if (description_ != null) {
         size += _single_description_codec.CalculateSizeWithTag(Description);
       }
-      if (count_ != null) {
-        size += _single_count_codec.CalculateSizeWithTag(Count);
-      }
       if (price_ != null) {
         size += _single_price_codec.CalculateSizeWithTag(Price);
       }
-      if (unitsInStock_ != null) {
-        size += _single_unitsInStock_codec.CalculateSizeWithTag(UnitsInStock);
+      if (pictureUrl_ != null) {
+        size += _single_pictureUrl_codec.CalculateSizeWithTag(PictureUrl);
       }
-      if (unitsOnOrder_ != null) {
-        size += _single_unitsOnOrder_codec.CalculateSizeWithTag(UnitsOnOrder);
+      if (productType_ != null) {
+        size += _single_productType_codec.CalculateSizeWithTag(ProductType);
       }
-      if (category_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Category);
-      }
-      if (tag_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Tag);
+      if (productBrand_ != null) {
+        size += _single_productBrand_codec.CalculateSizeWithTag(ProductBrand);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -997,37 +1219,25 @@ namespace ShoppyEx.Product.Api {
           Description = other.Description;
         }
       }
-      if (other.count_ != null) {
-        if (count_ == null || other.Count != 0) {
-          Count = other.Count;
-        }
-      }
       if (other.price_ != null) {
         if (price_ == null || other.Price != "") {
           Price = other.Price;
         }
       }
-      if (other.unitsInStock_ != null) {
-        if (unitsInStock_ == null || other.UnitsInStock != 0) {
-          UnitsInStock = other.UnitsInStock;
+      if (other.pictureUrl_ != null) {
+        if (pictureUrl_ == null || other.PictureUrl != "") {
+          PictureUrl = other.PictureUrl;
         }
       }
-      if (other.unitsOnOrder_ != null) {
-        if (unitsOnOrder_ == null || other.UnitsOnOrder != 0) {
-          UnitsOnOrder = other.UnitsOnOrder;
+      if (other.productType_ != null) {
+        if (productType_ == null || other.ProductType != "") {
+          ProductType = other.ProductType;
         }
       }
-      if (other.category_ != null) {
-        if (category_ == null) {
-          Category = new global::ShoppyEx.Product.Api.CategoryResponseMessage();
+      if (other.productBrand_ != null) {
+        if (productBrand_ == null || other.ProductBrand != "") {
+          ProductBrand = other.ProductBrand;
         }
-        Category.MergeFrom(other.Category);
-      }
-      if (other.tag_ != null) {
-        if (tag_ == null) {
-          Tag = new global::ShoppyEx.Product.Api.TagResponseMessage();
-        }
-        Tag.MergeFrom(other.Tag);
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -1066,45 +1276,31 @@ namespace ShoppyEx.Product.Api {
             break;
           }
           case 34: {
-            int? value = _single_count_codec.Read(input);
-            if (count_ == null || value != 0) {
-              Count = value;
-            }
-            break;
-          }
-          case 42: {
             string value = _single_price_codec.Read(input);
             if (price_ == null || value != "") {
               Price = value;
             }
             break;
           }
+          case 42: {
+            string value = _single_pictureUrl_codec.Read(input);
+            if (pictureUrl_ == null || value != "") {
+              PictureUrl = value;
+            }
+            break;
+          }
           case 50: {
-            int? value = _single_unitsInStock_codec.Read(input);
-            if (unitsInStock_ == null || value != 0) {
-              UnitsInStock = value;
+            string value = _single_productType_codec.Read(input);
+            if (productType_ == null || value != "") {
+              ProductType = value;
             }
             break;
           }
           case 58: {
-            int? value = _single_unitsOnOrder_codec.Read(input);
-            if (unitsOnOrder_ == null || value != 0) {
-              UnitsOnOrder = value;
+            string value = _single_productBrand_codec.Read(input);
+            if (productBrand_ == null || value != "") {
+              ProductBrand = value;
             }
-            break;
-          }
-          case 66: {
-            if (category_ == null) {
-              Category = new global::ShoppyEx.Product.Api.CategoryResponseMessage();
-            }
-            input.ReadMessage(Category);
-            break;
-          }
-          case 74: {
-            if (tag_ == null) {
-              Tag = new global::ShoppyEx.Product.Api.TagResponseMessage();
-            }
-            input.ReadMessage(Tag);
             break;
           }
         }
@@ -1144,45 +1340,31 @@ namespace ShoppyEx.Product.Api {
             break;
           }
           case 34: {
-            int? value = _single_count_codec.Read(ref input);
-            if (count_ == null || value != 0) {
-              Count = value;
-            }
-            break;
-          }
-          case 42: {
             string value = _single_price_codec.Read(ref input);
             if (price_ == null || value != "") {
               Price = value;
             }
             break;
           }
+          case 42: {
+            string value = _single_pictureUrl_codec.Read(ref input);
+            if (pictureUrl_ == null || value != "") {
+              PictureUrl = value;
+            }
+            break;
+          }
           case 50: {
-            int? value = _single_unitsInStock_codec.Read(ref input);
-            if (unitsInStock_ == null || value != 0) {
-              UnitsInStock = value;
+            string value = _single_productType_codec.Read(ref input);
+            if (productType_ == null || value != "") {
+              ProductType = value;
             }
             break;
           }
           case 58: {
-            int? value = _single_unitsOnOrder_codec.Read(ref input);
-            if (unitsOnOrder_ == null || value != 0) {
-              UnitsOnOrder = value;
+            string value = _single_productBrand_codec.Read(ref input);
+            if (productBrand_ == null || value != "") {
+              ProductBrand = value;
             }
-            break;
-          }
-          case 66: {
-            if (category_ == null) {
-              Category = new global::ShoppyEx.Product.Api.CategoryResponseMessage();
-            }
-            input.ReadMessage(Category);
-            break;
-          }
-          case 74: {
-            if (tag_ == null) {
-              Tag = new global::ShoppyEx.Product.Api.TagResponseMessage();
-            }
-            input.ReadMessage(Tag);
             break;
           }
         }

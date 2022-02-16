@@ -1,6 +1,7 @@
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services
+       .AddHttpContextAccessor()
        .AddCors(options =>
        {
            options.AddPolicy("CorsPolicy", cors =>
@@ -15,6 +16,7 @@ builder.Services
        .Services
        .AddAppApiVersioning()
        .AddSwagger(builder.Configuration)
+       
        .AddGrpcServices()
        .AddHealthChecks();
 

@@ -1,8 +1,5 @@
 ﻿using Grpc.Core;
 using MediatR;
-using ShoppyEx.Product.Api.Features.Category;
-using ShoppyEx.Product.Api.Features.Category.GetCategoryAll;
-using ShoppyEx.Product.Api.Features.Category.GetCategoryById;
 
 namespace ShoppyEx.Product.Api.Services
 {

@@ -653,11 +653,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\ACE ACE\\ShoppyEx\\ShoppyEx.Indentity.Api\\ShoppyEx.Indentity.Api.csproj",
+      "projectUniqueName": "E:\\ShoppyEx\\API\\ShoppyEx.Indentity.Api\\ShoppyEx.Indentity.Api.csproj",
       "projectName": "ShoppyEx.Indentity.Api",
-      "projectPath": "D:\\ACE ACE\\ShoppyEx\\ShoppyEx.Indentity.Api\\ShoppyEx.Indentity.Api.csproj",
+      "projectPath": "E:\\ShoppyEx\\API\\ShoppyEx.Indentity.Api\\ShoppyEx.Indentity.Api.csproj",
       "packagesPath": "C:\\Users\\moise\\.nuget\\packages\\",
-      "outputPath": "D:\\ACE ACE\\ShoppyEx\\ShoppyEx.Indentity.Api\\obj\\",
+      "outputPath": "E:\\ShoppyEx\\API\\ShoppyEx.Indentity.Api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\moise\\AppData\\Roaming\\NuGet\\NuGet.Config",

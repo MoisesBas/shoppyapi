@@ -46,29 +46,29 @@ namespace ShoppyEx.Product.Api {
     }
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::ShoppyEx.Product.Api.ProductByIdRequestMessage> __Marshaller_protos_package_ProductByIdRequestMessage = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ShoppyEx.Product.Api.ProductByIdRequestMessage.Parser));
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::ShoppyEx.Product.Api.ProductResponseMessage> __Marshaller_protos_package_ProductResponseMessage = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ShoppyEx.Product.Api.ProductResponseMessage.Parser));
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::ShoppyEx.Product.Api.ProductPageQueryRequestMessage> __Marshaller_protos_package_ProductPageQueryRequestMessage = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ShoppyEx.Product.Api.ProductPageQueryRequestMessage.Parser));
+    static readonly grpc::Marshaller<global::ShoppyEx.Product.Api.ProductsGetAllQuery> __Marshaller_protos_package_ProductsGetAllQuery = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ShoppyEx.Product.Api.ProductsGetAllQuery.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::ShoppyEx.Product.Api.ProductListMessage> __Marshaller_protos_package_ProductListMessage = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ShoppyEx.Product.Api.ProductListMessage.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::ShoppyEx.Product.Api.GetProductByIdQuery> __Marshaller_protos_package_GetProductByIdQuery = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ShoppyEx.Product.Api.GetProductByIdQuery.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::ShoppyEx.Product.Api.ProductResponseMessage> __Marshaller_protos_package_ProductResponseMessage = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ShoppyEx.Product.Api.ProductResponseMessage.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::ShoppyEx.Product.Api.ProductByIdRequestMessage, global::ShoppyEx.Product.Api.ProductResponseMessage> __Method_GetProductById = new grpc::Method<global::ShoppyEx.Product.Api.ProductByIdRequestMessage, global::ShoppyEx.Product.Api.ProductResponseMessage>(
-        grpc::MethodType.Unary,
-        __ServiceName,
-        "GetProductById",
-        __Marshaller_protos_package_ProductByIdRequestMessage,
-        __Marshaller_protos_package_ProductResponseMessage);
-
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::ShoppyEx.Product.Api.ProductPageQueryRequestMessage, global::ShoppyEx.Product.Api.ProductListMessage> __Method_GetProductAll = new grpc::Method<global::ShoppyEx.Product.Api.ProductPageQueryRequestMessage, global::ShoppyEx.Product.Api.ProductListMessage>(
+    static readonly grpc::Method<global::ShoppyEx.Product.Api.ProductsGetAllQuery, global::ShoppyEx.Product.Api.ProductListMessage> __Method_GetProductAll = new grpc::Method<global::ShoppyEx.Product.Api.ProductsGetAllQuery, global::ShoppyEx.Product.Api.ProductListMessage>(
         grpc::MethodType.Unary,
         __ServiceName,
         "GetProductAll",
-        __Marshaller_protos_package_ProductPageQueryRequestMessage,
+        __Marshaller_protos_package_ProductsGetAllQuery,
         __Marshaller_protos_package_ProductListMessage);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::ShoppyEx.Product.Api.GetProductByIdQuery, global::ShoppyEx.Product.Api.ProductResponseMessage> __Method_GetProductById = new grpc::Method<global::ShoppyEx.Product.Api.GetProductByIdQuery, global::ShoppyEx.Product.Api.ProductResponseMessage>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetProductById",
+        __Marshaller_protos_package_GetProductByIdQuery,
+        __Marshaller_protos_package_ProductResponseMessage);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -81,13 +81,13 @@ namespace ShoppyEx.Product.Api {
     public abstract partial class ProductGrpcBase
     {
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::ShoppyEx.Product.Api.ProductResponseMessage> GetProductById(global::ShoppyEx.Product.Api.ProductByIdRequestMessage request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::ShoppyEx.Product.Api.ProductListMessage> GetProductAll(global::ShoppyEx.Product.Api.ProductsGetAllQuery request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::ShoppyEx.Product.Api.ProductListMessage> GetProductAll(global::ShoppyEx.Product.Api.ProductPageQueryRequestMessage request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::ShoppyEx.Product.Api.ProductResponseMessage> GetProductById(global::ShoppyEx.Product.Api.GetProductByIdQuery request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -100,8 +100,8 @@ namespace ShoppyEx.Product.Api {
     public static grpc::ServerServiceDefinition BindService(ProductGrpcBase serviceImpl)
     {
       return grpc::ServerServiceDefinition.CreateBuilder()
-          .AddMethod(__Method_GetProductById, serviceImpl.GetProductById)
-          .AddMethod(__Method_GetProductAll, serviceImpl.GetProductAll).Build();
+          .AddMethod(__Method_GetProductAll, serviceImpl.GetProductAll)
+          .AddMethod(__Method_GetProductById, serviceImpl.GetProductById).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the  service binding logic.
@@ -111,8 +111,8 @@ namespace ShoppyEx.Product.Api {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     public static void BindService(grpc::ServiceBinderBase serviceBinder, ProductGrpcBase serviceImpl)
     {
-      serviceBinder.AddMethod(__Method_GetProductById, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::ShoppyEx.Product.Api.ProductByIdRequestMessage, global::ShoppyEx.Product.Api.ProductResponseMessage>(serviceImpl.GetProductById));
-      serviceBinder.AddMethod(__Method_GetProductAll, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::ShoppyEx.Product.Api.ProductPageQueryRequestMessage, global::ShoppyEx.Product.Api.ProductListMessage>(serviceImpl.GetProductAll));
+      serviceBinder.AddMethod(__Method_GetProductAll, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::ShoppyEx.Product.Api.ProductsGetAllQuery, global::ShoppyEx.Product.Api.ProductListMessage>(serviceImpl.GetProductAll));
+      serviceBinder.AddMethod(__Method_GetProductById, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::ShoppyEx.Product.Api.GetProductByIdQuery, global::ShoppyEx.Product.Api.ProductResponseMessage>(serviceImpl.GetProductById));
     }
 
   }

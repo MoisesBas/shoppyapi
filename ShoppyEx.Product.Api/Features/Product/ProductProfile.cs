@@ -6,9 +6,9 @@ namespace ShoppyEx.Product.Api.Features.Product
     {
         public ProductProfile()
         {
-            CreateMap<Core.Domain.Product.Product, ProductModel>()
-                .ForMember(x => x.Tag, x => x.MapFrom(x => x.Tag))
-                .ForMember(x=>x.Category, x=>x.MapFrom(x=>x.Category))
+            CreateMap<Core.Domain.Product.Product, ProductResponseDto>()
+                .ForMember(x => x.ProductBrand, x => x.MapFrom(x => x.ProductBrand.Name))
+                .ForMember(x=>x.ProductType, x=>x.MapFrom(x=>x.ProductType.Name))
                 .ForMember(
                       dest => dest.Id,
                       opt => opt.MapFrom(src => src.Id.Value)

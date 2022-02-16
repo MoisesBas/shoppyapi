@@ -42,8 +42,8 @@ app.UseRouting();
 app.UseEndpoints(endpoint =>
 {
     endpoint.MapGrpcService<ProductService>();
-    endpoint.MapGrpcService<CategoryService>();
-    endpoint.MapGrpcService<TagService>();
+    //endpoint.MapGrpcService<CategoryService>();
+    //endpoint.MapGrpcService<TagService>();
 
     endpoint.MapHealthChecks("/hc", new HealthCheckOptions()
     {

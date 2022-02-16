@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\ACE ACE\\ShoppyEx\\ShoppyEx.Identity.Infrastructure\\ShoppyEx.Identity.Infrastructure.csproj": {}
+    "E:\\ShoppyEx\\API\\ShoppyEx.Identity.Infrastructure\\ShoppyEx.Identity.Infrastructure.csproj": {}
   },
   "projects": {
-    "D:\\ACE ACE\\ShoppyEx\\ShoppyEx.Identity.Infrastructure\\ShoppyEx.Identity.Infrastructure.csproj": {
+    "E:\\ShoppyEx\\API\\ShoppyEx.Identity.Infrastructure\\ShoppyEx.Identity.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ACE ACE\\ShoppyEx\\ShoppyEx.Identity.Infrastructure\\ShoppyEx.Identity.Infrastructure.csproj",
+        "projectUniqueName": "E:\\ShoppyEx\\API\\ShoppyEx.Identity.Infrastructure\\ShoppyEx.Identity.Infrastructure.csproj",
         "projectName": "ShoppyEx.Identity.Infrastructure",
-        "projectPath": "D:\\ACE ACE\\ShoppyEx\\ShoppyEx.Identity.Infrastructure\\ShoppyEx.Identity.Infrastructure.csproj",
+        "projectPath": "E:\\ShoppyEx\\API\\ShoppyEx.Identity.Infrastructure\\ShoppyEx.Identity.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\moise\\.nuget\\packages\\",
-        "outputPath": "D:\\ACE ACE\\ShoppyEx\\ShoppyEx.Identity.Infrastructure\\obj\\",
+        "outputPath": "E:\\ShoppyEx\\API\\ShoppyEx.Identity.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\moise\\AppData\\Roaming\\NuGet\\NuGet.Config",

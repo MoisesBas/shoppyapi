@@ -3618,11 +3618,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\ACE ACE\\ShoppyEx\\ShoppyEx.Customer.Api\\ShoppyEx.Customer.Api.csproj",
+      "projectUniqueName": "E:\\ShoppyEx\\API\\ShoppyEx.Customer.Api\\ShoppyEx.Customer.Api.csproj",
       "projectName": "ShoppyEx.Customer.Api",
-      "projectPath": "D:\\ACE ACE\\ShoppyEx\\ShoppyEx.Customer.Api\\ShoppyEx.Customer.Api.csproj",
+      "projectPath": "E:\\ShoppyEx\\API\\ShoppyEx.Customer.Api\\ShoppyEx.Customer.Api.csproj",
       "packagesPath": "C:\\Users\\moise\\.nuget\\packages\\",
-      "outputPath": "D:\\ACE ACE\\ShoppyEx\\ShoppyEx.Customer.Api\\obj\\",
+      "outputPath": "E:\\ShoppyEx\\API\\ShoppyEx.Customer.Api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\moise\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3640,8 +3640,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\ACE ACE\\ShoppyEx\\ShoppyEx.Customer.Infrastructure\\ShoppyEx.Customer.Infrastructure.csproj": {
-              "projectPath": "D:\\ACE ACE\\ShoppyEx\\ShoppyEx.Customer.Infrastructure\\ShoppyEx.Customer.Infrastructure.csproj"
+            "E:\\ShoppyEx\\API\\ShoppyEx.Customer.Infrastructure\\ShoppyEx.Customer.Infrastructure.csproj": {
+              "projectPath": "E:\\ShoppyEx\\API\\ShoppyEx.Customer.Infrastructure\\ShoppyEx.Customer.Infrastructure.csproj"
             }
           }
         }

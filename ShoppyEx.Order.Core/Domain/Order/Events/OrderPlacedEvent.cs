@@ -15,9 +15,9 @@ namespace ShoppyEx.Order.Core.Domain.Order.Events
         public int CreditCardTypeID { get; init; }
         public int CardExpMo { get; init; }
         public int CardExpYr { get; init; }
-        public OrderAddress Address { get; init; }
+        public Address Address { get; init; }
 
-        public OrderPlacedEvent(Guid customerId, OrderId orderId, string creditCard, int creditCardTypeID, int cardExpMo, int cardExpYr, OrderAddress address)
+        public OrderPlacedEvent(Guid customerId, OrderId orderId, string creditCard, int creditCardTypeID, int cardExpMo, int cardExpYr, Address address)
         {
             CustomerId = customerId;
             OrderId = orderId;

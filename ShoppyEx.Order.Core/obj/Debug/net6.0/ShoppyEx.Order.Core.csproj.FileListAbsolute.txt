@@ -13,3 +13,18 @@ D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Core\obj\Debug\net6.0\ShoppyEx.Order.Core.csp
 D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Core\obj\Debug\net6.0\ShoppyEx.Order.Core.dll
 D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Core\obj\Debug\net6.0\ref\ShoppyEx.Order.Core.dll
 D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Core\obj\Debug\net6.0\ShoppyEx.Order.Core.pdb
+E:\ShoppyEx\API\ShoppyEx.Order.Core\bin\Debug\net6.0\ShoppyEx.Order.Core.deps.json
+E:\ShoppyEx\API\ShoppyEx.Order.Core\bin\Debug\net6.0\ShoppyEx.Order.Core.dll
+E:\ShoppyEx\API\ShoppyEx.Order.Core\bin\Debug\net6.0\ref\ShoppyEx.Order.Core.dll
+E:\ShoppyEx\API\ShoppyEx.Order.Core\bin\Debug\net6.0\ShoppyEx.Order.Core.pdb
+E:\ShoppyEx\API\ShoppyEx.Order.Core\bin\Debug\net6.0\ShoppyEx.SharedKernel.SeedWork.dll
+E:\ShoppyEx\API\ShoppyEx.Order.Core\bin\Debug\net6.0\ShoppyEx.SharedKernel.SeedWork.pdb
+E:\ShoppyEx\API\ShoppyEx.Order.Core\obj\Debug\net6.0\ShoppyEx.Order.Core.GeneratedMSBuildEditorConfig.editorconfig
+E:\ShoppyEx\API\ShoppyEx.Order.Core\obj\Debug\net6.0\ShoppyEx.Order.Core.AssemblyInfoInputs.cache
+E:\ShoppyEx\API\ShoppyEx.Order.Core\obj\Debug\net6.0\ShoppyEx.Order.Core.AssemblyInfo.cs
+E:\ShoppyEx\API\ShoppyEx.Order.Core\obj\Debug\net6.0\ShoppyEx.Order.Core.csproj.CoreCompileInputs.cache
+E:\ShoppyEx\API\ShoppyEx.Order.Core\obj\Debug\net6.0\ShoppyEx.Order.Core.csproj.CopyComplete
+E:\ShoppyEx\API\ShoppyEx.Order.Core\obj\Debug\net6.0\ShoppyEx.Order.Core.dll
+E:\ShoppyEx\API\ShoppyEx.Order.Core\obj\Debug\net6.0\ref\ShoppyEx.Order.Core.dll
+E:\ShoppyEx\API\ShoppyEx.Order.Core\obj\Debug\net6.0\ShoppyEx.Order.Core.pdb
+E:\ShoppyEx\API\ShoppyEx.Order.Core\obj\Debug\net6.0\ShoppyEx.Order.Core.csproj.AssemblyReference.cache

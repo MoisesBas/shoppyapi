@@ -9,10 +9,19 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Services\CategoryService.cs" />
+    <Compile Remove="Services\TagService.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Protos\productbrand.proto" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Protobuf Include="Protos\greet.proto" GrpcServices="Server" />
     <Protobuf Include="Protos\product.proto" GrpcServices="Server" />
-    <Protobuf Include="Protos\category.proto" GrpcServices="Server" />
-    <Protobuf Include="Protos\tag.proto" GrpcServices="Server" />
+    <Protobuf Include="Protos\productbrand.proto" GrpcServices="Server" />
+    <Protobuf Include="Protos\producttype.proto" GrpcServices="Server" />
   </ItemGroup>
 
   <ItemGroup>
@@ -31,6 +40,15 @@
     <ProjectReference Include="..\ShoppyEx.Product.Core\ShoppyEx.Product.Core.csproj" />
     <ProjectReference Include="..\ShoppyEx.Product.Infrastructure\ShoppyEx.Product.Infrastructure.csproj" />
     <ProjectReference Include="..\ShoppyEx.SharedKernel.SeedWork\ShoppyEx.SharedKernel.SeedWork.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="appsettings.Development.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
 </Project>

@@ -1,8 +1,13 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using ShoppyEx.Product.Core.Domain.Category;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
+using ShoppyEx.Product.Core.Domain.Brand;
 using ShoppyEx.Product.Core.Domain.Product;
-using ShoppyEx.Product.Core.Domain.Tag;
+using ShoppyEx.Product.Core.Domain.Type;
 using ShoppyEx.Product.Infrastructure.Persistence;
+using System.Dynamic;
+using System.Linq;
+
 
 namespace ShoppyEx.Product.Infrastructure.DataSeed
 {
@@ -10,22 +15,59 @@ namespace ShoppyEx.Product.Infrastructure.DataSeed
     {
         public static void SeedData(ApplicationDbContext context)
         {
-
-            for (char c = 'A'; c <= 'Z'; c++)
+            if (!context.Set<ProductBrand>().Any())
             {
-                var categoryId = new CategoryId(Guid.NewGuid());
-                var category = Category.Create(categoryId, $"category-{c}");
-                context.Set<Category>().Add(category);
+                var data = File.ReadAllText("../ShoppyEx.Product.Infrastructure/DataSeed/brands.json");
+                var brands = JsonConvert.DeserializeObject<List<ExpandoObject>>(data, new ExpandoObjectConverter());
 
-                var tagId = new TagId(Guid.NewGuid());
-                var tag = Tag.Create(tagId, $"tag-{c}");
-                context.Set<Tag>().Add(tag);
+                var items = new List<ProductBrand>();
+                foreach (var item in from br in brands
+                                     let item = ProductBrand.Create(new ProductBrandId(Guid.Parse(((dynamic)br).Id)), ((dynamic)br).Name)
+                                     select item)
+                {
+                    items.Add(item);
+                    
+                }
+                context.Set<ProductBrand>().AddRange(items);
+                context.SaveChanges();
 
-                var productId = new ProductId(Guid.NewGuid());
-                var product = Core.Domain.Product.Product.Create(productId, $"Product-{c}", Convert.ToDecimal(100), $"Shoppx-Product-{c}", 1000,1000,"tesfskfdsdfsdfdf", categoryId, tagId);
-                context.Set<Core.Domain.Product.Product>().Add(product);
             }
-            context.SaveChanges();
+
+            if (!context.Set<ProductType>().Any())
+            {
+                var items = new List<ProductType>();
+                var data = File.ReadAllText("../ShoppyEx.Product.Infrastructure/DataSeed/types.json");
+                var types = JsonConvert.DeserializeObject<List<ExpandoObject>>(data, new ExpandoObjectConverter());
+
+                foreach (var item in from br in types
+                                     let item = ProductType.Create(new ProductTypeId(Guid.Parse(((dynamic)br).Id)), ((dynamic)br).Name)
+                                     select item)
+                {
+                    items.Add(item);
+                }
+                context.Set<ProductType>().AddRange(items);
+                context.SaveChanges();
+            }
+
+            if (!context.Set<Core.Domain.Product.Product>().Any())
+            {
+                var data = File.ReadAllText("../ShoppyEx.Product.Infrastructure/DataSeed/products.json");
+                var products = JsonConvert.DeserializeObject<List<ExpandoObject>>(data, new ExpandoObjectConverter());
+
+                var items = new List<Core.Domain.Product.Product>();
+                foreach (var item in from br in products
+                                     let item = Core.Domain.Product.Product.Create(new ProductId(Guid.NewGuid()), ((dynamic)br).Name
+                                     , ((dynamic)br).Description, ((dynamic)br).Price, ((dynamic)br).PictureUrl,
+                                     new ProductTypeId(Guid.Parse(((dynamic)br).ProductTypeId)), new ProductBrandId(Guid.Parse(((dynamic)br).ProductBrandId)))
+                                     select item)
+                {
+                    items.Add(item);
+                }
+                context.Set<Core.Domain.Product.Product>().AddRange(items);
+                context.SaveChanges();
+            }
+
+           
 
         }
 

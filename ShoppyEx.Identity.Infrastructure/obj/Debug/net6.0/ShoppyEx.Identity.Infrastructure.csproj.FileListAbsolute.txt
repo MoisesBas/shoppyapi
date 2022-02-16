@@ -1,0 +1,11 @@
+E:\ShoppyEx\API\ShoppyEx.Identity.Infrastructure\bin\Debug\net6.0\ShoppyEx.Identity.Infrastructure.deps.json
+E:\ShoppyEx\API\ShoppyEx.Identity.Infrastructure\bin\Debug\net6.0\ShoppyEx.Identity.Infrastructure.dll
+E:\ShoppyEx\API\ShoppyEx.Identity.Infrastructure\bin\Debug\net6.0\ref\ShoppyEx.Identity.Infrastructure.dll
+E:\ShoppyEx\API\ShoppyEx.Identity.Infrastructure\bin\Debug\net6.0\ShoppyEx.Identity.Infrastructure.pdb
+E:\ShoppyEx\API\ShoppyEx.Identity.Infrastructure\obj\Debug\net6.0\ShoppyEx.Identity.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+E:\ShoppyEx\API\ShoppyEx.Identity.Infrastructure\obj\Debug\net6.0\ShoppyEx.Identity.Infrastructure.AssemblyInfoInputs.cache
+E:\ShoppyEx\API\ShoppyEx.Identity.Infrastructure\obj\Debug\net6.0\ShoppyEx.Identity.Infrastructure.AssemblyInfo.cs
+E:\ShoppyEx\API\ShoppyEx.Identity.Infrastructure\obj\Debug\net6.0\ShoppyEx.Identity.Infrastructure.csproj.CoreCompileInputs.cache
+E:\ShoppyEx\API\ShoppyEx.Identity.Infrastructure\obj\Debug\net6.0\ShoppyEx.Identity.Infrastructure.dll
+E:\ShoppyEx\API\ShoppyEx.Identity.Infrastructure\obj\Debug\net6.0\ref\ShoppyEx.Identity.Infrastructure.dll
+E:\ShoppyEx\API\ShoppyEx.Identity.Infrastructure\obj\Debug\net6.0\ShoppyEx.Identity.Infrastructure.pdb

@@ -19,28 +19,28 @@ namespace ShoppyEx.Order.Api.Features.Order.AddOrder
             try
             {
 
-                var orderId = new OrderId(Guid.NewGuid());
-                var order = Core.Domain.Order.Order.Create(orderId, command.CustomerId, command.CreditCard, command.CreditCardTypeID,
-                    command.CardExpMo, command.CardExpYr, new OrderAddress()
-                    {
-                        Address = command.Address,
-                        City = command.City,
-                        Country = command.Country,
-                        PostalCode = command.PostalCode,
-                        Region = command.Region
-                    });
+                //var orderId = new OrderId(Guid.NewGuid());
+                //var order = Core.Domain.Order.Order.Create(orderId, command.CustomerId, command.CreditCard, command.CreditCardTypeID,
+                //    command.CardExpMo, command.CardExpYr, new Address()
+                //    {
+                //        Address = command.Address,
+                //        City = command.City,
+                //        Country = command.Country,
+                //        PostalCode = command.PostalCode,
+                //        Region = command.Region
+                //    });
 
-                foreach (var item in command.OrderItems)
-                {
-                    order.AddOrderItems(item.ProductId, item.Price, item.Quantity);
-                }
+                //foreach (var item in command.OrderItems)
+                //{
+                //    order.AddOrderItems(item.ProductId, item.Price, item.Quantity);
+                //}
 
-                await _unitOfWork.Set<Core.Domain.Order.Order>()
-                                 .AddAsync(order, cancellationToken);
+                //await _unitOfWork.Set<Core.Domain.Order.Order>()
+                //                 .AddAsync(order, cancellationToken);
 
-                await _unitOfWork.CommitAsync(cancellationToken);
+                //await _unitOfWork.CommitAsync(cancellationToken);
 
-                return await Task.FromResult(order.Id.Value);
+                //return await Task.FromResult(order.Id.Value);
             }
             catch (Exception)
             {

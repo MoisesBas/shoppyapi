@@ -11,16 +11,16 @@ namespace ShoppyEx.Product.Infrastructure.Persistence.EntityConfigurations
             builder.Property(_ => _.Id)
                    .HasConversion(_ => _.Value,_ => new Core.Domain.Product.ProductId(_));
 
-            builder.HasOne(_ => _.Category)
+            builder.HasOne(_ => _.ProductBrand)
                   .WithMany(_ => _.Products)
-                  .HasForeignKey(_ => _.CategoryId)
-                  .HasConstraintName("FK_Products_Category_CategoryId")
+                  .HasForeignKey(_ => _.ProductBrandId)
+                  .HasConstraintName("FK_Products_ProductBrand_ProductBrandId")
                   .OnDelete(DeleteBehavior.ClientCascade);
 
-            builder.HasOne(_ => _.Tag)
+            builder.HasOne(_ => _.ProductType)
                .WithMany(_ => _.Products)
-               .HasForeignKey(_ => _.TagId)
-               .HasConstraintName("FK_Products_Tag_TagId")
+               .HasForeignKey(_ => _.ProductTypeId)
+               .HasConstraintName("FK_Products_ProductType_ProductTypeId")
                .OnDelete(DeleteBehavior.ClientCascade);
 
             builder.ToTable("tblProduct", "dbo");

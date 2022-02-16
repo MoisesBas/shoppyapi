@@ -13,11 +13,7 @@ namespace ShoppyEx.Order.Infrastructure.Persistence.EntityConfigurations
 
             builder.OwnsOne(_ => _.Address, nav =>
             {
-                nav.Property(x => x.Country);
-                nav.Property(x => x.City);
-                nav.Property(x => x.Region);
-                nav.Property(x => x.PostalCode);
-
+                nav.WithOwner();
             });
         }
     }
