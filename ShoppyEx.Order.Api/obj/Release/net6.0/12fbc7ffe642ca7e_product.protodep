@@ -1,0 +1,3 @@
+obj\Release\net6.0\Protos/Product.cs \
+obj\Release\net6.0\Protos/ProductGrpc.cs: C:/Users/moise/.nuget/packages/grpc.tools/2.42.0/build/native/include/google/protobuf/wrappers.proto\
+ Protos/product.proto

@@ -1,23 +1,26 @@
 ﻿syntax = "proto3";
 import "google/protobuf/wrappers.proto";
-import "protos/tag.proto";
-import "protos/category.proto";
-
 
 option csharp_namespace = "ShoppyEx.Order.Api";
 
 package protos.package;
 
-service ProductGrpc {  	
-   
-    rpc GetProductById(ProductByIdRequestMessage) returns (ProductResponseMessage) {}
-    rpc GetProductAll(ProductPageQueryRequestMessage) returns (ProductListMessage) {}
+service ProductGrpc { 
+    rpc GetProductAll(ProductsGetAllQuery) returns (ProductListMessage) {}
+    rpc GetProductById(GetProductByIdQuery) returns (ProductResponseMessage) {}
 }
-message ProductPageQueryRequestMessage {
 
+message GetProductByIdQuery {
+     google.protobuf.StringValue Id = 1;
 }
-message ProductByIdRequestMessage {    
-    google.protobuf.StringValue Id = 1;
+
+message ProductsGetAllQuery {
+     google.protobuf.Int32Value   PageIndex = 1;
+     google.protobuf.Int32Value   PageSize = 2;
+     google.protobuf.StringValue  ProductBrandId =3;
+     google.protobuf.StringValue  ProductTypeId = 4;
+     google.protobuf.StringValue  Sort = 5;
+     google.protobuf.StringValue  Search = 6;
 }
 
 message ProductListMessage {
@@ -30,13 +33,14 @@ message ProductListMessage {
     google.protobuf.StringValue Id = 1;
     google.protobuf.StringValue Name = 2;
     google.protobuf.StringValue Description = 3;
-    google.protobuf.Int32Value Count = 4;
-    google.protobuf.StringValue Price = 5;
-    google.protobuf.Int32Value UnitsInStock = 6;
-    google.protobuf.Int32Value UnitsOnOrder = 7;
-    CategoryResponseMessage  Category = 8;
-    TagResponseMessage Tag = 9;
+    google.protobuf.StringValue Price = 4;
+    google.protobuf.StringValue PictureUrl = 5;
+    google.protobuf.StringValue ProductType = 6;
+    google.protobuf.StringValue ProductBrand = 7;
+    google.protobuf.Int32Value UnitInStock = 8;
+  
 }
+
 
 
 

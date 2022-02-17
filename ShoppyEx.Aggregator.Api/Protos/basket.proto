@@ -1,0 +1,44 @@
+﻿syntax = "proto3";
+import "google/protobuf/wrappers.proto";
+import "protos/basketitem.proto";
+
+
+option csharp_namespace = "ShoppyEx.Order.Api";
+
+package protos.package;
+
+service BasketGrpc {  	
+   
+    rpc ChangeBasket(ChangeBasketCommand) returns (BasketIdReponse) {}
+    rpc CreateBasket(CreateBasketCommand) returns (BasketIdReponse) {}
+    rpc GetCurrentBasket(GetCurrentBasketCommand) returns (GetCurrentBasketCustomerResponse) {}
+}
+message CreateBasketCommand {
+     google.protobuf.StringValue CustomerId = 1;
+     repeated CreateBasketItemCommand Items = 2;
+
+}
+
+
+message GetCurrentBasketCommand {
+      google.protobuf.StringValue CustomerId = 1;    
+}
+
+message BasketIdReponse {
+    google.protobuf.StringValue Id = 1;
+}
+
+message GetCurrentBasketCustomerResponse{
+    google.protobuf.Int32Value TotalRecords = 1;
+    repeated GetCurrentBasketResponse Items = 2;
+}
+
+message GetCurrentBasketResponse {
+    google.protobuf.StringValue Id = 1;
+    google.protobuf.StringValue CustomerId = 2;
+    google.protobuf.StringValue Price = 3;
+    repeated GetCurrentBasketItemResponse Items = 4;
+}
+
+
+

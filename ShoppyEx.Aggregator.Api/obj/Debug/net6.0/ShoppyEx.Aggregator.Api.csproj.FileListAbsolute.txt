@@ -127,7 +127,6 @@ E:\ShoppyEx\API\ShoppyEx.Aggregator.Api\bin\Debug\net6.0\Swashbuckle.AspNetCore.
 E:\ShoppyEx\API\ShoppyEx.Aggregator.Api\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 E:\ShoppyEx\API\ShoppyEx.Aggregator.Api\bin\Debug\net6.0\ShoppyEx.SharedKernel.SeedWork.dll
 E:\ShoppyEx\API\ShoppyEx.Aggregator.Api\bin\Debug\net6.0\ShoppyEx.SharedKernel.SeedWork.pdb
-E:\ShoppyEx\API\ShoppyEx.Aggregator.Api\obj\Debug\net6.0\ShoppyEx.Aggregator.Api.csproj.AssemblyReference.cache
 E:\ShoppyEx\API\ShoppyEx.Aggregator.Api\obj\Debug\net6.0\ShoppyEx.Aggregator.Api.GeneratedMSBuildEditorConfig.editorconfig
 E:\ShoppyEx\API\ShoppyEx.Aggregator.Api\obj\Debug\net6.0\ShoppyEx.Aggregator.Api.AssemblyInfoInputs.cache
 E:\ShoppyEx\API\ShoppyEx.Aggregator.Api\obj\Debug\net6.0\ShoppyEx.Aggregator.Api.AssemblyInfo.cs

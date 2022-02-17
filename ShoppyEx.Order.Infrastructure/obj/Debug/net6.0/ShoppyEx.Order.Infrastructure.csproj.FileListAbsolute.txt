@@ -17,3 +17,22 @@ D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Infrastructure\obj\Debug\net6.0\ShoppyEx.Orde
 D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Infrastructure\obj\Debug\net6.0\ref\ShoppyEx.Order.Infrastructure.dll
 D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Infrastructure\obj\Debug\net6.0\ShoppyEx.Order.Infrastructure.pdb
 D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Infrastructure\obj\Debug\net6.0\ShoppyEx.Order.Infrastructure.genruntimeconfig.cache
+E:\ShoppyEx\API\ShoppyEx.Order.Infrastructure\bin\Debug\net6.0\ShoppyEx.Order.Infrastructure.deps.json
+E:\ShoppyEx\API\ShoppyEx.Order.Infrastructure\bin\Debug\net6.0\ShoppyEx.Order.Infrastructure.runtimeconfig.json
+E:\ShoppyEx\API\ShoppyEx.Order.Infrastructure\bin\Debug\net6.0\ShoppyEx.Order.Infrastructure.dll
+E:\ShoppyEx\API\ShoppyEx.Order.Infrastructure\bin\Debug\net6.0\ref\ShoppyEx.Order.Infrastructure.dll
+E:\ShoppyEx\API\ShoppyEx.Order.Infrastructure\bin\Debug\net6.0\ShoppyEx.Order.Infrastructure.pdb
+E:\ShoppyEx\API\ShoppyEx.Order.Infrastructure\bin\Debug\net6.0\ShoppyEx.Order.Core.dll
+E:\ShoppyEx\API\ShoppyEx.Order.Infrastructure\bin\Debug\net6.0\ShoppyEx.SharedKernel.SeedWork.dll
+E:\ShoppyEx\API\ShoppyEx.Order.Infrastructure\bin\Debug\net6.0\ShoppyEx.Order.Core.pdb
+E:\ShoppyEx\API\ShoppyEx.Order.Infrastructure\bin\Debug\net6.0\ShoppyEx.SharedKernel.SeedWork.pdb
+E:\ShoppyEx\API\ShoppyEx.Order.Infrastructure\obj\Debug\net6.0\ShoppyEx.Order.Infrastructure.csproj.AssemblyReference.cache
+E:\ShoppyEx\API\ShoppyEx.Order.Infrastructure\obj\Debug\net6.0\ShoppyEx.Order.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+E:\ShoppyEx\API\ShoppyEx.Order.Infrastructure\obj\Debug\net6.0\ShoppyEx.Order.Infrastructure.AssemblyInfoInputs.cache
+E:\ShoppyEx\API\ShoppyEx.Order.Infrastructure\obj\Debug\net6.0\ShoppyEx.Order.Infrastructure.AssemblyInfo.cs
+E:\ShoppyEx\API\ShoppyEx.Order.Infrastructure\obj\Debug\net6.0\ShoppyEx.Order.Infrastructure.csproj.CoreCompileInputs.cache
+E:\ShoppyEx\API\ShoppyEx.Order.Infrastructure\obj\Debug\net6.0\ShoppyEx.Order.Infrastructure.csproj.CopyComplete
+E:\ShoppyEx\API\ShoppyEx.Order.Infrastructure\obj\Debug\net6.0\ShoppyEx.Order.Infrastructure.dll
+E:\ShoppyEx\API\ShoppyEx.Order.Infrastructure\obj\Debug\net6.0\ref\ShoppyEx.Order.Infrastructure.dll
+E:\ShoppyEx\API\ShoppyEx.Order.Infrastructure\obj\Debug\net6.0\ShoppyEx.Order.Infrastructure.pdb
+E:\ShoppyEx\API\ShoppyEx.Order.Infrastructure\obj\Debug\net6.0\ShoppyEx.Order.Infrastructure.genruntimeconfig.cache

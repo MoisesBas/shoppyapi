@@ -1,92 +1,92 @@
-D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Api\bin\Release\net6.0\appsettings.Development.json
-D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Api\bin\Release\net6.0\appsettings.json
-D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Api\bin\Release\net6.0\ShoppyEx.Order.Api.exe
-D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Api\bin\Release\net6.0\ShoppyEx.Order.Api.deps.json
-D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Api\bin\Release\net6.0\ShoppyEx.Order.Api.runtimeconfig.json
-D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Api\bin\Release\net6.0\ShoppyEx.Order.Api.dll
-D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Api\bin\Release\net6.0\ref\ShoppyEx.Order.Api.dll
-D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Api\bin\Release\net6.0\ShoppyEx.Order.Api.pdb
-D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Api\bin\Release\net6.0\HealthChecks.UI.Client.dll
-D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Api\bin\Release\net6.0\HealthChecks.UI.Core.dll
-D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Api\bin\Release\net6.0\AutoMapper.dll
-D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Api\bin\Release\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
-D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Api\bin\Release\net6.0\Azure.Core.dll
-D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Api\bin\Release\net6.0\Azure.Core.Amqp.dll
-D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Api\bin\Release\net6.0\Azure.Messaging.ServiceBus.dll
-D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Api\bin\Release\net6.0\FluentValidation.dll
-D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Api\bin\Release\net6.0\Google.Protobuf.dll
-D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Api\bin\Release\net6.0\Grpc.AspNetCore.Server.dll
-D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Api\bin\Release\net6.0\Grpc.AspNetCore.Server.ClientFactory.dll
-D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Api\bin\Release\net6.0\Grpc.Core.Api.dll
-D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Api\bin\Release\net6.0\Grpc.Net.Client.dll
-D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Api\bin\Release\net6.0\Grpc.Net.ClientFactory.dll
-D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Api\bin\Release\net6.0\Grpc.Net.Common.dll
-D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Api\bin\Release\net6.0\Humanizer.dll
-D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Api\bin\Release\net6.0\MediatR.dll
-D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Api\bin\Release\net6.0\MediatR.Contracts.dll
-D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Api\bin\Release\net6.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
-D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Api\bin\Release\net6.0\Microsoft.AspNetCore.Mvc.Versioning.dll
-D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Api\bin\Release\net6.0\Microsoft.Azure.Amqp.dll
-D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Api\bin\Release\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
-D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Api\bin\Release\net6.0\Microsoft.Data.SqlClient.dll
-D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Api\bin\Release\net6.0\Microsoft.EntityFrameworkCore.dll
-D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Api\bin\Release\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
-D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Api\bin\Release\net6.0\Microsoft.EntityFrameworkCore.Design.dll
-D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Api\bin\Release\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
-D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Api\bin\Release\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
-D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Api\bin\Release\net6.0\Microsoft.Extensions.Caching.Memory.dll
-D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Api\bin\Release\net6.0\Microsoft.Extensions.DependencyModel.dll
-D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Api\bin\Release\net6.0\Microsoft.Identity.Client.dll
-D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Api\bin\Release\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
-D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Api\bin\Release\net6.0\Microsoft.IdentityModel.Logging.dll
-D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Api\bin\Release\net6.0\Microsoft.IdentityModel.Protocols.dll
-D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Api\bin\Release\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Api\bin\Release\net6.0\Microsoft.IdentityModel.Tokens.dll
-D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Api\bin\Release\net6.0\Microsoft.OpenApi.dll
-D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Api\bin\Release\net6.0\Microsoft.Win32.SystemEvents.dll
-D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Api\bin\Release\net6.0\Newtonsoft.Json.dll
-D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Api\bin\Release\net6.0\Scrutor.dll
-D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Api\bin\Release\net6.0\Swashbuckle.AspNetCore.Swagger.dll
-D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Api\bin\Release\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
-D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Api\bin\Release\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Api\bin\Release\net6.0\System.Configuration.ConfigurationManager.dll
-D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Api\bin\Release\net6.0\System.Drawing.Common.dll
-D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Api\bin\Release\net6.0\System.IdentityModel.Tokens.Jwt.dll
-D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Api\bin\Release\net6.0\System.Memory.Data.dll
-D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Api\bin\Release\net6.0\System.Runtime.Caching.dll
-D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Api\bin\Release\net6.0\System.Security.Cryptography.ProtectedData.dll
-D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Api\bin\Release\net6.0\System.Security.Permissions.dll
-D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Api\bin\Release\net6.0\System.Windows.Extensions.dll
-D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Api\bin\Release\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
-D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Api\bin\Release\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
-D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Api\bin\Release\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
-D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Api\bin\Release\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
-D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Api\bin\Release\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
-D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Api\bin\Release\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
-D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Api\bin\Release\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
-D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Api\bin\Release\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
-D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Api\bin\Release\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
-D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Api\bin\Release\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
-D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Api\bin\Release\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Api\bin\Release\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
-D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Api\bin\Release\net6.0\ShoppyEx.Order.Core.dll
-D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Api\bin\Release\net6.0\ShoppyEx.Order.Infrastructure.dll
-D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Api\bin\Release\net6.0\ShoppyEx.SharedKernel.SeedWork.dll
-D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Api\bin\Release\net6.0\ShoppyEx.Order.Infrastructure.pdb
-D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Api\bin\Release\net6.0\ShoppyEx.Order.Core.pdb
-D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Api\bin\Release\net6.0\ShoppyEx.SharedKernel.SeedWork.pdb
-D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Api\obj\Release\net6.0\ShoppyEx.Order.Api.csproj.AssemblyReference.cache
-D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Api\obj\Release\net6.0\ShoppyEx.Order.Api.GeneratedMSBuildEditorConfig.editorconfig
-D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Api\obj\Release\net6.0\ShoppyEx.Order.Api.AssemblyInfoInputs.cache
-D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Api\obj\Release\net6.0\ShoppyEx.Order.Api.AssemblyInfo.cs
-D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Api\obj\Release\net6.0\ShoppyEx.Order.Api.csproj.CoreCompileInputs.cache
-D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Api\obj\Release\net6.0\ShoppyEx.Order.Api.MvcApplicationPartsAssemblyInfo.cs
-D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Api\obj\Release\net6.0\ShoppyEx.Order.Api.MvcApplicationPartsAssemblyInfo.cache
-D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Api\obj\Release\net6.0\staticwebassets.build.json
-D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Api\obj\Release\net6.0\staticwebassets.development.json
-D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Api\obj\Release\net6.0\scopedcss\bundle\ShoppyEx.Order.Api.styles.css
-D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Api\obj\Release\net6.0\ShoppyEx.Order.Api.csproj.CopyComplete
-D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Api\obj\Release\net6.0\ShoppyEx.Order.Api.dll
-D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Api\obj\Release\net6.0\ref\ShoppyEx.Order.Api.dll
-D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Api\obj\Release\net6.0\ShoppyEx.Order.Api.pdb
-D:\ACE ACE\ShoppyEx\ShoppyEx.Order.Api\obj\Release\net6.0\ShoppyEx.Order.Api.genruntimeconfig.cache
+E:\ShoppyEx\API\ShoppyEx.Order.Api\obj\Release\net6.0\ShoppyEx.Order.Api.csproj.AssemblyReference.cache
+E:\ShoppyEx\API\ShoppyEx.Order.Api\obj\Release\net6.0\ShoppyEx.Order.Api.GeneratedMSBuildEditorConfig.editorconfig
+E:\ShoppyEx\API\ShoppyEx.Order.Api\obj\Release\net6.0\ShoppyEx.Order.Api.AssemblyInfoInputs.cache
+E:\ShoppyEx\API\ShoppyEx.Order.Api\obj\Release\net6.0\ShoppyEx.Order.Api.AssemblyInfo.cs
+E:\ShoppyEx\API\ShoppyEx.Order.Api\obj\Release\net6.0\ShoppyEx.Order.Api.csproj.CoreCompileInputs.cache
+E:\ShoppyEx\API\ShoppyEx.Order.Api\obj\Release\net6.0\ShoppyEx.Order.Api.MvcApplicationPartsAssemblyInfo.cs
+E:\ShoppyEx\API\ShoppyEx.Order.Api\obj\Release\net6.0\ShoppyEx.Order.Api.MvcApplicationPartsAssemblyInfo.cache
+E:\ShoppyEx\API\ShoppyEx.Order.Api\bin\Release\net6.0\appsettings.Development.json
+E:\ShoppyEx\API\ShoppyEx.Order.Api\bin\Release\net6.0\appsettings.json
+E:\ShoppyEx\API\ShoppyEx.Order.Api\bin\Release\net6.0\ShoppyEx.Order.Api.exe
+E:\ShoppyEx\API\ShoppyEx.Order.Api\bin\Release\net6.0\ShoppyEx.Order.Api.deps.json
+E:\ShoppyEx\API\ShoppyEx.Order.Api\bin\Release\net6.0\ShoppyEx.Order.Api.runtimeconfig.json
+E:\ShoppyEx\API\ShoppyEx.Order.Api\bin\Release\net6.0\ShoppyEx.Order.Api.dll
+E:\ShoppyEx\API\ShoppyEx.Order.Api\bin\Release\net6.0\ref\ShoppyEx.Order.Api.dll
+E:\ShoppyEx\API\ShoppyEx.Order.Api\bin\Release\net6.0\ShoppyEx.Order.Api.pdb
+E:\ShoppyEx\API\ShoppyEx.Order.Api\bin\Release\net6.0\HealthChecks.UI.Client.dll
+E:\ShoppyEx\API\ShoppyEx.Order.Api\bin\Release\net6.0\HealthChecks.UI.Core.dll
+E:\ShoppyEx\API\ShoppyEx.Order.Api\bin\Release\net6.0\AutoMapper.dll
+E:\ShoppyEx\API\ShoppyEx.Order.Api\bin\Release\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+E:\ShoppyEx\API\ShoppyEx.Order.Api\bin\Release\net6.0\Azure.Core.dll
+E:\ShoppyEx\API\ShoppyEx.Order.Api\bin\Release\net6.0\Azure.Core.Amqp.dll
+E:\ShoppyEx\API\ShoppyEx.Order.Api\bin\Release\net6.0\Azure.Messaging.ServiceBus.dll
+E:\ShoppyEx\API\ShoppyEx.Order.Api\bin\Release\net6.0\FluentValidation.dll
+E:\ShoppyEx\API\ShoppyEx.Order.Api\bin\Release\net6.0\Google.Protobuf.dll
+E:\ShoppyEx\API\ShoppyEx.Order.Api\bin\Release\net6.0\Grpc.AspNetCore.Server.dll
+E:\ShoppyEx\API\ShoppyEx.Order.Api\bin\Release\net6.0\Grpc.AspNetCore.Server.ClientFactory.dll
+E:\ShoppyEx\API\ShoppyEx.Order.Api\bin\Release\net6.0\Grpc.Core.Api.dll
+E:\ShoppyEx\API\ShoppyEx.Order.Api\bin\Release\net6.0\Grpc.Net.Client.dll
+E:\ShoppyEx\API\ShoppyEx.Order.Api\bin\Release\net6.0\Grpc.Net.ClientFactory.dll
+E:\ShoppyEx\API\ShoppyEx.Order.Api\bin\Release\net6.0\Grpc.Net.Common.dll
+E:\ShoppyEx\API\ShoppyEx.Order.Api\bin\Release\net6.0\Humanizer.dll
+E:\ShoppyEx\API\ShoppyEx.Order.Api\bin\Release\net6.0\MediatR.dll
+E:\ShoppyEx\API\ShoppyEx.Order.Api\bin\Release\net6.0\MediatR.Contracts.dll
+E:\ShoppyEx\API\ShoppyEx.Order.Api\bin\Release\net6.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
+E:\ShoppyEx\API\ShoppyEx.Order.Api\bin\Release\net6.0\Microsoft.AspNetCore.Mvc.Versioning.dll
+E:\ShoppyEx\API\ShoppyEx.Order.Api\bin\Release\net6.0\Microsoft.Azure.Amqp.dll
+E:\ShoppyEx\API\ShoppyEx.Order.Api\bin\Release\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+E:\ShoppyEx\API\ShoppyEx.Order.Api\bin\Release\net6.0\Microsoft.Data.SqlClient.dll
+E:\ShoppyEx\API\ShoppyEx.Order.Api\bin\Release\net6.0\Microsoft.EntityFrameworkCore.dll
+E:\ShoppyEx\API\ShoppyEx.Order.Api\bin\Release\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\ShoppyEx\API\ShoppyEx.Order.Api\bin\Release\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+E:\ShoppyEx\API\ShoppyEx.Order.Api\bin\Release\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+E:\ShoppyEx\API\ShoppyEx.Order.Api\bin\Release\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+E:\ShoppyEx\API\ShoppyEx.Order.Api\bin\Release\net6.0\Microsoft.Extensions.Caching.Memory.dll
+E:\ShoppyEx\API\ShoppyEx.Order.Api\bin\Release\net6.0\Microsoft.Extensions.DependencyModel.dll
+E:\ShoppyEx\API\ShoppyEx.Order.Api\bin\Release\net6.0\Microsoft.Identity.Client.dll
+E:\ShoppyEx\API\ShoppyEx.Order.Api\bin\Release\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\ShoppyEx\API\ShoppyEx.Order.Api\bin\Release\net6.0\Microsoft.IdentityModel.Logging.dll
+E:\ShoppyEx\API\ShoppyEx.Order.Api\bin\Release\net6.0\Microsoft.IdentityModel.Protocols.dll
+E:\ShoppyEx\API\ShoppyEx.Order.Api\bin\Release\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\ShoppyEx\API\ShoppyEx.Order.Api\bin\Release\net6.0\Microsoft.IdentityModel.Tokens.dll
+E:\ShoppyEx\API\ShoppyEx.Order.Api\bin\Release\net6.0\Microsoft.OpenApi.dll
+E:\ShoppyEx\API\ShoppyEx.Order.Api\bin\Release\net6.0\Microsoft.Win32.SystemEvents.dll
+E:\ShoppyEx\API\ShoppyEx.Order.Api\bin\Release\net6.0\Newtonsoft.Json.dll
+E:\ShoppyEx\API\ShoppyEx.Order.Api\bin\Release\net6.0\Scrutor.dll
+E:\ShoppyEx\API\ShoppyEx.Order.Api\bin\Release\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+E:\ShoppyEx\API\ShoppyEx.Order.Api\bin\Release\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+E:\ShoppyEx\API\ShoppyEx.Order.Api\bin\Release\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+E:\ShoppyEx\API\ShoppyEx.Order.Api\bin\Release\net6.0\System.Configuration.ConfigurationManager.dll
+E:\ShoppyEx\API\ShoppyEx.Order.Api\bin\Release\net6.0\System.Drawing.Common.dll
+E:\ShoppyEx\API\ShoppyEx.Order.Api\bin\Release\net6.0\System.IdentityModel.Tokens.Jwt.dll
+E:\ShoppyEx\API\ShoppyEx.Order.Api\bin\Release\net6.0\System.Memory.Data.dll
+E:\ShoppyEx\API\ShoppyEx.Order.Api\bin\Release\net6.0\System.Runtime.Caching.dll
+E:\ShoppyEx\API\ShoppyEx.Order.Api\bin\Release\net6.0\System.Security.Cryptography.ProtectedData.dll
+E:\ShoppyEx\API\ShoppyEx.Order.Api\bin\Release\net6.0\System.Security.Permissions.dll
+E:\ShoppyEx\API\ShoppyEx.Order.Api\bin\Release\net6.0\System.Windows.Extensions.dll
+E:\ShoppyEx\API\ShoppyEx.Order.Api\bin\Release\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+E:\ShoppyEx\API\ShoppyEx.Order.Api\bin\Release\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+E:\ShoppyEx\API\ShoppyEx.Order.Api\bin\Release\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+E:\ShoppyEx\API\ShoppyEx.Order.Api\bin\Release\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\ShoppyEx\API\ShoppyEx.Order.Api\bin\Release\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\ShoppyEx\API\ShoppyEx.Order.Api\bin\Release\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+E:\ShoppyEx\API\ShoppyEx.Order.Api\bin\Release\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+E:\ShoppyEx\API\ShoppyEx.Order.Api\bin\Release\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+E:\ShoppyEx\API\ShoppyEx.Order.Api\bin\Release\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+E:\ShoppyEx\API\ShoppyEx.Order.Api\bin\Release\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+E:\ShoppyEx\API\ShoppyEx.Order.Api\bin\Release\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+E:\ShoppyEx\API\ShoppyEx.Order.Api\bin\Release\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+E:\ShoppyEx\API\ShoppyEx.Order.Api\bin\Release\net6.0\ShoppyEx.Order.Core.dll
+E:\ShoppyEx\API\ShoppyEx.Order.Api\bin\Release\net6.0\ShoppyEx.Order.Infrastructure.dll
+E:\ShoppyEx\API\ShoppyEx.Order.Api\bin\Release\net6.0\ShoppyEx.SharedKernel.SeedWork.dll
+E:\ShoppyEx\API\ShoppyEx.Order.Api\bin\Release\net6.0\ShoppyEx.Order.Infrastructure.pdb
+E:\ShoppyEx\API\ShoppyEx.Order.Api\bin\Release\net6.0\ShoppyEx.Order.Core.pdb
+E:\ShoppyEx\API\ShoppyEx.Order.Api\bin\Release\net6.0\ShoppyEx.SharedKernel.SeedWork.pdb
+E:\ShoppyEx\API\ShoppyEx.Order.Api\obj\Release\net6.0\staticwebassets.build.json
+E:\ShoppyEx\API\ShoppyEx.Order.Api\obj\Release\net6.0\staticwebassets.development.json
+E:\ShoppyEx\API\ShoppyEx.Order.Api\obj\Release\net6.0\scopedcss\bundle\ShoppyEx.Order.Api.styles.css
+E:\ShoppyEx\API\ShoppyEx.Order.Api\obj\Release\net6.0\ShoppyEx.Order.Api.csproj.CopyComplete
+E:\ShoppyEx\API\ShoppyEx.Order.Api\obj\Release\net6.0\ShoppyEx.Order.Api.dll
+E:\ShoppyEx\API\ShoppyEx.Order.Api\obj\Release\net6.0\ref\ShoppyEx.Order.Api.dll
+E:\ShoppyEx\API\ShoppyEx.Order.Api\obj\Release\net6.0\ShoppyEx.Order.Api.pdb
+E:\ShoppyEx\API\ShoppyEx.Order.Api\obj\Release\net6.0\ShoppyEx.Order.Api.genruntimeconfig.cache

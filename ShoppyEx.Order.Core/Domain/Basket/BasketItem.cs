@@ -34,11 +34,19 @@ namespace ShoppyEx.Order.Core.Domain.Basket
             Price = Quantity * price;
         }
 
-        internal static BasketItem Create(BasketId basketId, string productName, Guid productId, decimal price, int quantity, string pictureUrl, string brand,
+        public void ChangeQuantity(int quantity)
+        {
+            if (quantity == 0)
+                throw new Exception("The product quantity must be at last 1.");
+            Quantity = quantity;
+        }
+
+        public static BasketItem Create(BasketId basketId, string productName, Guid productId, decimal price, int quantity, string pictureUrl, string brand,
             string type)
         {
             return new BasketItem(basketId, productName, productId, price, quantity, pictureUrl, brand,
             type);
         }
+
     }
 }

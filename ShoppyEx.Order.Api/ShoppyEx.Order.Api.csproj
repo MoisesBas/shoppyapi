@@ -20,26 +20,23 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Remove="Services\OrderService.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
+    <None Remove="Features\Basket\CreateBasket\CreateBasketCommandHandler.cs~RF77fded1.TMP" />
     <None Remove="Protos\address.proto" />
-    <None Remove="Protos\category.proto" />
+    <None Remove="Protos\basket.proto" />
+    <None Remove="Protos\basketitem.proto" />
     <None Remove="Protos\customer.proto" />
     <None Remove="Protos\product.proto" />
-    <None Remove="Protos\tag.proto" />
   </ItemGroup>
 
   <ItemGroup>
     <Protobuf Include="Protos\address.proto" GrpcServices="Client" />
-    <Protobuf Include="Protos\category.proto" GrpcServices="Client" />
+    <Protobuf Include="Protos\basketitem.proto" GrpcServices="Server" />
     <Protobuf Include="Protos\customer.proto" GrpcServices="Client" />
     <Protobuf Include="Protos\greet.proto" GrpcServices="Server" />
     <Protobuf Include="Protos\order.proto" GrpcServices="Server" />
     <Protobuf Include="Protos\orderitem.proto" GrpcServices="Server" />
     <Protobuf Include="Protos\product.proto" GrpcServices="Client" />
-    <Protobuf Include="Protos\tag.proto" GrpcServices="Client" />
+    <Protobuf Include="Protos\basket.proto" GrpcServices="Server" />
   </ItemGroup>
 
   <ItemGroup>
@@ -56,10 +53,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ShoppyEx.Order.Infrastructure\ShoppyEx.Order.Infrastructure.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Features\" />
   </ItemGroup>
 
 </Project>

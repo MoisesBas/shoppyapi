@@ -4,7 +4,7 @@ import "protos/productbrand.proto";
 import "protos/producttype.proto";
 
 
-option csharp_namespace = "ShoppyEx.Aggregator.Api";
+option csharp_namespace = "ShoppyEx";
 
 package protos.package;
 
@@ -40,6 +40,9 @@ message ProductListMessage {
     google.protobuf.StringValue PictureUrl = 5;
     google.protobuf.StringValue ProductType = 6;
     google.protobuf.StringValue ProductBrand = 7;
+    google.protobuf.Int32Value UnitInStock = 8;
+
+
   
 }
 

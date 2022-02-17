@@ -11,7 +11,8 @@ namespace ShoppyEx.Product.Api.Features.Product
         public string PictureUrl { get; init; }
         public string ProductType { get; init; }
         public string ProductBrand { get; init; }
-        public ValidationResult ValidationResult { get; set; } = new ValidationResult();
+        public int UnitInStock { get; init; }
+     
 
     }
 }

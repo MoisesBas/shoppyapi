@@ -1,0 +1,4 @@
+obj\Debug\net6.0\Protos/Basket.cs \
+obj\Debug\net6.0\Protos/BasketGrpc.cs: C:/Users/moise/.nuget/packages/grpc.tools/2.42.0/build/native/include/google/protobuf/wrappers.proto\
+ protos/basketitem.proto\
+ Protos/basket.proto

@@ -40,6 +40,7 @@ message ProductListMessage {
     google.protobuf.StringValue PictureUrl = 5;
     google.protobuf.StringValue ProductType = 6;
     google.protobuf.StringValue ProductBrand = 7;
+    google.protobuf.Int32Value UnitInStock = 8;
   
 }
 

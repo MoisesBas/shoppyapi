@@ -39,9 +39,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Identity", "Identity", "{E1
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShoppyEx.Identity.Infrastructure", "ShoppyEx.Identity.Infrastructure\ShoppyEx.Identity.Infrastructure.csproj", "{008ECF42-CBAF-46DB-80DC-7F1301372A55}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShoppyEx.Identity.Api", "ShoppyEx.Identity.Api\ShoppyEx.Identity.Api.csproj", "{9A0CA8B3-5F25-4606-830D-3198E7B88ED6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShoppyEx.Identity.Api", "ShoppyEx.Identity.Api\ShoppyEx.Identity.Api.csproj", "{9A0CA8B3-5F25-4606-830D-3198E7B88ED6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShoppyEx.Identity.Core", "ShoppyEx.Identity.Core\ShoppyEx.Identity.Core.csproj", "{6B71205C-C97F-46E4-ADEC-D4802EE2F200}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShoppyEx.Identity.Core", "ShoppyEx.Identity.Core\ShoppyEx.Identity.Core.csproj", "{6B71205C-C97F-46E4-ADEC-D4802EE2F200}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

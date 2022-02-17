@@ -1,0 +1,30 @@
+[
+  {
+    "Id": "06BD817C-2C7C-4D05-B8F5-0A2B07D7AF6D",
+    "Name": "Adidas"
+  },
+  {
+    "Id": "39DDB4C5-D316-4EE5-AD96-1F2BA4279D42",
+    "Name": "ASICS"
+  },
+  {
+    "Id": "23EDDD62-5F50-4200-9227-3C53675C28C1",
+    "Name": "Victor"
+  },
+  {
+    "Id": "7D883792-DEB9-4E0D-9427-45841A940505",
+    "Name": "Yonex"
+  },
+  {
+    "Id": "CE32079C-4CB1-4351-B77D-54F32AFFDA5F",
+    "Name": "Puma"
+  },
+  {
+    "Id": "380BD572-8433-4986-9069-57623A150C03",
+    "Name": "Nike"
+  },
+  {
+    "Id": "0D6C2510-BE2F-4E04-B036-63B46BF41448",
+    "Name": "Babolat"
+  }
+]
