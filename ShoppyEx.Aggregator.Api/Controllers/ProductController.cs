@@ -1,5 +1,4 @@
-﻿using ShoppyEx.Product.Api;
-
+﻿
 namespace ShoppyEx.Aggregator.Api.Controllers;
 
 [ApiController]

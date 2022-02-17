@@ -24,7 +24,7 @@ public sealed class ProductsGetAllQueryHandler : QueryHandler<ProductsGetAllQuer
         CancellationToken cancellationToken)
     {
         var results = QueryProducts(query);
-                      SortProducts(query, results);
+        results = SortProducts(query, results);
         var items = await MapProducts(results, cancellationToken);
         return items;
     }
@@ -52,11 +52,11 @@ public sealed class ProductsGetAllQueryHandler : QueryHandler<ProductsGetAllQuer
 
     private IQueryable<Core.Domain.Product.Product> QueryProducts(ProductsGetAllQuery query)
     {
-        return _unitOfWork.Set<Core.Domain.Product.Product>()
+        var results = _unitOfWork.Set<Core.Domain.Product.Product>()
                                         .Include(x => x.ProductBrand).Include(x => x.ProductType)
                                         .Where(x => (string.IsNullOrEmpty(query.Search) || x.Name.ToLower().Contains(query.Search))
-                                                      && (!query.ProductBrandId.HasValue || x.ProductBrandId.Value == query.ProductBrandId)
-                                                      && (!query.ProductTypeId.HasValue || x.ProductTypeId.Value == query.ProductTypeId))
-                                        .Skip((query.PageIndex - 1) * query.PageSize).Take(query.PageSize).AsQueryable();
+                                                      && (query.ProductBrandId == Guid.Empty || x.ProductBrandId == new Core.Domain.Brand.ProductBrandId(query.ProductBrandId.Value))
+                                                      && (query.ProductTypeId == Guid.Empty || x.ProductTypeId == new Core.Domain.Type.ProductTypeId(query.ProductTypeId.Value)));
+        return results.Skip((query.PageIndex - 1) * query.PageSize).Take(query.PageSize).AsQueryable();
     }
 }

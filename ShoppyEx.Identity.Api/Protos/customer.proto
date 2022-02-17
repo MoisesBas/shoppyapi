@@ -1,0 +1,36 @@
+﻿syntax = "proto3";
+import "google/protobuf/wrappers.proto";
+import "protos/address.proto";
+
+
+option csharp_namespace = "ShoppyEx.Identity.Api";
+
+package protos.package;
+
+service CustomerGrpc {   	
+    rpc AddCustomer(CustomerCreateRequestMessage) returns (CustomerIdResponseMessage){}
+    rpc GetCustomerById(CustomerByIdRequestMessage) returns (CustomerResponseMessage) {}
+}
+
+message CustomerByIdRequestMessage {    
+    google.protobuf.StringValue Id = 1;
+}
+message CustomerCreateRequestMessage {   
+    google.protobuf.StringValue Name = 1;
+    google.protobuf.StringValue UserId = 2;
+    AddressRequestMessage Address = 3;
+}
+
+message CustomerResponseMessage {    
+    google.protobuf.StringValue Id = 1;
+    google.protobuf.StringValue Name = 2;
+    google.protobuf.StringValue UserId = 3;
+    AddressResponseMessage Address = 4;   
+}
+
+message CustomerIdResponseMessage {    
+    google.protobuf.StringValue Id = 1;
+}
+
+
+

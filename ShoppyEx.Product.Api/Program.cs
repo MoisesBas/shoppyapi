@@ -21,6 +21,7 @@ var builder = WebApplication.CreateBuilder(new WebApplicationOptions()
 builder.Services.AddDbContext<ApplicationDbContext>(X =>
 {
     X.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+    X.EnableSensitiveDataLogging();
 });
 
 builder.Services
@@ -42,8 +43,8 @@ app.UseRouting();
 app.UseEndpoints(endpoint =>
 {
     endpoint.MapGrpcService<ProductService>();
-    //endpoint.MapGrpcService<CategoryService>();
-    //endpoint.MapGrpcService<TagService>();
+    endpoint.MapGrpcService<ProductBrandService>();
+    endpoint.MapGrpcService<ProductTypeService>();
 
     endpoint.MapHealthChecks("/hc", new HealthCheckOptions()
     {

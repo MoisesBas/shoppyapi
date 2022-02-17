@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace ShoppyEx.Aggregator.Api.Protos {
+namespace ShoppyEx.Aggregator.Api {
 
   /// <summary>Holder for reflection information generated from Protos/order.proto</summary>
   public static partial class OrderReflection {
@@ -63,17 +63,16 @@ namespace ShoppyEx.Aggregator.Api.Protos {
             "Z2UuT3JkZXJDcmVhdGVSZXNwb25zZU1lc3NhZ2UiABJuChRHZXRPcmRlckJ5",
             "Q3VzdG9tZXJJZBIyLnByb3Rvcy5wYWNrYWdlLkdldE9yZGVyQnlDdXN0b21l",
             "cklkUmVxdWVzdE1lc3NhZ2UaIC5wcm90b3MucGFja2FnZS5PcmRlckxpc3RN",
-            "ZXNzYWdlIgBCIaoCHlNob3BweUV4LkFnZ3JlZ2F0b3IuQXBpLlByb3Rvc2IG",
-            "cHJvdG8z"));
+            "ZXNzYWdlIgBCGqoCF1Nob3BweUV4LkFnZ3JlZ2F0b3IuQXBpYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::ShoppyEx.Aggregator.Api.Protos.OrderitemReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::ShoppyEx.Aggregator.Api.OrderitemReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::ShoppyEx.Aggregator.Api.Protos.GetOrderByCustomerIdRequestMessage), global::ShoppyEx.Aggregator.Api.Protos.GetOrderByCustomerIdRequestMessage.Parser, new[]{ "CustomerId" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::ShoppyEx.Aggregator.Api.Protos.OrderCreateRequestMessage), global::ShoppyEx.Aggregator.Api.Protos.OrderCreateRequestMessage.Parser, new[]{ "CustomerId", "OrderDate", "TotalPrice", "Address", "City", "Region", "PostalCode", "Country", "OrderItems" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::ShoppyEx.Aggregator.Api.Protos.OrderListMessage), global::ShoppyEx.Aggregator.Api.Protos.OrderListMessage.Parser, new[]{ "TotalCount", "Items" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::ShoppyEx.Aggregator.Api.Protos.OrderCreateResponseMessage), global::ShoppyEx.Aggregator.Api.Protos.OrderCreateResponseMessage.Parser, new[]{ "Id", "CustomerId", "OrderDate", "TotalPrice", "Address", "City", "Region", "PostalCode", "Country", "OrderItems" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::ShoppyEx.Aggregator.Api.Protos.OrderIdRequestMessage), global::ShoppyEx.Aggregator.Api.Protos.OrderIdRequestMessage.Parser, new[]{ "Id" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::ShoppyEx.Aggregator.Api.Protos.OrderIdResponseMessage), global::ShoppyEx.Aggregator.Api.Protos.OrderIdResponseMessage.Parser, new[]{ "Id" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::ShoppyEx.Aggregator.Api.GetOrderByCustomerIdRequestMessage), global::ShoppyEx.Aggregator.Api.GetOrderByCustomerIdRequestMessage.Parser, new[]{ "CustomerId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ShoppyEx.Aggregator.Api.OrderCreateRequestMessage), global::ShoppyEx.Aggregator.Api.OrderCreateRequestMessage.Parser, new[]{ "CustomerId", "OrderDate", "TotalPrice", "Address", "City", "Region", "PostalCode", "Country", "OrderItems" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ShoppyEx.Aggregator.Api.OrderListMessage), global::ShoppyEx.Aggregator.Api.OrderListMessage.Parser, new[]{ "TotalCount", "Items" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ShoppyEx.Aggregator.Api.OrderCreateResponseMessage), global::ShoppyEx.Aggregator.Api.OrderCreateResponseMessage.Parser, new[]{ "Id", "CustomerId", "OrderDate", "TotalPrice", "Address", "City", "Region", "PostalCode", "Country", "OrderItems" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ShoppyEx.Aggregator.Api.OrderIdRequestMessage), global::ShoppyEx.Aggregator.Api.OrderIdRequestMessage.Parser, new[]{ "Id" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ShoppyEx.Aggregator.Api.OrderIdResponseMessage), global::ShoppyEx.Aggregator.Api.OrderIdResponseMessage.Parser, new[]{ "Id" }, null, null, null, null)
           }));
     }
     #endregion
@@ -94,7 +93,7 @@ namespace ShoppyEx.Aggregator.Api.Protos {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::ShoppyEx.Aggregator.Api.Protos.OrderReflection.Descriptor.MessageTypes[0]; }
+      get { return global::ShoppyEx.Aggregator.Api.OrderReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -291,7 +290,7 @@ namespace ShoppyEx.Aggregator.Api.Protos {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::ShoppyEx.Aggregator.Api.Protos.OrderReflection.Descriptor.MessageTypes[1]; }
+      get { return global::ShoppyEx.Aggregator.Api.OrderReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -443,12 +442,12 @@ namespace ShoppyEx.Aggregator.Api.Protos {
 
     /// <summary>Field number for the "OrderItems" field.</summary>
     public const int OrderItemsFieldNumber = 9;
-    private static readonly pb::FieldCodec<global::ShoppyEx.Aggregator.Api.Protos.OrderItemRequestMessage> _repeated_orderItems_codec
-        = pb::FieldCodec.ForMessage(74, global::ShoppyEx.Aggregator.Api.Protos.OrderItemRequestMessage.Parser);
-    private readonly pbc::RepeatedField<global::ShoppyEx.Aggregator.Api.Protos.OrderItemRequestMessage> orderItems_ = new pbc::RepeatedField<global::ShoppyEx.Aggregator.Api.Protos.OrderItemRequestMessage>();
+    private static readonly pb::FieldCodec<global::ShoppyEx.Aggregator.Api.OrderItemRequestMessage> _repeated_orderItems_codec
+        = pb::FieldCodec.ForMessage(74, global::ShoppyEx.Aggregator.Api.OrderItemRequestMessage.Parser);
+    private readonly pbc::RepeatedField<global::ShoppyEx.Aggregator.Api.OrderItemRequestMessage> orderItems_ = new pbc::RepeatedField<global::ShoppyEx.Aggregator.Api.OrderItemRequestMessage>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::ShoppyEx.Aggregator.Api.Protos.OrderItemRequestMessage> OrderItems {
+    public pbc::RepeatedField<global::ShoppyEx.Aggregator.Api.OrderItemRequestMessage> OrderItems {
       get { return orderItems_; }
     }
 
@@ -829,7 +828,7 @@ namespace ShoppyEx.Aggregator.Api.Protos {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::ShoppyEx.Aggregator.Api.Protos.OrderReflection.Descriptor.MessageTypes[2]; }
+      get { return global::ShoppyEx.Aggregator.Api.OrderReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -876,12 +875,12 @@ namespace ShoppyEx.Aggregator.Api.Protos {
 
     /// <summary>Field number for the "Items" field.</summary>
     public const int ItemsFieldNumber = 2;
-    private static readonly pb::FieldCodec<global::ShoppyEx.Aggregator.Api.Protos.OrderCreateResponseMessage> _repeated_items_codec
-        = pb::FieldCodec.ForMessage(18, global::ShoppyEx.Aggregator.Api.Protos.OrderCreateResponseMessage.Parser);
-    private readonly pbc::RepeatedField<global::ShoppyEx.Aggregator.Api.Protos.OrderCreateResponseMessage> items_ = new pbc::RepeatedField<global::ShoppyEx.Aggregator.Api.Protos.OrderCreateResponseMessage>();
+    private static readonly pb::FieldCodec<global::ShoppyEx.Aggregator.Api.OrderCreateResponseMessage> _repeated_items_codec
+        = pb::FieldCodec.ForMessage(18, global::ShoppyEx.Aggregator.Api.OrderCreateResponseMessage.Parser);
+    private readonly pbc::RepeatedField<global::ShoppyEx.Aggregator.Api.OrderCreateResponseMessage> items_ = new pbc::RepeatedField<global::ShoppyEx.Aggregator.Api.OrderCreateResponseMessage>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::ShoppyEx.Aggregator.Api.Protos.OrderCreateResponseMessage> Items {
+    public pbc::RepeatedField<global::ShoppyEx.Aggregator.Api.OrderCreateResponseMessage> Items {
       get { return items_; }
     }
 
@@ -1052,7 +1051,7 @@ namespace ShoppyEx.Aggregator.Api.Protos {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::ShoppyEx.Aggregator.Api.Protos.OrderReflection.Descriptor.MessageTypes[3]; }
+      get { return global::ShoppyEx.Aggregator.Api.OrderReflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1219,12 +1218,12 @@ namespace ShoppyEx.Aggregator.Api.Protos {
 
     /// <summary>Field number for the "OrderItems" field.</summary>
     public const int OrderItemsFieldNumber = 10;
-    private static readonly pb::FieldCodec<global::ShoppyEx.Aggregator.Api.Protos.OrderItemResponseMessage> _repeated_orderItems_codec
-        = pb::FieldCodec.ForMessage(82, global::ShoppyEx.Aggregator.Api.Protos.OrderItemResponseMessage.Parser);
-    private readonly pbc::RepeatedField<global::ShoppyEx.Aggregator.Api.Protos.OrderItemResponseMessage> orderItems_ = new pbc::RepeatedField<global::ShoppyEx.Aggregator.Api.Protos.OrderItemResponseMessage>();
+    private static readonly pb::FieldCodec<global::ShoppyEx.Aggregator.Api.OrderItemResponseMessage> _repeated_orderItems_codec
+        = pb::FieldCodec.ForMessage(82, global::ShoppyEx.Aggregator.Api.OrderItemResponseMessage.Parser);
+    private readonly pbc::RepeatedField<global::ShoppyEx.Aggregator.Api.OrderItemResponseMessage> orderItems_ = new pbc::RepeatedField<global::ShoppyEx.Aggregator.Api.OrderItemResponseMessage>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::ShoppyEx.Aggregator.Api.Protos.OrderItemResponseMessage> OrderItems {
+    public pbc::RepeatedField<global::ShoppyEx.Aggregator.Api.OrderItemResponseMessage> OrderItems {
       get { return orderItems_; }
     }
 
@@ -1635,7 +1634,7 @@ namespace ShoppyEx.Aggregator.Api.Protos {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::ShoppyEx.Aggregator.Api.Protos.OrderReflection.Descriptor.MessageTypes[4]; }
+      get { return global::ShoppyEx.Aggregator.Api.OrderReflection.Descriptor.MessageTypes[4]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1832,7 +1831,7 @@ namespace ShoppyEx.Aggregator.Api.Protos {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::ShoppyEx.Aggregator.Api.Protos.OrderReflection.Descriptor.MessageTypes[5]; }
+      get { return global::ShoppyEx.Aggregator.Api.OrderReflection.Descriptor.MessageTypes[5]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

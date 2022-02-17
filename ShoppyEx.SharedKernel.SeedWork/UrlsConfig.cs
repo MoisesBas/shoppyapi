@@ -1,9 +1,10 @@
 ﻿namespace ShoppyEx.SharedKernel.SeedWork
 {
-    public class UrlsConfig
+    public record class UrlsConfig
     {           
-        public string GrpcCustomer { get; set; }
-        public string GrpcProduct { get; set; }
-        public string GrpcOrder { get; set; }
+        public string GrpcCustomer { get; init; }
+        public string GrpcProduct { get; init; }
+        public string GrpcOrder { get; init; }
+        public string GrpcIdentity { get; init; }
     }
 }

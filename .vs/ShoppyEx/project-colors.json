@@ -85,7 +85,17 @@
       "ProjectGuid": "008ecf42-cbaf-46db-80dc-7f1301372a55",
       "DisplayName": "ShoppyEx.Identity.Infrastructure",
       "ColorIndex": 15
+    },
+    "6b71205c-c97f-46e4-adec-d4802ee2f200": {
+      "ProjectGuid": "6b71205c-c97f-46e4-adec-d4802ee2f200",
+      "DisplayName": "ShoppyEx.Identity.Core",
+      "ColorIndex": 0
+    },
+    "9a0ca8b3-5f25-4606-830d-3198e7b88ed6": {
+      "ProjectGuid": "9a0ca8b3-5f25-4606-830d-3198e7b88ed6",
+      "DisplayName": "ShoppyEx.Identity.Api",
+      "ColorIndex": 1
     }
   },
-  "NextColorIndex": 0
+  "NextColorIndex": 2
 }

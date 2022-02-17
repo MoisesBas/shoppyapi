@@ -7,7 +7,7 @@
 
 using grpc = global::Grpc.Core;
 
-namespace ShoppyEx.Customer.Api.Protos {
+namespace ShoppyEx.Customer.Api {
   public static partial class CustomerGrpc
   {
     static readonly string __ServiceName = "protos.package.CustomerGrpc";
@@ -46,16 +46,16 @@ namespace ShoppyEx.Customer.Api.Protos {
     }
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::ShoppyEx.Customer.Api.Protos.CustomerCreateRequestMessage> __Marshaller_protos_package_CustomerCreateRequestMessage = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ShoppyEx.Customer.Api.Protos.CustomerCreateRequestMessage.Parser));
+    static readonly grpc::Marshaller<global::ShoppyEx.Customer.Api.CustomerCreateRequestMessage> __Marshaller_protos_package_CustomerCreateRequestMessage = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ShoppyEx.Customer.Api.CustomerCreateRequestMessage.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::ShoppyEx.Customer.Api.Protos.CustomerIdResponseMessage> __Marshaller_protos_package_CustomerIdResponseMessage = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ShoppyEx.Customer.Api.Protos.CustomerIdResponseMessage.Parser));
+    static readonly grpc::Marshaller<global::ShoppyEx.Customer.Api.CustomerIdResponseMessage> __Marshaller_protos_package_CustomerIdResponseMessage = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ShoppyEx.Customer.Api.CustomerIdResponseMessage.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::ShoppyEx.Customer.Api.Protos.CustomerByIdRequestMessage> __Marshaller_protos_package_CustomerByIdRequestMessage = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ShoppyEx.Customer.Api.Protos.CustomerByIdRequestMessage.Parser));
+    static readonly grpc::Marshaller<global::ShoppyEx.Customer.Api.CustomerByIdRequestMessage> __Marshaller_protos_package_CustomerByIdRequestMessage = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ShoppyEx.Customer.Api.CustomerByIdRequestMessage.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::ShoppyEx.Customer.Api.Protos.CustomerResponseMessage> __Marshaller_protos_package_CustomerResponseMessage = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ShoppyEx.Customer.Api.Protos.CustomerResponseMessage.Parser));
+    static readonly grpc::Marshaller<global::ShoppyEx.Customer.Api.CustomerResponseMessage> __Marshaller_protos_package_CustomerResponseMessage = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ShoppyEx.Customer.Api.CustomerResponseMessage.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::ShoppyEx.Customer.Api.Protos.CustomerCreateRequestMessage, global::ShoppyEx.Customer.Api.Protos.CustomerIdResponseMessage> __Method_AddCustomer = new grpc::Method<global::ShoppyEx.Customer.Api.Protos.CustomerCreateRequestMessage, global::ShoppyEx.Customer.Api.Protos.CustomerIdResponseMessage>(
+    static readonly grpc::Method<global::ShoppyEx.Customer.Api.CustomerCreateRequestMessage, global::ShoppyEx.Customer.Api.CustomerIdResponseMessage> __Method_AddCustomer = new grpc::Method<global::ShoppyEx.Customer.Api.CustomerCreateRequestMessage, global::ShoppyEx.Customer.Api.CustomerIdResponseMessage>(
         grpc::MethodType.Unary,
         __ServiceName,
         "AddCustomer",
@@ -63,7 +63,7 @@ namespace ShoppyEx.Customer.Api.Protos {
         __Marshaller_protos_package_CustomerIdResponseMessage);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::ShoppyEx.Customer.Api.Protos.CustomerByIdRequestMessage, global::ShoppyEx.Customer.Api.Protos.CustomerResponseMessage> __Method_GetCustomerById = new grpc::Method<global::ShoppyEx.Customer.Api.Protos.CustomerByIdRequestMessage, global::ShoppyEx.Customer.Api.Protos.CustomerResponseMessage>(
+    static readonly grpc::Method<global::ShoppyEx.Customer.Api.CustomerByIdRequestMessage, global::ShoppyEx.Customer.Api.CustomerResponseMessage> __Method_GetCustomerById = new grpc::Method<global::ShoppyEx.Customer.Api.CustomerByIdRequestMessage, global::ShoppyEx.Customer.Api.CustomerResponseMessage>(
         grpc::MethodType.Unary,
         __ServiceName,
         "GetCustomerById",
@@ -73,7 +73,7 @@ namespace ShoppyEx.Customer.Api.Protos {
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
-      get { return global::ShoppyEx.Customer.Api.Protos.CustomerReflection.Descriptor.Services[0]; }
+      get { return global::ShoppyEx.Customer.Api.CustomerReflection.Descriptor.Services[0]; }
     }
 
     /// <summary>Base class for server-side implementations of CustomerGrpc</summary>
@@ -81,13 +81,13 @@ namespace ShoppyEx.Customer.Api.Protos {
     public abstract partial class CustomerGrpcBase
     {
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::ShoppyEx.Customer.Api.Protos.CustomerIdResponseMessage> AddCustomer(global::ShoppyEx.Customer.Api.Protos.CustomerCreateRequestMessage request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::ShoppyEx.Customer.Api.CustomerIdResponseMessage> AddCustomer(global::ShoppyEx.Customer.Api.CustomerCreateRequestMessage request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::ShoppyEx.Customer.Api.Protos.CustomerResponseMessage> GetCustomerById(global::ShoppyEx.Customer.Api.Protos.CustomerByIdRequestMessage request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::ShoppyEx.Customer.Api.CustomerResponseMessage> GetCustomerById(global::ShoppyEx.Customer.Api.CustomerByIdRequestMessage request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -111,8 +111,8 @@ namespace ShoppyEx.Customer.Api.Protos {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     public static void BindService(grpc::ServiceBinderBase serviceBinder, CustomerGrpcBase serviceImpl)
     {
-      serviceBinder.AddMethod(__Method_AddCustomer, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::ShoppyEx.Customer.Api.Protos.CustomerCreateRequestMessage, global::ShoppyEx.Customer.Api.Protos.CustomerIdResponseMessage>(serviceImpl.AddCustomer));
-      serviceBinder.AddMethod(__Method_GetCustomerById, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::ShoppyEx.Customer.Api.Protos.CustomerByIdRequestMessage, global::ShoppyEx.Customer.Api.Protos.CustomerResponseMessage>(serviceImpl.GetCustomerById));
+      serviceBinder.AddMethod(__Method_AddCustomer, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::ShoppyEx.Customer.Api.CustomerCreateRequestMessage, global::ShoppyEx.Customer.Api.CustomerIdResponseMessage>(serviceImpl.AddCustomer));
+      serviceBinder.AddMethod(__Method_GetCustomerById, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::ShoppyEx.Customer.Api.CustomerByIdRequestMessage, global::ShoppyEx.Customer.Api.CustomerResponseMessage>(serviceImpl.GetCustomerById));
     }
 
   }

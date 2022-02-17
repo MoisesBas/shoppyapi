@@ -1,5 +1,4 @@
 ﻿global using Microsoft.AspNetCore.Mvc;
-global using ShoppyEx.Aggregator.Api.Protos;
 global using ShoppyEx.SharedKernel.SeedWork.Invariant;
 global using ShoppyEx.SharedKernel.SeedWork.Swagger;
 global using System.Net.Mime;

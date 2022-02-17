@@ -17,22 +17,3 @@ D:\ACE ACE\ShoppyEx\ShoppyEx.Customer.Infrastructure\obj\Release\net6.0\ShoppyEx
 D:\ACE ACE\ShoppyEx\ShoppyEx.Customer.Infrastructure\obj\Release\net6.0\ref\ShoppyEx.Customer.Infrastructure.dll
 D:\ACE ACE\ShoppyEx\ShoppyEx.Customer.Infrastructure\obj\Release\net6.0\ShoppyEx.Customer.Infrastructure.pdb
 D:\ACE ACE\ShoppyEx\ShoppyEx.Customer.Infrastructure\obj\Release\net6.0\ShoppyEx.Customer.Infrastructure.genruntimeconfig.cache
-E:\ShoppyEx\API\ShoppyEx.Customer.Infrastructure\bin\Release\net6.0\ShoppyEx.Customer.Infrastructure.deps.json
-E:\ShoppyEx\API\ShoppyEx.Customer.Infrastructure\bin\Release\net6.0\ShoppyEx.Customer.Infrastructure.runtimeconfig.json
-E:\ShoppyEx\API\ShoppyEx.Customer.Infrastructure\bin\Release\net6.0\ShoppyEx.Customer.Infrastructure.dll
-E:\ShoppyEx\API\ShoppyEx.Customer.Infrastructure\bin\Release\net6.0\ref\ShoppyEx.Customer.Infrastructure.dll
-E:\ShoppyEx\API\ShoppyEx.Customer.Infrastructure\bin\Release\net6.0\ShoppyEx.Customer.Infrastructure.pdb
-E:\ShoppyEx\API\ShoppyEx.Customer.Infrastructure\bin\Release\net6.0\ShoppyEx.Customer.Core.dll
-E:\ShoppyEx\API\ShoppyEx.Customer.Infrastructure\bin\Release\net6.0\ShoppyEx.SharedKernel.SeedWork.dll
-E:\ShoppyEx\API\ShoppyEx.Customer.Infrastructure\bin\Release\net6.0\ShoppyEx.Customer.Core.pdb
-E:\ShoppyEx\API\ShoppyEx.Customer.Infrastructure\bin\Release\net6.0\ShoppyEx.SharedKernel.SeedWork.pdb
-E:\ShoppyEx\API\ShoppyEx.Customer.Infrastructure\obj\Release\net6.0\ShoppyEx.Customer.Infrastructure.csproj.AssemblyReference.cache
-E:\ShoppyEx\API\ShoppyEx.Customer.Infrastructure\obj\Release\net6.0\ShoppyEx.Customer.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
-E:\ShoppyEx\API\ShoppyEx.Customer.Infrastructure\obj\Release\net6.0\ShoppyEx.Customer.Infrastructure.AssemblyInfoInputs.cache
-E:\ShoppyEx\API\ShoppyEx.Customer.Infrastructure\obj\Release\net6.0\ShoppyEx.Customer.Infrastructure.AssemblyInfo.cs
-E:\ShoppyEx\API\ShoppyEx.Customer.Infrastructure\obj\Release\net6.0\ShoppyEx.Customer.Infrastructure.csproj.CoreCompileInputs.cache
-E:\ShoppyEx\API\ShoppyEx.Customer.Infrastructure\obj\Release\net6.0\ShoppyEx.Customer.Infrastructure.csproj.CopyComplete
-E:\ShoppyEx\API\ShoppyEx.Customer.Infrastructure\obj\Release\net6.0\ShoppyEx.Customer.Infrastructure.dll
-E:\ShoppyEx\API\ShoppyEx.Customer.Infrastructure\obj\Release\net6.0\ref\ShoppyEx.Customer.Infrastructure.dll
-E:\ShoppyEx\API\ShoppyEx.Customer.Infrastructure\obj\Release\net6.0\ShoppyEx.Customer.Infrastructure.pdb
-E:\ShoppyEx\API\ShoppyEx.Customer.Infrastructure\obj\Release\net6.0\ShoppyEx.Customer.Infrastructure.genruntimeconfig.cache

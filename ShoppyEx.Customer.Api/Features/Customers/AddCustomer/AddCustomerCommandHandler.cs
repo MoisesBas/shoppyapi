@@ -21,12 +21,9 @@ namespace ShoppyEx.Customer.Api.Features.Customers.AddCustomer
             try
             {
                 var customerId = new CustomerId(Guid.NewGuid());
-                var customer = Core.Domain.Customer.Customer.Create(customerId, command.Name);
+                var customer = Core.Domain.Customer.Customer.Create(customerId, command.Name, Guid.Empty);
                 customer.AddAddress(Core.Domain.Address.CustomerAddress.Create(command.City, command.Country, command.Address,command.Address,command.Region,command.PostalCode, customerId));
-                customer.AddBillingAddress(Core.Domain.Address.BillingAddress.Create(command.BillingCity, command.BillingCountry, 
-                  command.BillingAddress, command.BillingRegion, command.BillingPostalCode, customerId));
-                customer.AddShippingAddress(Core.Domain.Address.ShippingAddress.Create(command.ShippingCity, command.ShippingCountry,
-                 command.ShippingAddress, command.ShippingRegion, command.ShippingPostalCode, customerId));
+               
 
                 if (customer == null) return default;
 

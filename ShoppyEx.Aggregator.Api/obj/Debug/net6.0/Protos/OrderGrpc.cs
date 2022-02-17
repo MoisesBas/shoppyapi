@@ -7,7 +7,7 @@
 
 using grpc = global::Grpc.Core;
 
-namespace ShoppyEx.Aggregator.Api.Protos {
+namespace ShoppyEx.Aggregator.Api {
   public static partial class OrderGrpc
   {
     static readonly string __ServiceName = "protos.package.OrderGrpc";
@@ -46,18 +46,18 @@ namespace ShoppyEx.Aggregator.Api.Protos {
     }
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::ShoppyEx.Aggregator.Api.Protos.OrderCreateRequestMessage> __Marshaller_protos_package_OrderCreateRequestMessage = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ShoppyEx.Aggregator.Api.Protos.OrderCreateRequestMessage.Parser));
+    static readonly grpc::Marshaller<global::ShoppyEx.Aggregator.Api.OrderCreateRequestMessage> __Marshaller_protos_package_OrderCreateRequestMessage = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ShoppyEx.Aggregator.Api.OrderCreateRequestMessage.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::ShoppyEx.Aggregator.Api.Protos.OrderCreateResponseMessage> __Marshaller_protos_package_OrderCreateResponseMessage = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ShoppyEx.Aggregator.Api.Protos.OrderCreateResponseMessage.Parser));
+    static readonly grpc::Marshaller<global::ShoppyEx.Aggregator.Api.OrderCreateResponseMessage> __Marshaller_protos_package_OrderCreateResponseMessage = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ShoppyEx.Aggregator.Api.OrderCreateResponseMessage.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::ShoppyEx.Aggregator.Api.Protos.OrderIdRequestMessage> __Marshaller_protos_package_OrderIdRequestMessage = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ShoppyEx.Aggregator.Api.Protos.OrderIdRequestMessage.Parser));
+    static readonly grpc::Marshaller<global::ShoppyEx.Aggregator.Api.OrderIdRequestMessage> __Marshaller_protos_package_OrderIdRequestMessage = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ShoppyEx.Aggregator.Api.OrderIdRequestMessage.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::ShoppyEx.Aggregator.Api.Protos.GetOrderByCustomerIdRequestMessage> __Marshaller_protos_package_GetOrderByCustomerIdRequestMessage = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ShoppyEx.Aggregator.Api.Protos.GetOrderByCustomerIdRequestMessage.Parser));
+    static readonly grpc::Marshaller<global::ShoppyEx.Aggregator.Api.GetOrderByCustomerIdRequestMessage> __Marshaller_protos_package_GetOrderByCustomerIdRequestMessage = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ShoppyEx.Aggregator.Api.GetOrderByCustomerIdRequestMessage.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::ShoppyEx.Aggregator.Api.Protos.OrderListMessage> __Marshaller_protos_package_OrderListMessage = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ShoppyEx.Aggregator.Api.Protos.OrderListMessage.Parser));
+    static readonly grpc::Marshaller<global::ShoppyEx.Aggregator.Api.OrderListMessage> __Marshaller_protos_package_OrderListMessage = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ShoppyEx.Aggregator.Api.OrderListMessage.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::ShoppyEx.Aggregator.Api.Protos.OrderCreateRequestMessage, global::ShoppyEx.Aggregator.Api.Protos.OrderCreateResponseMessage> __Method_AddOrder = new grpc::Method<global::ShoppyEx.Aggregator.Api.Protos.OrderCreateRequestMessage, global::ShoppyEx.Aggregator.Api.Protos.OrderCreateResponseMessage>(
+    static readonly grpc::Method<global::ShoppyEx.Aggregator.Api.OrderCreateRequestMessage, global::ShoppyEx.Aggregator.Api.OrderCreateResponseMessage> __Method_AddOrder = new grpc::Method<global::ShoppyEx.Aggregator.Api.OrderCreateRequestMessage, global::ShoppyEx.Aggregator.Api.OrderCreateResponseMessage>(
         grpc::MethodType.Unary,
         __ServiceName,
         "AddOrder",
@@ -65,7 +65,7 @@ namespace ShoppyEx.Aggregator.Api.Protos {
         __Marshaller_protos_package_OrderCreateResponseMessage);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::ShoppyEx.Aggregator.Api.Protos.OrderIdRequestMessage, global::ShoppyEx.Aggregator.Api.Protos.OrderCreateResponseMessage> __Method_GetOrderById = new grpc::Method<global::ShoppyEx.Aggregator.Api.Protos.OrderIdRequestMessage, global::ShoppyEx.Aggregator.Api.Protos.OrderCreateResponseMessage>(
+    static readonly grpc::Method<global::ShoppyEx.Aggregator.Api.OrderIdRequestMessage, global::ShoppyEx.Aggregator.Api.OrderCreateResponseMessage> __Method_GetOrderById = new grpc::Method<global::ShoppyEx.Aggregator.Api.OrderIdRequestMessage, global::ShoppyEx.Aggregator.Api.OrderCreateResponseMessage>(
         grpc::MethodType.Unary,
         __ServiceName,
         "GetOrderById",
@@ -73,7 +73,7 @@ namespace ShoppyEx.Aggregator.Api.Protos {
         __Marshaller_protos_package_OrderCreateResponseMessage);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::ShoppyEx.Aggregator.Api.Protos.GetOrderByCustomerIdRequestMessage, global::ShoppyEx.Aggregator.Api.Protos.OrderListMessage> __Method_GetOrderByCustomerId = new grpc::Method<global::ShoppyEx.Aggregator.Api.Protos.GetOrderByCustomerIdRequestMessage, global::ShoppyEx.Aggregator.Api.Protos.OrderListMessage>(
+    static readonly grpc::Method<global::ShoppyEx.Aggregator.Api.GetOrderByCustomerIdRequestMessage, global::ShoppyEx.Aggregator.Api.OrderListMessage> __Method_GetOrderByCustomerId = new grpc::Method<global::ShoppyEx.Aggregator.Api.GetOrderByCustomerIdRequestMessage, global::ShoppyEx.Aggregator.Api.OrderListMessage>(
         grpc::MethodType.Unary,
         __ServiceName,
         "GetOrderByCustomerId",
@@ -83,7 +83,7 @@ namespace ShoppyEx.Aggregator.Api.Protos {
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
-      get { return global::ShoppyEx.Aggregator.Api.Protos.OrderReflection.Descriptor.Services[0]; }
+      get { return global::ShoppyEx.Aggregator.Api.OrderReflection.Descriptor.Services[0]; }
     }
 
     /// <summary>Client for OrderGrpc</summary>
@@ -114,62 +114,62 @@ namespace ShoppyEx.Aggregator.Api.Protos {
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::ShoppyEx.Aggregator.Api.Protos.OrderCreateResponseMessage AddOrder(global::ShoppyEx.Aggregator.Api.Protos.OrderCreateRequestMessage request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::ShoppyEx.Aggregator.Api.OrderCreateResponseMessage AddOrder(global::ShoppyEx.Aggregator.Api.OrderCreateRequestMessage request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return AddOrder(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::ShoppyEx.Aggregator.Api.Protos.OrderCreateResponseMessage AddOrder(global::ShoppyEx.Aggregator.Api.Protos.OrderCreateRequestMessage request, grpc::CallOptions options)
+      public virtual global::ShoppyEx.Aggregator.Api.OrderCreateResponseMessage AddOrder(global::ShoppyEx.Aggregator.Api.OrderCreateRequestMessage request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_AddOrder, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::ShoppyEx.Aggregator.Api.Protos.OrderCreateResponseMessage> AddOrderAsync(global::ShoppyEx.Aggregator.Api.Protos.OrderCreateRequestMessage request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::ShoppyEx.Aggregator.Api.OrderCreateResponseMessage> AddOrderAsync(global::ShoppyEx.Aggregator.Api.OrderCreateRequestMessage request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return AddOrderAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::ShoppyEx.Aggregator.Api.Protos.OrderCreateResponseMessage> AddOrderAsync(global::ShoppyEx.Aggregator.Api.Protos.OrderCreateRequestMessage request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::ShoppyEx.Aggregator.Api.OrderCreateResponseMessage> AddOrderAsync(global::ShoppyEx.Aggregator.Api.OrderCreateRequestMessage request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_AddOrder, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::ShoppyEx.Aggregator.Api.Protos.OrderCreateResponseMessage GetOrderById(global::ShoppyEx.Aggregator.Api.Protos.OrderIdRequestMessage request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::ShoppyEx.Aggregator.Api.OrderCreateResponseMessage GetOrderById(global::ShoppyEx.Aggregator.Api.OrderIdRequestMessage request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetOrderById(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::ShoppyEx.Aggregator.Api.Protos.OrderCreateResponseMessage GetOrderById(global::ShoppyEx.Aggregator.Api.Protos.OrderIdRequestMessage request, grpc::CallOptions options)
+      public virtual global::ShoppyEx.Aggregator.Api.OrderCreateResponseMessage GetOrderById(global::ShoppyEx.Aggregator.Api.OrderIdRequestMessage request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_GetOrderById, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::ShoppyEx.Aggregator.Api.Protos.OrderCreateResponseMessage> GetOrderByIdAsync(global::ShoppyEx.Aggregator.Api.Protos.OrderIdRequestMessage request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::ShoppyEx.Aggregator.Api.OrderCreateResponseMessage> GetOrderByIdAsync(global::ShoppyEx.Aggregator.Api.OrderIdRequestMessage request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetOrderByIdAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::ShoppyEx.Aggregator.Api.Protos.OrderCreateResponseMessage> GetOrderByIdAsync(global::ShoppyEx.Aggregator.Api.Protos.OrderIdRequestMessage request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::ShoppyEx.Aggregator.Api.OrderCreateResponseMessage> GetOrderByIdAsync(global::ShoppyEx.Aggregator.Api.OrderIdRequestMessage request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetOrderById, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::ShoppyEx.Aggregator.Api.Protos.OrderListMessage GetOrderByCustomerId(global::ShoppyEx.Aggregator.Api.Protos.GetOrderByCustomerIdRequestMessage request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::ShoppyEx.Aggregator.Api.OrderListMessage GetOrderByCustomerId(global::ShoppyEx.Aggregator.Api.GetOrderByCustomerIdRequestMessage request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetOrderByCustomerId(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::ShoppyEx.Aggregator.Api.Protos.OrderListMessage GetOrderByCustomerId(global::ShoppyEx.Aggregator.Api.Protos.GetOrderByCustomerIdRequestMessage request, grpc::CallOptions options)
+      public virtual global::ShoppyEx.Aggregator.Api.OrderListMessage GetOrderByCustomerId(global::ShoppyEx.Aggregator.Api.GetOrderByCustomerIdRequestMessage request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_GetOrderByCustomerId, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::ShoppyEx.Aggregator.Api.Protos.OrderListMessage> GetOrderByCustomerIdAsync(global::ShoppyEx.Aggregator.Api.Protos.GetOrderByCustomerIdRequestMessage request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::ShoppyEx.Aggregator.Api.OrderListMessage> GetOrderByCustomerIdAsync(global::ShoppyEx.Aggregator.Api.GetOrderByCustomerIdRequestMessage request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetOrderByCustomerIdAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::ShoppyEx.Aggregator.Api.Protos.OrderListMessage> GetOrderByCustomerIdAsync(global::ShoppyEx.Aggregator.Api.Protos.GetOrderByCustomerIdRequestMessage request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::ShoppyEx.Aggregator.Api.OrderListMessage> GetOrderByCustomerIdAsync(global::ShoppyEx.Aggregator.Api.GetOrderByCustomerIdRequestMessage request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetOrderByCustomerId, null, options, request);
       }

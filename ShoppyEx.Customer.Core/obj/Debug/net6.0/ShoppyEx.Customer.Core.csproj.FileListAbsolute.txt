@@ -19,6 +19,7 @@ E:\ShoppyEx\API\ShoppyEx.Customer.Core\bin\Debug\net6.0\ref\ShoppyEx.Customer.Co
 E:\ShoppyEx\API\ShoppyEx.Customer.Core\bin\Debug\net6.0\ShoppyEx.Customer.Core.pdb
 E:\ShoppyEx\API\ShoppyEx.Customer.Core\bin\Debug\net6.0\ShoppyEx.SharedKernel.SeedWork.dll
 E:\ShoppyEx\API\ShoppyEx.Customer.Core\bin\Debug\net6.0\ShoppyEx.SharedKernel.SeedWork.pdb
+E:\ShoppyEx\API\ShoppyEx.Customer.Core\obj\Debug\net6.0\ShoppyEx.Customer.Core.csproj.AssemblyReference.cache
 E:\ShoppyEx\API\ShoppyEx.Customer.Core\obj\Debug\net6.0\ShoppyEx.Customer.Core.GeneratedMSBuildEditorConfig.editorconfig
 E:\ShoppyEx\API\ShoppyEx.Customer.Core\obj\Debug\net6.0\ShoppyEx.Customer.Core.AssemblyInfoInputs.cache
 E:\ShoppyEx\API\ShoppyEx.Customer.Core\obj\Debug\net6.0\ShoppyEx.Customer.Core.AssemblyInfo.cs
@@ -27,4 +28,3 @@ E:\ShoppyEx\API\ShoppyEx.Customer.Core\obj\Debug\net6.0\ShoppyEx.Customer.Core.c
 E:\ShoppyEx\API\ShoppyEx.Customer.Core\obj\Debug\net6.0\ShoppyEx.Customer.Core.dll
 E:\ShoppyEx\API\ShoppyEx.Customer.Core\obj\Debug\net6.0\ref\ShoppyEx.Customer.Core.dll
 E:\ShoppyEx\API\ShoppyEx.Customer.Core\obj\Debug\net6.0\ShoppyEx.Customer.Core.pdb
-E:\ShoppyEx\API\ShoppyEx.Customer.Core\obj\Debug\net6.0\ShoppyEx.Customer.Core.csproj.AssemblyReference.cache

@@ -1,7 +1,7 @@
 ﻿syntax = "proto3";
 import "google/protobuf/wrappers.proto";
 
-option csharp_namespace = "ShoppyEx.Customer.Api.Protos";
+option csharp_namespace = "ShoppyEx.Customer.Api";
 
 package protos.package;
 service AddressGrpc { 

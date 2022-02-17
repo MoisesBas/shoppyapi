@@ -23,7 +23,7 @@ public record class ProductsGetAllQuery : Query<IList<ProductResponseDto>>
     public string Search
     {
         get => _search;
-        set => _search = value.ToLower();
+        set => _search = String.IsNullOrEmpty(_search) ? String.Empty : value.ToLower();
     }
     public override ValidationResult Validate()
     {

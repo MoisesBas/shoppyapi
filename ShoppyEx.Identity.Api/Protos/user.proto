@@ -1,0 +1,34 @@
+syntax = "proto3";
+
+option csharp_namespace = "ShoppyEx.Identity.Api";
+
+package protos.package;
+
+
+service UserGrpc { 
+  rpc Login (LoginQuery) returns (LoginResponse){};
+  rpc Register (RegisterCommand) returns (RegisterResponse){}
+}
+message RegisterResponse {
+  string Id = 1;
+}
+message LoginResponse {
+  string AccessToken = 1;
+}
+message RegisterCommand {
+	string Email = 1;
+	string Password = 2;
+	string PasswordConfirm = 3;
+	string FirstName = 4;
+	string LastName = 5;
+	string Address = 6;
+	string City = 7;
+	string Region = 8;
+	string PostalCode = 9;
+	string Country = 10;
+}
+
+message LoginQuery {
+  string Email = 1;
+  string Password = 2;
+}

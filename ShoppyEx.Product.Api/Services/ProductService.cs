@@ -18,7 +18,10 @@ namespace ShoppyEx.Product.Api.Services
             {
                 PageIndex = request.PageIndex.Value,
                 PageSize = request.PageSize.Value,
-                ProductBrandId = Guid.Parse(request.ProductBrandId)
+                ProductBrandId = string.IsNullOrEmpty(request.ProductBrandId) ? Guid.Empty : Guid.Parse(request.ProductBrandId),               
+                Search = request.Search,
+                Sort = request.Sort,             
+                ProductTypeId = string.IsNullOrEmpty(request.ProductTypeId) ? Guid.Empty : Guid.Parse(request.ProductTypeId),
 
             }, context.CancellationToken);
 

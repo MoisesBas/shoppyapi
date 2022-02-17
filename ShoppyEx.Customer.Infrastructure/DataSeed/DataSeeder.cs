@@ -14,10 +14,8 @@ namespace ShoppyEx.Customer.Infrastructure.DataSeed
                 for (char c = 'A'; c <= 'Z'; c++)
                 {     
                     var customerId = new CustomerId(Guid.NewGuid());
-                    var customer = Core.Domain.Customer.Customer.Create(customerId, $"Company-{c}");
-                    customer.AddAddress(Core.Domain.Address.CustomerAddress.Create($"City-{c}", $"Country-{c}", $"Address-1-{c}", $"Address-2-{c}",$"Region-{c}", $"Postal Code-{c}",customerId));
-                    customer.AddBillingAddress(Core.Domain.Address.BillingAddress.Create($"City-{c}", $"Country-{c}", $"Address-1-{c}", $"Region-{c}", $"Postal Code-{c}", customerId));
-                    customer.AddShippingAddress(Core.Domain.Address.ShippingAddress.Create($"City-{c}", $"Country-{c}", $"Address-1-{c}", $"Region-{c}", $"Postal Code-{c}", customerId));
+                    var customer = Core.Domain.Customer.Customer.Create(customerId, $"Company-{c}",customerId.Value);
+                    customer.AddAddress(Core.Domain.Address.CustomerAddress.Create($"City-{c}", $"Country-{c}", $"Address-1-{c}", $"Address-2-{c}",$"Region-{c}", $"Postal Code-{c}",customerId));                    
                     customer.AddCard(Core.Domain.Card.Card.Create($"Visa Card", 1, 2, 2025, true, customerId));
                     customers.Add(customer);
                 }

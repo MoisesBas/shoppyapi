@@ -43,7 +43,7 @@ builder.Services.AddHealthChecks();
 
 var app = builder.Build();
 app.Services.Run<ApplicationDbContext>(false);
-app.Services.SeedCustomerApi(false);
+//app.Services.SeedCustomerApi(false);
 
 app.UseRouting();
 app.UseEndpoints(endpoint =>

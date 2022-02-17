@@ -22,41 +22,6 @@ namespace ShoppyEx.Customer.Infrastructure.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
-            modelBuilder.Entity("ShoppyEx.Customer.Core.Domain.Address.BillingAddress", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("Address")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("City")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Country")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<Guid>("CustomerId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("PostalCode")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Region")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("CustomerId");
-
-                    b.ToTable("tblBillingAddress", "dbo");
-                });
-
             modelBuilder.Entity("ShoppyEx.Customer.Core.Domain.Address.CustomerAddress", b =>
                 {
                     b.Property<Guid>("Id")
@@ -94,41 +59,6 @@ namespace ShoppyEx.Customer.Infrastructure.Migrations
                     b.HasIndex("CustomerId");
 
                     b.ToTable("tblCustomerAddresses", "dbo");
-                });
-
-            modelBuilder.Entity("ShoppyEx.Customer.Core.Domain.Address.ShippingAddress", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("Address")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("City")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Country")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<Guid>("CustomerId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("PostalCode")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Region")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("CustomerId");
-
-                    b.ToTable("tblShippingAddress", "dbo");
                 });
 
             modelBuilder.Entity("ShoppyEx.Customer.Core.Domain.Card.Card", b =>
@@ -171,6 +101,9 @@ namespace ShoppyEx.Customer.Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<Guid?>("UserId")
+                        .HasColumnType("uniqueidentifier");
+
                     b.HasKey("Id");
 
                     b.ToTable("tblCustomer", "dbo");
@@ -205,38 +138,14 @@ namespace ShoppyEx.Customer.Infrastructure.Migrations
                     b.ToTable("tblStoredEvent", "dbo");
                 });
 
-            modelBuilder.Entity("ShoppyEx.Customer.Core.Domain.Address.BillingAddress", b =>
-                {
-                    b.HasOne("ShoppyEx.Customer.Core.Domain.Customer.Customer", "Customer")
-                        .WithMany("BillingAddresses")
-                        .HasForeignKey("CustomerId")
-                        .OnDelete(DeleteBehavior.ClientCascade)
-                        .IsRequired()
-                        .HasConstraintName("FK_BillingAddresses_Customer_CustomerId");
-
-                    b.Navigation("Customer");
-                });
-
             modelBuilder.Entity("ShoppyEx.Customer.Core.Domain.Address.CustomerAddress", b =>
                 {
                     b.HasOne("ShoppyEx.Customer.Core.Domain.Customer.Customer", "Customer")
-                        .WithMany("CustomerAddresses")
+                        .WithMany("CustomerAddress")
                         .HasForeignKey("CustomerId")
                         .OnDelete(DeleteBehavior.ClientCascade)
                         .IsRequired()
-                        .HasConstraintName("FK_CustomerAddresses_Customer_CustomerId");
-
-                    b.Navigation("Customer");
-                });
-
-            modelBuilder.Entity("ShoppyEx.Customer.Core.Domain.Address.ShippingAddress", b =>
-                {
-                    b.HasOne("ShoppyEx.Customer.Core.Domain.Customer.Customer", "Customer")
-                        .WithMany("ShippingAddresses")
-                        .HasForeignKey("CustomerId")
-                        .OnDelete(DeleteBehavior.ClientCascade)
-                        .IsRequired()
-                        .HasConstraintName("FK_ShippingAddresses_Customer_CustomerId");
+                        .HasConstraintName("FK_CustomerAddress_Customer_CustomerId");
 
                     b.Navigation("Customer");
                 });
@@ -255,13 +164,9 @@ namespace ShoppyEx.Customer.Infrastructure.Migrations
 
             modelBuilder.Entity("ShoppyEx.Customer.Core.Domain.Customer.Customer", b =>
                 {
-                    b.Navigation("BillingAddresses");
-
                     b.Navigation("Cards");
 
-                    b.Navigation("CustomerAddresses");
-
-                    b.Navigation("ShippingAddresses");
+                    b.Navigation("CustomerAddress");
                 });
 #pragma warning restore 612, 618
         }

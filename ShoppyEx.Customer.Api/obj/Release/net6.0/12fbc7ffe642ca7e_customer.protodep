@@ -1,4 +1,0 @@
-obj\Release\net6.0\Protos/Customer.cs \
-obj\Release\net6.0\Protos/CustomerGrpc.cs: C:/Users/moise/.nuget/packages/grpc.tools/2.42.0/build/native/include/google/protobuf/wrappers.proto\
- protos/address.proto\
- Protos/customer.proto

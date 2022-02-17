@@ -3,7 +3,6 @@ using MediatR;
 using ShoppyEx.Customer.Api.Features.Customers;
 using ShoppyEx.Customer.Api.Features.Customers.AddCustomer;
 using ShoppyEx.Customer.Api.Features.Customers.GetCustomerById;
-using ShoppyEx.Customer.Api.Protos;
 using ShoppyEx.SharedKernel.SeedWork.CQRS.Query;
 
 namespace ShoppyEx.Customer.Api.Grpc
@@ -26,9 +25,7 @@ namespace ShoppyEx.Customer.Api.Grpc
                 {
                     Id = result.Result.Id.ToString(),
                     Name = result.Result.Name,
-                    Address = MapAddress(result),
-                    BillingAddress = MapBillingAddress(result),
-                    ShippingAddress = MapShippingAddress(result)
+                    Address = MapAddress(result)                   
 
                 };
             }
@@ -39,33 +36,9 @@ namespace ShoppyEx.Customer.Api.Grpc
             return default;
         }
 
-        private static AddressResponseMessage MapShippingAddress(QueryHandlerResult<CustomerModel> result)
-        {
-            return new AddressResponseMessage
-            {
-                Id = result.Result.ShippingAddress.Id.ToString(),
-                City = result.Result.ShippingAddress.City,
-                Country = result.Result.ShippingAddress.Country,
-                Address = result.Result.ShippingAddress.Address,
-                Region = result.Result.ShippingAddress.Region,
-                PostalCode = result.Result.ShippingAddress.PostalCode
+       
 
-            };
-        }
-
-        private static AddressResponseMessage MapBillingAddress(QueryHandlerResult<CustomerModel> result)
-        {
-            return new AddressResponseMessage
-            {
-                Id = result.Result.BillingAddress.Id.ToString(),
-                City = result.Result.BillingAddress.City,
-                Country = result.Result.BillingAddress.Country,
-                Address = result.Result.BillingAddress.Address,
-                Region = result.Result.BillingAddress.Region,
-                PostalCode = result.Result.BillingAddress.PostalCode
-
-            };
-        }
+       
 
         private static AddressResponseMessage MapAddress(QueryHandlerResult<CustomerModel> result)
         {
@@ -88,9 +61,7 @@ namespace ShoppyEx.Customer.Api.Grpc
             {
 
                 var result = await _mediator.Send(new AddCustomerCommand(request.Name, request.Address.Address, request.Address.City,request.Address.Region,
-                    request.Address.PostalCode,request.Address.Country, request.BillingAddress.Address,request.BillingAddress.City,
-                    request.BillingAddress.Region, request.BillingAddress.PostalCode,request.BillingAddress.Country,
-                    request.ShippingAddress.Address, request.ShippingAddress.City, request.ShippingAddress.Region, request.ShippingAddress.PostalCode, request.ShippingAddress.Country), context.CancellationToken);
+                    request.Address.PostalCode,request.Address.Country, Guid.Parse(request.UserId)), context.CancellationToken);
                 return new CustomerIdResponseMessage
                 {
                     Id = result.Id.ToString(),

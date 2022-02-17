@@ -1,0 +1,15 @@
+E:\ShoppyEx\API\ShoppyEx.Identity.Core\bin\Debug\net6.0\ShoppyEx.Identity.Core.deps.json
+E:\ShoppyEx\API\ShoppyEx.Identity.Core\bin\Debug\net6.0\ShoppyEx.Identity.Core.dll
+E:\ShoppyEx\API\ShoppyEx.Identity.Core\bin\Debug\net6.0\ref\ShoppyEx.Identity.Core.dll
+E:\ShoppyEx\API\ShoppyEx.Identity.Core\bin\Debug\net6.0\ShoppyEx.Identity.Core.pdb
+E:\ShoppyEx\API\ShoppyEx.Identity.Core\bin\Debug\net6.0\ShoppyEx.SharedKernel.SeedWork.dll
+E:\ShoppyEx\API\ShoppyEx.Identity.Core\bin\Debug\net6.0\ShoppyEx.SharedKernel.SeedWork.pdb
+E:\ShoppyEx\API\ShoppyEx.Identity.Core\obj\Debug\net6.0\ShoppyEx.Identity.Core.csproj.AssemblyReference.cache
+E:\ShoppyEx\API\ShoppyEx.Identity.Core\obj\Debug\net6.0\ShoppyEx.Identity.Core.GeneratedMSBuildEditorConfig.editorconfig
+E:\ShoppyEx\API\ShoppyEx.Identity.Core\obj\Debug\net6.0\ShoppyEx.Identity.Core.AssemblyInfoInputs.cache
+E:\ShoppyEx\API\ShoppyEx.Identity.Core\obj\Debug\net6.0\ShoppyEx.Identity.Core.AssemblyInfo.cs
+E:\ShoppyEx\API\ShoppyEx.Identity.Core\obj\Debug\net6.0\ShoppyEx.Identity.Core.csproj.CoreCompileInputs.cache
+E:\ShoppyEx\API\ShoppyEx.Identity.Core\obj\Debug\net6.0\ShoppyEx.Identity.Core.csproj.CopyComplete
+E:\ShoppyEx\API\ShoppyEx.Identity.Core\obj\Debug\net6.0\ShoppyEx.Identity.Core.dll
+E:\ShoppyEx\API\ShoppyEx.Identity.Core\obj\Debug\net6.0\ref\ShoppyEx.Identity.Core.dll
+E:\ShoppyEx\API\ShoppyEx.Identity.Core\obj\Debug\net6.0\ShoppyEx.Identity.Core.pdb

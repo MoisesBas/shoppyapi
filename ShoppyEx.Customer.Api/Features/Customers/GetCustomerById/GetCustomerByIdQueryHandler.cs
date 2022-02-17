@@ -23,9 +23,8 @@ namespace ShoppyEx.Customer.Api.Features.Customers.GetCustomerById
         {
             var customerId = new CustomerId(query.Id);
             var item = await _unitOfWork.Set<Core.Domain.Customer.Customer>()
-                .Include(x=>x.CustomerAddress)
-                .Include(x=>x.ShippingAddress)
-                .Include(x=>x.BillingAddress)
+                .Include(x=>x.CustomerAddress)       
+             
                 .Include(x=>x.Cards)
                 .FirstOrDefaultAsync(x=>x.Id == customerId, cancellationToken).ConfigureAwait(false);
             if(item == null) return default;            

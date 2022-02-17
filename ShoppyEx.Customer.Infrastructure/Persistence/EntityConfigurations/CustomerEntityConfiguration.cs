@@ -14,12 +14,7 @@ namespace ShoppyEx.Customer.Infrastructure.Persistence.EntityConfigurations
 
             builder.ToTable("tblCustomer", "dbo");
             builder.Metadata.FindNavigation(nameof(Core.Domain.Address.CustomerAddress))
-                .SetPropertyAccessMode(PropertyAccessMode.Field);
-          
-            var billingAddresses = builder.Metadata.FindNavigation(nameof(Core.Domain.Address.BillingAddress));
-            billingAddresses.SetPropertyAccessMode(PropertyAccessMode.Field);
-            var shippingAddresses = builder.Metadata.FindNavigation(nameof(Core.Domain.Address.ShippingAddress));
-            shippingAddresses.SetPropertyAccessMode(PropertyAccessMode.Field);
+                .SetPropertyAccessMode(PropertyAccessMode.Field);            
 
             var cards = builder.Metadata.FindNavigation($"{nameof(Core.Domain.Card.Card)}s");
             cards.SetPropertyAccessMode(PropertyAccessMode.Field);

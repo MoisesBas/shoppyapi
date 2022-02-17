@@ -1,3 +1,0 @@
-obj\Release\net6.0\Protos/Address.cs \
-obj\Release\net6.0\Protos/AddressGrpc.cs: C:/Users/moise/.nuget/packages/grpc.tools/2.42.0/build/native/include/google/protobuf/wrappers.proto\
- Protos/address.proto

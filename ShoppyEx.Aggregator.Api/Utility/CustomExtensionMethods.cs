@@ -1,5 +1,5 @@
 ﻿using Microsoft.Extensions.Options;
-using ShoppyEx.Product.Api;
+
 using ShoppyEx.SharedKernel.SeedWork;
 
 namespace ShoppyEx.Aggregator.Api.Utility
@@ -21,22 +21,31 @@ namespace ShoppyEx.Aggregator.Api.Utility
                 options.Address = new Uri(catalogApi);
             });
 
-            //services.AddGrpcClient<CategoryGrpc.CategoryGrpcClient>((services, options) =>
-            //{
-            //    var categoryApi = services.GetRequiredService<IOptions<UrlsConfig>>().Value.GrpcProduct;
-            //    options.Address = new Uri(categoryApi);
-            //});
-            //services.AddGrpcClient<TagGrpc.TagGrpcClient>((services, options) =>
-            //{
-            //    var tagApi = services.GetRequiredService<IOptions<UrlsConfig>>().Value.GrpcProduct;
-            //    options.Address = new Uri(tagApi);
-            //});
+            services.AddGrpcClient<ProductBrandGrpc.ProductBrandGrpcClient>((services, options) =>
+            {
+                var categoryApi = services.GetRequiredService<IOptions<UrlsConfig>>().Value.GrpcProduct;
+                options.Address = new Uri(categoryApi);
+            });
+
+            services.AddGrpcClient<ProductTypeGrpc.ProductTypeGrpcClient>((services, options) =>
+            {
+                var tagApi = services.GetRequiredService<IOptions<UrlsConfig>>().Value.GrpcProduct;
+                options.Address = new Uri(tagApi);
+            });
 
             services.AddGrpcClient<OrderGrpc.OrderGrpcClient>((services, options) =>
             {
                 var tagApi = services.GetRequiredService<IOptions<UrlsConfig>>().Value.GrpcOrder;
                 options.Address = new Uri(tagApi);
             });
+
+
+            services.AddGrpcClient<UserGrpc.UserGrpcClient>((services, options) =>
+            {
+                var tagApi = services.GetRequiredService<IOptions<UrlsConfig>>().Value.GrpcIdentity;
+                options.Address = new Uri(tagApi);
+            });
+
 
             return services;
         }

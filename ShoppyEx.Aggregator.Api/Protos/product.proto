@@ -4,7 +4,7 @@ import "protos/productbrand.proto";
 import "protos/producttype.proto";
 
 
-option csharp_namespace = "ShoppyEx.Product.Api";
+option csharp_namespace = "ShoppyEx.Aggregator.Api";
 
 package protos.package;
 

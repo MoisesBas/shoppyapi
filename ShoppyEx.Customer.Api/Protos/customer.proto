@@ -3,7 +3,7 @@ import "google/protobuf/wrappers.proto";
 import "protos/address.proto";
 
 
-option csharp_namespace = "ShoppyEx.Customer.Api.Protos";
+option csharp_namespace = "ShoppyEx.Customer.Api";
 
 package protos.package;
 
@@ -17,17 +17,15 @@ message CustomerByIdRequestMessage {
 }
 message CustomerCreateRequestMessage {   
     google.protobuf.StringValue Name = 1;
-    AddressRequestMessage Address = 2;
-    AddressRequestMessage BillingAddress = 3;
-    AddressRequestMessage ShippingAddress = 4;
+    google.protobuf.StringValue UserId = 2;
+    AddressRequestMessage Address = 3;
 }
 
 message CustomerResponseMessage {    
     google.protobuf.StringValue Id = 1;
     google.protobuf.StringValue Name = 2;
-    AddressResponseMessage Address = 3;
-    AddressResponseMessage BillingAddress = 4;
-    AddressResponseMessage ShippingAddress = 5;
+    google.protobuf.StringValue UserId = 3;
+    AddressResponseMessage Address = 4;   
 }
 
 message CustomerIdResponseMessage {    

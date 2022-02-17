@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace ShoppyEx.Aggregator.Api.Protos {
+namespace ShoppyEx.Aggregator.Api {
 
   /// <summary>Holder for reflection information generated from Protos/customer.proto</summary>
   public static partial class CustomerReflection {
@@ -46,15 +46,15 @@ namespace ShoppyEx.Aggregator.Api.Protos {
             "cmVhdGVSZXF1ZXN0TWVzc2FnZRopLnByb3Rvcy5wYWNrYWdlLkN1c3RvbWVy",
             "SWRSZXNwb25zZU1lc3NhZ2UiABJoCg9HZXRDdXN0b21lckJ5SWQSKi5wcm90",
             "b3MucGFja2FnZS5DdXN0b21lckJ5SWRSZXF1ZXN0TWVzc2FnZRonLnByb3Rv",
-            "cy5wYWNrYWdlLkN1c3RvbWVyUmVzcG9uc2VNZXNzYWdlIgBCIaoCHlNob3Bw",
-            "eUV4LkFnZ3JlZ2F0b3IuQXBpLlByb3Rvc2IGcHJvdG8z"));
+            "cy5wYWNrYWdlLkN1c3RvbWVyUmVzcG9uc2VNZXNzYWdlIgBCGqoCF1Nob3Bw",
+            "eUV4LkFnZ3JlZ2F0b3IuQXBpYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::ShoppyEx.Aggregator.Api.Protos.AddressReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::ShoppyEx.Aggregator.Api.AddressReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::ShoppyEx.Aggregator.Api.Protos.CustomerByIdRequestMessage), global::ShoppyEx.Aggregator.Api.Protos.CustomerByIdRequestMessage.Parser, new[]{ "Id" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::ShoppyEx.Aggregator.Api.Protos.CustomerCreateRequestMessage), global::ShoppyEx.Aggregator.Api.Protos.CustomerCreateRequestMessage.Parser, new[]{ "Name", "Address", "BillingAddress", "ShippingAddress" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::ShoppyEx.Aggregator.Api.Protos.CustomerResponseMessage), global::ShoppyEx.Aggregator.Api.Protos.CustomerResponseMessage.Parser, new[]{ "Id", "Name", "Address", "BillingAddress", "ShippingAddress" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::ShoppyEx.Aggregator.Api.Protos.CustomerIdResponseMessage), global::ShoppyEx.Aggregator.Api.Protos.CustomerIdResponseMessage.Parser, new[]{ "Id" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::ShoppyEx.Aggregator.Api.CustomerByIdRequestMessage), global::ShoppyEx.Aggregator.Api.CustomerByIdRequestMessage.Parser, new[]{ "Id" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ShoppyEx.Aggregator.Api.CustomerCreateRequestMessage), global::ShoppyEx.Aggregator.Api.CustomerCreateRequestMessage.Parser, new[]{ "Name", "Address", "BillingAddress", "ShippingAddress" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ShoppyEx.Aggregator.Api.CustomerResponseMessage), global::ShoppyEx.Aggregator.Api.CustomerResponseMessage.Parser, new[]{ "Id", "Name", "Address", "BillingAddress", "ShippingAddress" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ShoppyEx.Aggregator.Api.CustomerIdResponseMessage), global::ShoppyEx.Aggregator.Api.CustomerIdResponseMessage.Parser, new[]{ "Id" }, null, null, null, null)
           }));
     }
     #endregion
@@ -75,7 +75,7 @@ namespace ShoppyEx.Aggregator.Api.Protos {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::ShoppyEx.Aggregator.Api.Protos.CustomerReflection.Descriptor.MessageTypes[0]; }
+      get { return global::ShoppyEx.Aggregator.Api.CustomerReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -272,7 +272,7 @@ namespace ShoppyEx.Aggregator.Api.Protos {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::ShoppyEx.Aggregator.Api.Protos.CustomerReflection.Descriptor.MessageTypes[1]; }
+      get { return global::ShoppyEx.Aggregator.Api.CustomerReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -321,10 +321,10 @@ namespace ShoppyEx.Aggregator.Api.Protos {
 
     /// <summary>Field number for the "Address" field.</summary>
     public const int AddressFieldNumber = 2;
-    private global::ShoppyEx.Aggregator.Api.Protos.AddressRequestMessage address_;
+    private global::ShoppyEx.Aggregator.Api.AddressRequestMessage address_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::ShoppyEx.Aggregator.Api.Protos.AddressRequestMessage Address {
+    public global::ShoppyEx.Aggregator.Api.AddressRequestMessage Address {
       get { return address_; }
       set {
         address_ = value;
@@ -333,10 +333,10 @@ namespace ShoppyEx.Aggregator.Api.Protos {
 
     /// <summary>Field number for the "BillingAddress" field.</summary>
     public const int BillingAddressFieldNumber = 3;
-    private global::ShoppyEx.Aggregator.Api.Protos.AddressRequestMessage billingAddress_;
+    private global::ShoppyEx.Aggregator.Api.AddressRequestMessage billingAddress_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::ShoppyEx.Aggregator.Api.Protos.AddressRequestMessage BillingAddress {
+    public global::ShoppyEx.Aggregator.Api.AddressRequestMessage BillingAddress {
       get { return billingAddress_; }
       set {
         billingAddress_ = value;
@@ -345,10 +345,10 @@ namespace ShoppyEx.Aggregator.Api.Protos {
 
     /// <summary>Field number for the "ShippingAddress" field.</summary>
     public const int ShippingAddressFieldNumber = 4;
-    private global::ShoppyEx.Aggregator.Api.Protos.AddressRequestMessage shippingAddress_;
+    private global::ShoppyEx.Aggregator.Api.AddressRequestMessage shippingAddress_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::ShoppyEx.Aggregator.Api.Protos.AddressRequestMessage ShippingAddress {
+    public global::ShoppyEx.Aggregator.Api.AddressRequestMessage ShippingAddress {
       get { return shippingAddress_; }
       set {
         shippingAddress_ = value;
@@ -484,19 +484,19 @@ namespace ShoppyEx.Aggregator.Api.Protos {
       }
       if (other.address_ != null) {
         if (address_ == null) {
-          Address = new global::ShoppyEx.Aggregator.Api.Protos.AddressRequestMessage();
+          Address = new global::ShoppyEx.Aggregator.Api.AddressRequestMessage();
         }
         Address.MergeFrom(other.Address);
       }
       if (other.billingAddress_ != null) {
         if (billingAddress_ == null) {
-          BillingAddress = new global::ShoppyEx.Aggregator.Api.Protos.AddressRequestMessage();
+          BillingAddress = new global::ShoppyEx.Aggregator.Api.AddressRequestMessage();
         }
         BillingAddress.MergeFrom(other.BillingAddress);
       }
       if (other.shippingAddress_ != null) {
         if (shippingAddress_ == null) {
-          ShippingAddress = new global::ShoppyEx.Aggregator.Api.Protos.AddressRequestMessage();
+          ShippingAddress = new global::ShoppyEx.Aggregator.Api.AddressRequestMessage();
         }
         ShippingAddress.MergeFrom(other.ShippingAddress);
       }
@@ -524,21 +524,21 @@ namespace ShoppyEx.Aggregator.Api.Protos {
           }
           case 18: {
             if (address_ == null) {
-              Address = new global::ShoppyEx.Aggregator.Api.Protos.AddressRequestMessage();
+              Address = new global::ShoppyEx.Aggregator.Api.AddressRequestMessage();
             }
             input.ReadMessage(Address);
             break;
           }
           case 26: {
             if (billingAddress_ == null) {
-              BillingAddress = new global::ShoppyEx.Aggregator.Api.Protos.AddressRequestMessage();
+              BillingAddress = new global::ShoppyEx.Aggregator.Api.AddressRequestMessage();
             }
             input.ReadMessage(BillingAddress);
             break;
           }
           case 34: {
             if (shippingAddress_ == null) {
-              ShippingAddress = new global::ShoppyEx.Aggregator.Api.Protos.AddressRequestMessage();
+              ShippingAddress = new global::ShoppyEx.Aggregator.Api.AddressRequestMessage();
             }
             input.ReadMessage(ShippingAddress);
             break;
@@ -567,21 +567,21 @@ namespace ShoppyEx.Aggregator.Api.Protos {
           }
           case 18: {
             if (address_ == null) {
-              Address = new global::ShoppyEx.Aggregator.Api.Protos.AddressRequestMessage();
+              Address = new global::ShoppyEx.Aggregator.Api.AddressRequestMessage();
             }
             input.ReadMessage(Address);
             break;
           }
           case 26: {
             if (billingAddress_ == null) {
-              BillingAddress = new global::ShoppyEx.Aggregator.Api.Protos.AddressRequestMessage();
+              BillingAddress = new global::ShoppyEx.Aggregator.Api.AddressRequestMessage();
             }
             input.ReadMessage(BillingAddress);
             break;
           }
           case 34: {
             if (shippingAddress_ == null) {
-              ShippingAddress = new global::ShoppyEx.Aggregator.Api.Protos.AddressRequestMessage();
+              ShippingAddress = new global::ShoppyEx.Aggregator.Api.AddressRequestMessage();
             }
             input.ReadMessage(ShippingAddress);
             break;
@@ -607,7 +607,7 @@ namespace ShoppyEx.Aggregator.Api.Protos {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::ShoppyEx.Aggregator.Api.Protos.CustomerReflection.Descriptor.MessageTypes[2]; }
+      get { return global::ShoppyEx.Aggregator.Api.CustomerReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -671,10 +671,10 @@ namespace ShoppyEx.Aggregator.Api.Protos {
 
     /// <summary>Field number for the "Address" field.</summary>
     public const int AddressFieldNumber = 3;
-    private global::ShoppyEx.Aggregator.Api.Protos.AddressResponseMessage address_;
+    private global::ShoppyEx.Aggregator.Api.AddressResponseMessage address_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::ShoppyEx.Aggregator.Api.Protos.AddressResponseMessage Address {
+    public global::ShoppyEx.Aggregator.Api.AddressResponseMessage Address {
       get { return address_; }
       set {
         address_ = value;
@@ -683,10 +683,10 @@ namespace ShoppyEx.Aggregator.Api.Protos {
 
     /// <summary>Field number for the "BillingAddress" field.</summary>
     public const int BillingAddressFieldNumber = 4;
-    private global::ShoppyEx.Aggregator.Api.Protos.AddressResponseMessage billingAddress_;
+    private global::ShoppyEx.Aggregator.Api.AddressResponseMessage billingAddress_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::ShoppyEx.Aggregator.Api.Protos.AddressResponseMessage BillingAddress {
+    public global::ShoppyEx.Aggregator.Api.AddressResponseMessage BillingAddress {
       get { return billingAddress_; }
       set {
         billingAddress_ = value;
@@ -695,10 +695,10 @@ namespace ShoppyEx.Aggregator.Api.Protos {
 
     /// <summary>Field number for the "ShippingAddress" field.</summary>
     public const int ShippingAddressFieldNumber = 5;
-    private global::ShoppyEx.Aggregator.Api.Protos.AddressResponseMessage shippingAddress_;
+    private global::ShoppyEx.Aggregator.Api.AddressResponseMessage shippingAddress_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::ShoppyEx.Aggregator.Api.Protos.AddressResponseMessage ShippingAddress {
+    public global::ShoppyEx.Aggregator.Api.AddressResponseMessage ShippingAddress {
       get { return shippingAddress_; }
       set {
         shippingAddress_ = value;
@@ -850,19 +850,19 @@ namespace ShoppyEx.Aggregator.Api.Protos {
       }
       if (other.address_ != null) {
         if (address_ == null) {
-          Address = new global::ShoppyEx.Aggregator.Api.Protos.AddressResponseMessage();
+          Address = new global::ShoppyEx.Aggregator.Api.AddressResponseMessage();
         }
         Address.MergeFrom(other.Address);
       }
       if (other.billingAddress_ != null) {
         if (billingAddress_ == null) {
-          BillingAddress = new global::ShoppyEx.Aggregator.Api.Protos.AddressResponseMessage();
+          BillingAddress = new global::ShoppyEx.Aggregator.Api.AddressResponseMessage();
         }
         BillingAddress.MergeFrom(other.BillingAddress);
       }
       if (other.shippingAddress_ != null) {
         if (shippingAddress_ == null) {
-          ShippingAddress = new global::ShoppyEx.Aggregator.Api.Protos.AddressResponseMessage();
+          ShippingAddress = new global::ShoppyEx.Aggregator.Api.AddressResponseMessage();
         }
         ShippingAddress.MergeFrom(other.ShippingAddress);
       }
@@ -897,21 +897,21 @@ namespace ShoppyEx.Aggregator.Api.Protos {
           }
           case 26: {
             if (address_ == null) {
-              Address = new global::ShoppyEx.Aggregator.Api.Protos.AddressResponseMessage();
+              Address = new global::ShoppyEx.Aggregator.Api.AddressResponseMessage();
             }
             input.ReadMessage(Address);
             break;
           }
           case 34: {
             if (billingAddress_ == null) {
-              BillingAddress = new global::ShoppyEx.Aggregator.Api.Protos.AddressResponseMessage();
+              BillingAddress = new global::ShoppyEx.Aggregator.Api.AddressResponseMessage();
             }
             input.ReadMessage(BillingAddress);
             break;
           }
           case 42: {
             if (shippingAddress_ == null) {
-              ShippingAddress = new global::ShoppyEx.Aggregator.Api.Protos.AddressResponseMessage();
+              ShippingAddress = new global::ShoppyEx.Aggregator.Api.AddressResponseMessage();
             }
             input.ReadMessage(ShippingAddress);
             break;
@@ -947,21 +947,21 @@ namespace ShoppyEx.Aggregator.Api.Protos {
           }
           case 26: {
             if (address_ == null) {
-              Address = new global::ShoppyEx.Aggregator.Api.Protos.AddressResponseMessage();
+              Address = new global::ShoppyEx.Aggregator.Api.AddressResponseMessage();
             }
             input.ReadMessage(Address);
             break;
           }
           case 34: {
             if (billingAddress_ == null) {
-              BillingAddress = new global::ShoppyEx.Aggregator.Api.Protos.AddressResponseMessage();
+              BillingAddress = new global::ShoppyEx.Aggregator.Api.AddressResponseMessage();
             }
             input.ReadMessage(BillingAddress);
             break;
           }
           case 42: {
             if (shippingAddress_ == null) {
-              ShippingAddress = new global::ShoppyEx.Aggregator.Api.Protos.AddressResponseMessage();
+              ShippingAddress = new global::ShoppyEx.Aggregator.Api.AddressResponseMessage();
             }
             input.ReadMessage(ShippingAddress);
             break;
@@ -987,7 +987,7 @@ namespace ShoppyEx.Aggregator.Api.Protos {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::ShoppyEx.Aggregator.Api.Protos.CustomerReflection.Descriptor.MessageTypes[3]; }
+      get { return global::ShoppyEx.Aggregator.Api.CustomerReflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

@@ -5,7 +5,8 @@ namespace ShoppyEx.Customer.Core.Domain.Customer.Events
     public record class CustomerCreateEvent: DomainEvent
     {
         public CustomerId CustomerId { get; init; }
-        public string Name { get; init; }       
+        public string Name { get; init; } 
+        public Guid? UserId { get; init; }
         public CustomerCreateEvent(CustomerId customerId, string name)
         {
             CustomerId = customerId;

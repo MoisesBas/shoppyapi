@@ -3,7 +3,7 @@ import "google/protobuf/wrappers.proto";
 import "protos/address.proto";
 
 
-option csharp_namespace = "ShoppyEx.Aggregator.Api.Protos";
+option csharp_namespace = "ShoppyEx.Aggregator.Api";
 
 package protos.package;
 
