@@ -56,9 +56,14 @@ namespace ShoppyEx.Product.Infrastructure.DataSeed
 
                 var items = new List<Core.Domain.Product.Product>();
                 foreach (var item in from br in products
-                                     let item = Core.Domain.Product.Product.Create(new ProductId(Guid.NewGuid()), ((dynamic)br).Name
-                                     , ((dynamic)br).Description, ((dynamic)br).Price, ((dynamic)br).PictureUrl,
-                                     new ProductTypeId(Guid.Parse(((dynamic)br).ProductTypeId)), new ProductBrandId(Guid.Parse(((dynamic)br).ProductBrandId)),((dynamic)br).UnitInStock)
+                                     let item = Core.Domain.Product.Product.Create(new ProductId(Guid.NewGuid()),
+                                     ((dynamic)br).Name
+                                     , ((dynamic)br).Description,
+                                     ((dynamic)br).Price, 
+                                     ((dynamic)br).PictureUrl,
+                                     new ProductTypeId(Guid.Parse(((dynamic)br).ProductTypeId)),
+                                     new ProductBrandId(Guid.Parse(((dynamic)br).ProductBrandId)),
+                                     1000)
                                      select item)
                 {
                     items.Add(item);

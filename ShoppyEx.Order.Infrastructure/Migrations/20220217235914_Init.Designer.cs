@@ -12,7 +12,7 @@ using ShoppyEx.Order.Infrastructure.Persistence;
 namespace ShoppyEx.Order.Infrastructure.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20220216015842_Init")]
+    [Migration("20220217235914_Init")]
     partial class Init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -32,10 +32,10 @@ namespace ShoppyEx.Order.Infrastructure.Migrations
                     b.Property<Guid>("CustomerId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid>("DeliveryId")
+                    b.Property<Guid?>("DeliveryId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<decimal>("ShippingPrice")
+                    b.Property<decimal>("Price")
                         .HasColumnType("decimal(18,2)");
 
                     b.HasKey("Id");
@@ -167,14 +167,9 @@ namespace ShoppyEx.Order.Infrastructure.Migrations
 
             modelBuilder.Entity("ShoppyEx.Order.Core.Domain.Basket.Basket", b =>
                 {
-                    b.HasOne("ShoppyEx.Order.Core.Domain.Order.Delivery", "Delivery")
+                    b.HasOne("ShoppyEx.Order.Core.Domain.Order.Delivery", null)
                         .WithMany("Baskets")
-                        .HasForeignKey("DeliveryId")
-                        .OnDelete(DeleteBehavior.ClientCascade)
-                        .IsRequired()
-                        .HasConstraintName("FK_Baskets_Delivery_DeliveryId");
-
-                    b.Navigation("Delivery");
+                        .HasForeignKey("DeliveryId");
                 });
 
             modelBuilder.Entity("ShoppyEx.Order.Core.Domain.Basket.BasketItem", b =>

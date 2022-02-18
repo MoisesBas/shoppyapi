@@ -62,6 +62,9 @@ namespace ShoppyEx.Product.Infrastructure.Migrations
                     b.Property<Guid>("ProductTypeId")
                         .HasColumnType("uniqueidentifier");
 
+                    b.Property<int>("UnitInStock")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
                     b.HasIndex("ProductBrandId");

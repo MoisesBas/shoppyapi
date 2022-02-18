@@ -12,7 +12,7 @@ using ShoppyEx.Product.Infrastructure.Persistence;
 namespace ShoppyEx.Product.Infrastructure.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20220215223135_Init")]
+    [Migration("20220218005305_Init")]
     partial class Init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -63,6 +63,9 @@ namespace ShoppyEx.Product.Infrastructure.Migrations
 
                     b.Property<Guid>("ProductTypeId")
                         .HasColumnType("uniqueidentifier");
+
+                    b.Property<int>("UnitInStock")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 

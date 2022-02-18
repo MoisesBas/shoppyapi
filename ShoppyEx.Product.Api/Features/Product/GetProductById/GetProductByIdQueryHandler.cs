@@ -20,12 +20,18 @@ namespace ShoppyEx.Product.Api.Features.Product.GetProductById
 
         public override async Task<ProductResponseDto> ExecuteQuery(GetProductByIdQuery query, CancellationToken cancellationToken)
         {
-            var productId = new ProductId(query.Id);
-            var item = await _unitOfWork.Set<Core.Domain.Product.Product>()
-                .Include(x => x.ProductType)
-                .Include(x => x.ProductBrand)
-                .FirstOrDefaultAsync(x => x.Id == productId, cancellationToken).ConfigureAwait(false); ;
-            if (item != null) return _mapper.Map<ProductResponseDto>(item);
+            try
+            {
+                var productId = new ProductId(query.Id);
+                var item = await _unitOfWork.Set<Core.Domain.Product.Product>()
+                    .Include(x => x.ProductType)
+                    .Include(x => x.ProductBrand)
+                    .FirstOrDefaultAsync(x => x.Id == productId, cancellationToken).ConfigureAwait(false); ;
+                if (item != null) return _mapper.Map<ProductResponseDto>(item);
+            }
+            catch (Exception ex) {
+                throw ex; 
+            }
             return default;
         }
     }

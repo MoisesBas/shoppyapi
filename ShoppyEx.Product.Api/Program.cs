@@ -37,7 +37,7 @@ builder.Services
 //builder.WebHost.AddKestrel(builder.Configuration);
 var app = builder.Build();
 app.Services.Run<ApplicationDbContext>(false);
-app.Services.SeedProductApi(false);
+app.Services.SeedProductApi(true);
 
 app.UseRouting();
 app.UseEndpoints(endpoint =>

@@ -34,13 +34,20 @@ namespace ShoppyEx.Order.Api {
             "LwoJUHJvZHVjdElkGAIgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1Zh",
             "bHVlEisKBVByaWNlGAMgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1Zh",
             "bHVlEi0KCFF1YW50aXR5GAQgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkludDMy",
-            "VmFsdWUyEAoOQmFza2V0SXRlbUdycGNCFaoCElNob3BweUV4Lk9yZGVyLkFw",
-            "aWIGcHJvdG8z"));
+            "VmFsdWUihQIKHEdldEN1cnJlbnRCYXNrZXRJdGVtUmVzcG9uc2USKAoCSWQY",
+            "ASABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSLgoIQmFza2V0",
+            "SWQYAiABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSLwoJUHJv",
+            "ZHVjdElkGAMgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEisK",
+            "BVByaWNlGAQgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEi0K",
+            "CFF1YW50aXR5GAUgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkludDMyVmFsdWUy",
+            "EAoOQmFza2V0SXRlbUdycGNCFaoCElNob3BweUV4Lk9yZGVyLkFwaWIGcHJv",
+            "dG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::ShoppyEx.Order.Api.ChangeBasketCommand), global::ShoppyEx.Order.Api.ChangeBasketCommand.Parser, new[]{ "BasketId", "ProductId", "Price", "Quantity" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::ShoppyEx.Order.Api.CreateBasketItemCommand), global::ShoppyEx.Order.Api.CreateBasketItemCommand.Parser, new[]{ "ProductId", "Price", "Quantity" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::ShoppyEx.Order.Api.CreateBasketItemCommand), global::ShoppyEx.Order.Api.CreateBasketItemCommand.Parser, new[]{ "ProductId", "Price", "Quantity" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ShoppyEx.Order.Api.GetCurrentBasketItemResponse), global::ShoppyEx.Order.Api.GetCurrentBasketItemResponse.Parser, new[]{ "Id", "BasketId", "ProductId", "Price", "Quantity" }, null, null, null, null)
           }));
     }
     #endregion
@@ -653,6 +660,383 @@ namespace ShoppyEx.Order.Api {
             break;
           }
           case 34: {
+            int? value = _single_quantity_codec.Read(ref input);
+            if (quantity_ == null || value != 0) {
+              Quantity = value;
+            }
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class GetCurrentBasketItemResponse : pb::IMessage<GetCurrentBasketItemResponse>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<GetCurrentBasketItemResponse> _parser = new pb::MessageParser<GetCurrentBasketItemResponse>(() => new GetCurrentBasketItemResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<GetCurrentBasketItemResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::ShoppyEx.Order.Api.BasketitemReflection.Descriptor.MessageTypes[2]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GetCurrentBasketItemResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GetCurrentBasketItemResponse(GetCurrentBasketItemResponse other) : this() {
+      Id = other.Id;
+      BasketId = other.BasketId;
+      ProductId = other.ProductId;
+      Price = other.Price;
+      Quantity = other.Quantity;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GetCurrentBasketItemResponse Clone() {
+      return new GetCurrentBasketItemResponse(this);
+    }
+
+    /// <summary>Field number for the "Id" field.</summary>
+    public const int IdFieldNumber = 1;
+    private static readonly pb::FieldCodec<string> _single_id_codec = pb::FieldCodec.ForClassWrapper<string>(10);
+    private string id_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Id {
+      get { return id_; }
+      set {
+        id_ = value;
+      }
+    }
+
+
+    /// <summary>Field number for the "BasketId" field.</summary>
+    public const int BasketIdFieldNumber = 2;
+    private static readonly pb::FieldCodec<string> _single_basketId_codec = pb::FieldCodec.ForClassWrapper<string>(18);
+    private string basketId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string BasketId {
+      get { return basketId_; }
+      set {
+        basketId_ = value;
+      }
+    }
+
+
+    /// <summary>Field number for the "ProductId" field.</summary>
+    public const int ProductIdFieldNumber = 3;
+    private static readonly pb::FieldCodec<string> _single_productId_codec = pb::FieldCodec.ForClassWrapper<string>(26);
+    private string productId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string ProductId {
+      get { return productId_; }
+      set {
+        productId_ = value;
+      }
+    }
+
+
+    /// <summary>Field number for the "Price" field.</summary>
+    public const int PriceFieldNumber = 4;
+    private static readonly pb::FieldCodec<string> _single_price_codec = pb::FieldCodec.ForClassWrapper<string>(34);
+    private string price_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Price {
+      get { return price_; }
+      set {
+        price_ = value;
+      }
+    }
+
+
+    /// <summary>Field number for the "Quantity" field.</summary>
+    public const int QuantityFieldNumber = 5;
+    private static readonly pb::FieldCodec<int?> _single_quantity_codec = pb::FieldCodec.ForStructWrapper<int>(42);
+    private int? quantity_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int? Quantity {
+      get { return quantity_; }
+      set {
+        quantity_ = value;
+      }
+    }
+
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as GetCurrentBasketItemResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(GetCurrentBasketItemResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Id != other.Id) return false;
+      if (BasketId != other.BasketId) return false;
+      if (ProductId != other.ProductId) return false;
+      if (Price != other.Price) return false;
+      if (Quantity != other.Quantity) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (id_ != null) hash ^= Id.GetHashCode();
+      if (basketId_ != null) hash ^= BasketId.GetHashCode();
+      if (productId_ != null) hash ^= ProductId.GetHashCode();
+      if (price_ != null) hash ^= Price.GetHashCode();
+      if (quantity_ != null) hash ^= Quantity.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (id_ != null) {
+        _single_id_codec.WriteTagAndValue(output, Id);
+      }
+      if (basketId_ != null) {
+        _single_basketId_codec.WriteTagAndValue(output, BasketId);
+      }
+      if (productId_ != null) {
+        _single_productId_codec.WriteTagAndValue(output, ProductId);
+      }
+      if (price_ != null) {
+        _single_price_codec.WriteTagAndValue(output, Price);
+      }
+      if (quantity_ != null) {
+        _single_quantity_codec.WriteTagAndValue(output, Quantity);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (id_ != null) {
+        _single_id_codec.WriteTagAndValue(ref output, Id);
+      }
+      if (basketId_ != null) {
+        _single_basketId_codec.WriteTagAndValue(ref output, BasketId);
+      }
+      if (productId_ != null) {
+        _single_productId_codec.WriteTagAndValue(ref output, ProductId);
+      }
+      if (price_ != null) {
+        _single_price_codec.WriteTagAndValue(ref output, Price);
+      }
+      if (quantity_ != null) {
+        _single_quantity_codec.WriteTagAndValue(ref output, Quantity);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (id_ != null) {
+        size += _single_id_codec.CalculateSizeWithTag(Id);
+      }
+      if (basketId_ != null) {
+        size += _single_basketId_codec.CalculateSizeWithTag(BasketId);
+      }
+      if (productId_ != null) {
+        size += _single_productId_codec.CalculateSizeWithTag(ProductId);
+      }
+      if (price_ != null) {
+        size += _single_price_codec.CalculateSizeWithTag(Price);
+      }
+      if (quantity_ != null) {
+        size += _single_quantity_codec.CalculateSizeWithTag(Quantity);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(GetCurrentBasketItemResponse other) {
+      if (other == null) {
+        return;
+      }
+      if (other.id_ != null) {
+        if (id_ == null || other.Id != "") {
+          Id = other.Id;
+        }
+      }
+      if (other.basketId_ != null) {
+        if (basketId_ == null || other.BasketId != "") {
+          BasketId = other.BasketId;
+        }
+      }
+      if (other.productId_ != null) {
+        if (productId_ == null || other.ProductId != "") {
+          ProductId = other.ProductId;
+        }
+      }
+      if (other.price_ != null) {
+        if (price_ == null || other.Price != "") {
+          Price = other.Price;
+        }
+      }
+      if (other.quantity_ != null) {
+        if (quantity_ == null || other.Quantity != 0) {
+          Quantity = other.Quantity;
+        }
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            string value = _single_id_codec.Read(input);
+            if (id_ == null || value != "") {
+              Id = value;
+            }
+            break;
+          }
+          case 18: {
+            string value = _single_basketId_codec.Read(input);
+            if (basketId_ == null || value != "") {
+              BasketId = value;
+            }
+            break;
+          }
+          case 26: {
+            string value = _single_productId_codec.Read(input);
+            if (productId_ == null || value != "") {
+              ProductId = value;
+            }
+            break;
+          }
+          case 34: {
+            string value = _single_price_codec.Read(input);
+            if (price_ == null || value != "") {
+              Price = value;
+            }
+            break;
+          }
+          case 42: {
+            int? value = _single_quantity_codec.Read(input);
+            if (quantity_ == null || value != 0) {
+              Quantity = value;
+            }
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            string value = _single_id_codec.Read(ref input);
+            if (id_ == null || value != "") {
+              Id = value;
+            }
+            break;
+          }
+          case 18: {
+            string value = _single_basketId_codec.Read(ref input);
+            if (basketId_ == null || value != "") {
+              BasketId = value;
+            }
+            break;
+          }
+          case 26: {
+            string value = _single_productId_codec.Read(ref input);
+            if (productId_ == null || value != "") {
+              ProductId = value;
+            }
+            break;
+          }
+          case 34: {
+            string value = _single_price_codec.Read(ref input);
+            if (price_ == null || value != "") {
+              Price = value;
+            }
+            break;
+          }
+          case 42: {
             int? value = _single_quantity_codec.Read(ref input);
             if (quantity_ == null || value != 0) {
               Quantity = value;

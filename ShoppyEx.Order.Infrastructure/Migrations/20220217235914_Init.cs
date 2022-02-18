@@ -54,15 +54,15 @@ namespace ShoppyEx.Order.Infrastructure.Migrations
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    DeliveryId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     CustomerId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    ShippingPrice = table.Column<decimal>(type: "decimal(18,2)", nullable: false)
+                    Price = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
+                    DeliveryId = table.Column<Guid>(type: "uniqueidentifier", nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_tblBasket", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Baskets_Delivery_DeliveryId",
+                        name: "FK_tblBasket_tblDelivery_DeliveryId",
                         column: x => x.DeliveryId,
                         principalSchema: "dbo",
                         principalTable: "tblDelivery",

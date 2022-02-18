@@ -65,6 +65,7 @@ namespace ShoppyEx.Product.Infrastructure.Migrations
                     Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Price = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
                     PictureUrl = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    UnitInStock = table.Column<int>(type: "int", nullable: false),
                     ProductTypeId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     ProductBrandId = table.Column<Guid>(type: "uniqueidentifier", nullable: false)
                 },

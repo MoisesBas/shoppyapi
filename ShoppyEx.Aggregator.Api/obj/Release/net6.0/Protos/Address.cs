@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace ShoppyEx {
+namespace ShoppyEx.Aggregator.Api {
 
   /// <summary>Holder for reflection information generated from Protos/address.proto</summary>
   public static partial class AddressReflection {
@@ -38,12 +38,13 @@ namespace ShoppyEx {
             "ZGRyZXNzGAMgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEiwK",
             "BlJlZ2lvbhgEIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRIw",
             "CgpQb3N0YWxDb2RlGAUgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1Zh",
-            "bHVlMg0KC0FkZHJlc3NHcnBjQguqAghTaG9wcHlFeGIGcHJvdG8z"));
+            "bHVlMg0KC0FkZHJlc3NHcnBjQhqqAhdTaG9wcHlFeC5BZ2dyZWdhdG9yLkFw",
+            "aWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::ShoppyEx.AddressResponseMessage), global::ShoppyEx.AddressResponseMessage.Parser, new[]{ "Id", "City", "Country", "Address", "Region", "PostalCode" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::ShoppyEx.AddressRequestMessage), global::ShoppyEx.AddressRequestMessage.Parser, new[]{ "City", "Country", "Address", "Region", "PostalCode" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::ShoppyEx.Aggregator.Api.AddressResponseMessage), global::ShoppyEx.Aggregator.Api.AddressResponseMessage.Parser, new[]{ "Id", "City", "Country", "Address", "Region", "PostalCode" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ShoppyEx.Aggregator.Api.AddressRequestMessage), global::ShoppyEx.Aggregator.Api.AddressRequestMessage.Parser, new[]{ "City", "Country", "Address", "Region", "PostalCode" }, null, null, null, null)
           }));
     }
     #endregion
@@ -64,7 +65,7 @@ namespace ShoppyEx {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::ShoppyEx.AddressReflection.Descriptor.MessageTypes[0]; }
+      get { return global::ShoppyEx.Aggregator.Api.AddressReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -486,7 +487,7 @@ namespace ShoppyEx {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::ShoppyEx.AddressReflection.Descriptor.MessageTypes[1]; }
+      get { return global::ShoppyEx.Aggregator.Api.AddressReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

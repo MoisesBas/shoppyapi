@@ -32,20 +32,30 @@ namespace ShoppyEx.Order.Api {
             "ChdHZXRDdXJyZW50QmFza2V0Q29tbWFuZBIwCgpDdXN0b21lcklkGAEgASgL",
             "MhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlIjsKD0Jhc2tldElkUmVw",
             "b25zZRIoCgJJZBgBIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1",
-            "ZTKcAgoKQmFza2V0R3JwYxJWCgxDaGFuZ2VCYXNrZXQSIy5wcm90b3MucGFj",
-            "a2FnZS5DaGFuZ2VCYXNrZXRDb21tYW5kGh8ucHJvdG9zLnBhY2thZ2UuQmFz",
-            "a2V0SWRSZXBvbnNlIgASVgoMQ3JlYXRlQmFza2V0EiMucHJvdG9zLnBhY2th",
-            "Z2UuQ3JlYXRlQmFza2V0Q29tbWFuZBofLnByb3Rvcy5wYWNrYWdlLkJhc2tl",
-            "dElkUmVwb25zZSIAEl4KEEdldEN1cnJlbnRCYXNrZXQSJy5wcm90b3MucGFj",
-            "a2FnZS5HZXRDdXJyZW50QmFza2V0Q29tbWFuZBofLnByb3Rvcy5wYWNrYWdl",
-            "LkJhc2tldElkUmVwb25zZSIAQhWqAhJTaG9wcHlFeC5PcmRlci5BcGliBnBy",
-            "b3RvMw=="));
+            "ZSKOAQogR2V0Q3VycmVudEJhc2tldEN1c3RvbWVyUmVzcG9uc2USMQoMVG90",
+            "YWxSZWNvcmRzGAEgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkludDMyVmFsdWUS",
+            "NwoFSXRlbXMYAiADKAsyKC5wcm90b3MucGFja2FnZS5HZXRDdXJyZW50QmFz",
+            "a2V0UmVzcG9uc2Ui4AEKGEdldEN1cnJlbnRCYXNrZXRSZXNwb25zZRIoCgJJ",
+            "ZBgBIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRIwCgpDdXN0",
+            "b21lcklkGAIgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEisK",
+            "BVByaWNlGAMgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEjsK",
+            "BUl0ZW1zGAQgAygLMiwucHJvdG9zLnBhY2thZ2UuR2V0Q3VycmVudEJhc2tl",
+            "dEl0ZW1SZXNwb25zZTKtAgoKQmFza2V0R3JwYxJWCgxDaGFuZ2VCYXNrZXQS",
+            "Iy5wcm90b3MucGFja2FnZS5DaGFuZ2VCYXNrZXRDb21tYW5kGh8ucHJvdG9z",
+            "LnBhY2thZ2UuQmFza2V0SWRSZXBvbnNlIgASVgoMQ3JlYXRlQmFza2V0EiMu",
+            "cHJvdG9zLnBhY2thZ2UuQ3JlYXRlQmFza2V0Q29tbWFuZBofLnByb3Rvcy5w",
+            "YWNrYWdlLkJhc2tldElkUmVwb25zZSIAEm8KEEdldEN1cnJlbnRCYXNrZXQS",
+            "Jy5wcm90b3MucGFja2FnZS5HZXRDdXJyZW50QmFza2V0Q29tbWFuZBowLnBy",
+            "b3Rvcy5wYWNrYWdlLkdldEN1cnJlbnRCYXNrZXRDdXN0b21lclJlc3BvbnNl",
+            "IgBCFaoCElNob3BweUV4Lk9yZGVyLkFwaWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::ShoppyEx.Order.Api.BasketitemReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::ShoppyEx.Order.Api.CreateBasketCommand), global::ShoppyEx.Order.Api.CreateBasketCommand.Parser, new[]{ "CustomerId", "Items" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::ShoppyEx.Order.Api.GetCurrentBasketCommand), global::ShoppyEx.Order.Api.GetCurrentBasketCommand.Parser, new[]{ "CustomerId" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::ShoppyEx.Order.Api.BasketIdReponse), global::ShoppyEx.Order.Api.BasketIdReponse.Parser, new[]{ "Id" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::ShoppyEx.Order.Api.BasketIdReponse), global::ShoppyEx.Order.Api.BasketIdReponse.Parser, new[]{ "Id" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ShoppyEx.Order.Api.GetCurrentBasketCustomerResponse), global::ShoppyEx.Order.Api.GetCurrentBasketCustomerResponse.Parser, new[]{ "TotalRecords", "Items" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ShoppyEx.Order.Api.GetCurrentBasketResponse), global::ShoppyEx.Order.Api.GetCurrentBasketResponse.Parser, new[]{ "Id", "CustomerId", "Price", "Items" }, null, null, null, null)
           }));
     }
     #endregion
@@ -660,6 +670,542 @@ namespace ShoppyEx.Order.Api {
             if (id_ == null || value != "") {
               Id = value;
             }
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class GetCurrentBasketCustomerResponse : pb::IMessage<GetCurrentBasketCustomerResponse>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<GetCurrentBasketCustomerResponse> _parser = new pb::MessageParser<GetCurrentBasketCustomerResponse>(() => new GetCurrentBasketCustomerResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<GetCurrentBasketCustomerResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::ShoppyEx.Order.Api.BasketReflection.Descriptor.MessageTypes[3]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GetCurrentBasketCustomerResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GetCurrentBasketCustomerResponse(GetCurrentBasketCustomerResponse other) : this() {
+      TotalRecords = other.TotalRecords;
+      items_ = other.items_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GetCurrentBasketCustomerResponse Clone() {
+      return new GetCurrentBasketCustomerResponse(this);
+    }
+
+    /// <summary>Field number for the "TotalRecords" field.</summary>
+    public const int TotalRecordsFieldNumber = 1;
+    private static readonly pb::FieldCodec<int?> _single_totalRecords_codec = pb::FieldCodec.ForStructWrapper<int>(10);
+    private int? totalRecords_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int? TotalRecords {
+      get { return totalRecords_; }
+      set {
+        totalRecords_ = value;
+      }
+    }
+
+
+    /// <summary>Field number for the "Items" field.</summary>
+    public const int ItemsFieldNumber = 2;
+    private static readonly pb::FieldCodec<global::ShoppyEx.Order.Api.GetCurrentBasketResponse> _repeated_items_codec
+        = pb::FieldCodec.ForMessage(18, global::ShoppyEx.Order.Api.GetCurrentBasketResponse.Parser);
+    private readonly pbc::RepeatedField<global::ShoppyEx.Order.Api.GetCurrentBasketResponse> items_ = new pbc::RepeatedField<global::ShoppyEx.Order.Api.GetCurrentBasketResponse>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::ShoppyEx.Order.Api.GetCurrentBasketResponse> Items {
+      get { return items_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as GetCurrentBasketCustomerResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(GetCurrentBasketCustomerResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (TotalRecords != other.TotalRecords) return false;
+      if(!items_.Equals(other.items_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (totalRecords_ != null) hash ^= TotalRecords.GetHashCode();
+      hash ^= items_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (totalRecords_ != null) {
+        _single_totalRecords_codec.WriteTagAndValue(output, TotalRecords);
+      }
+      items_.WriteTo(output, _repeated_items_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (totalRecords_ != null) {
+        _single_totalRecords_codec.WriteTagAndValue(ref output, TotalRecords);
+      }
+      items_.WriteTo(ref output, _repeated_items_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (totalRecords_ != null) {
+        size += _single_totalRecords_codec.CalculateSizeWithTag(TotalRecords);
+      }
+      size += items_.CalculateSize(_repeated_items_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(GetCurrentBasketCustomerResponse other) {
+      if (other == null) {
+        return;
+      }
+      if (other.totalRecords_ != null) {
+        if (totalRecords_ == null || other.TotalRecords != 0) {
+          TotalRecords = other.TotalRecords;
+        }
+      }
+      items_.Add(other.items_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            int? value = _single_totalRecords_codec.Read(input);
+            if (totalRecords_ == null || value != 0) {
+              TotalRecords = value;
+            }
+            break;
+          }
+          case 18: {
+            items_.AddEntriesFrom(input, _repeated_items_codec);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            int? value = _single_totalRecords_codec.Read(ref input);
+            if (totalRecords_ == null || value != 0) {
+              TotalRecords = value;
+            }
+            break;
+          }
+          case 18: {
+            items_.AddEntriesFrom(ref input, _repeated_items_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class GetCurrentBasketResponse : pb::IMessage<GetCurrentBasketResponse>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<GetCurrentBasketResponse> _parser = new pb::MessageParser<GetCurrentBasketResponse>(() => new GetCurrentBasketResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<GetCurrentBasketResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::ShoppyEx.Order.Api.BasketReflection.Descriptor.MessageTypes[4]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GetCurrentBasketResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GetCurrentBasketResponse(GetCurrentBasketResponse other) : this() {
+      Id = other.Id;
+      CustomerId = other.CustomerId;
+      Price = other.Price;
+      items_ = other.items_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GetCurrentBasketResponse Clone() {
+      return new GetCurrentBasketResponse(this);
+    }
+
+    /// <summary>Field number for the "Id" field.</summary>
+    public const int IdFieldNumber = 1;
+    private static readonly pb::FieldCodec<string> _single_id_codec = pb::FieldCodec.ForClassWrapper<string>(10);
+    private string id_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Id {
+      get { return id_; }
+      set {
+        id_ = value;
+      }
+    }
+
+
+    /// <summary>Field number for the "CustomerId" field.</summary>
+    public const int CustomerIdFieldNumber = 2;
+    private static readonly pb::FieldCodec<string> _single_customerId_codec = pb::FieldCodec.ForClassWrapper<string>(18);
+    private string customerId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string CustomerId {
+      get { return customerId_; }
+      set {
+        customerId_ = value;
+      }
+    }
+
+
+    /// <summary>Field number for the "Price" field.</summary>
+    public const int PriceFieldNumber = 3;
+    private static readonly pb::FieldCodec<string> _single_price_codec = pb::FieldCodec.ForClassWrapper<string>(26);
+    private string price_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Price {
+      get { return price_; }
+      set {
+        price_ = value;
+      }
+    }
+
+
+    /// <summary>Field number for the "Items" field.</summary>
+    public const int ItemsFieldNumber = 4;
+    private static readonly pb::FieldCodec<global::ShoppyEx.Order.Api.GetCurrentBasketItemResponse> _repeated_items_codec
+        = pb::FieldCodec.ForMessage(34, global::ShoppyEx.Order.Api.GetCurrentBasketItemResponse.Parser);
+    private readonly pbc::RepeatedField<global::ShoppyEx.Order.Api.GetCurrentBasketItemResponse> items_ = new pbc::RepeatedField<global::ShoppyEx.Order.Api.GetCurrentBasketItemResponse>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::ShoppyEx.Order.Api.GetCurrentBasketItemResponse> Items {
+      get { return items_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as GetCurrentBasketResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(GetCurrentBasketResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Id != other.Id) return false;
+      if (CustomerId != other.CustomerId) return false;
+      if (Price != other.Price) return false;
+      if(!items_.Equals(other.items_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (id_ != null) hash ^= Id.GetHashCode();
+      if (customerId_ != null) hash ^= CustomerId.GetHashCode();
+      if (price_ != null) hash ^= Price.GetHashCode();
+      hash ^= items_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (id_ != null) {
+        _single_id_codec.WriteTagAndValue(output, Id);
+      }
+      if (customerId_ != null) {
+        _single_customerId_codec.WriteTagAndValue(output, CustomerId);
+      }
+      if (price_ != null) {
+        _single_price_codec.WriteTagAndValue(output, Price);
+      }
+      items_.WriteTo(output, _repeated_items_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (id_ != null) {
+        _single_id_codec.WriteTagAndValue(ref output, Id);
+      }
+      if (customerId_ != null) {
+        _single_customerId_codec.WriteTagAndValue(ref output, CustomerId);
+      }
+      if (price_ != null) {
+        _single_price_codec.WriteTagAndValue(ref output, Price);
+      }
+      items_.WriteTo(ref output, _repeated_items_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (id_ != null) {
+        size += _single_id_codec.CalculateSizeWithTag(Id);
+      }
+      if (customerId_ != null) {
+        size += _single_customerId_codec.CalculateSizeWithTag(CustomerId);
+      }
+      if (price_ != null) {
+        size += _single_price_codec.CalculateSizeWithTag(Price);
+      }
+      size += items_.CalculateSize(_repeated_items_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(GetCurrentBasketResponse other) {
+      if (other == null) {
+        return;
+      }
+      if (other.id_ != null) {
+        if (id_ == null || other.Id != "") {
+          Id = other.Id;
+        }
+      }
+      if (other.customerId_ != null) {
+        if (customerId_ == null || other.CustomerId != "") {
+          CustomerId = other.CustomerId;
+        }
+      }
+      if (other.price_ != null) {
+        if (price_ == null || other.Price != "") {
+          Price = other.Price;
+        }
+      }
+      items_.Add(other.items_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            string value = _single_id_codec.Read(input);
+            if (id_ == null || value != "") {
+              Id = value;
+            }
+            break;
+          }
+          case 18: {
+            string value = _single_customerId_codec.Read(input);
+            if (customerId_ == null || value != "") {
+              CustomerId = value;
+            }
+            break;
+          }
+          case 26: {
+            string value = _single_price_codec.Read(input);
+            if (price_ == null || value != "") {
+              Price = value;
+            }
+            break;
+          }
+          case 34: {
+            items_.AddEntriesFrom(input, _repeated_items_codec);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            string value = _single_id_codec.Read(ref input);
+            if (id_ == null || value != "") {
+              Id = value;
+            }
+            break;
+          }
+          case 18: {
+            string value = _single_customerId_codec.Read(ref input);
+            if (customerId_ == null || value != "") {
+              CustomerId = value;
+            }
+            break;
+          }
+          case 26: {
+            string value = _single_price_codec.Read(ref input);
+            if (price_ == null || value != "") {
+              Price = value;
+            }
+            break;
+          }
+          case 34: {
+            items_.AddEntriesFrom(ref input, _repeated_items_codec);
             break;
           }
         }

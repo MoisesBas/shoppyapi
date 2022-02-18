@@ -140,3 +140,4 @@ E:\ShoppyEx\API\ShoppyEx.Aggregator.Api\obj\Release\net6.0\ShoppyEx.Aggregator.A
 E:\ShoppyEx\API\ShoppyEx.Aggregator.Api\obj\Release\net6.0\ref\ShoppyEx.Aggregator.Api.dll
 E:\ShoppyEx\API\ShoppyEx.Aggregator.Api\obj\Release\net6.0\ShoppyEx.Aggregator.Api.pdb
 E:\ShoppyEx\API\ShoppyEx.Aggregator.Api\obj\Release\net6.0\ShoppyEx.Aggregator.Api.genruntimeconfig.cache
+E:\ShoppyEx\API\ShoppyEx.Aggregator.Api\obj\Release\net6.0\ShoppyEx.Aggregator.Api.csproj.AssemblyReference.cache

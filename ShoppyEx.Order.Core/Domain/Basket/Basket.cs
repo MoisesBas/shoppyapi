@@ -4,10 +4,12 @@ namespace ShoppyEx.Order.Core.Domain.Basket
 {
     public class Basket: AggregateRoot<BasketId>
     {
-        private readonly List<BasketItem> _basketItems = new();       
+        private readonly List<BasketItem> _basketItems = new(); 
+        private readonly List<Order.Order> _orders = new();
         public Guid CustomerId { get; private set; }
         public decimal Price { get; private set; }
-        public IEnumerable<BasketItem> BasketItems => _basketItems.AsReadOnly();      
+        public IEnumerable<BasketItem> BasketItems => _basketItems.AsReadOnly();
+        public IEnumerable<Order.Order> Orders => _orders.AsReadOnly();
         protected Basket() { }
 
         internal Basket(BasketId id, Guid customerId) : this()

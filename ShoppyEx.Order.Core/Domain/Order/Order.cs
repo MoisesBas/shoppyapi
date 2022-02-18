@@ -1,4 +1,5 @@
 ﻿
+using ShoppyEx.Order.Core.Domain.Basket;
 using ShoppyEx.Order.Core.Domain.Order.Events;
 using ShoppyEx.Order.Core.Shared;
 using ShoppyEx.SharedKernel.SeedWork;
@@ -9,24 +10,27 @@ namespace ShoppyEx.Order.Core.Domain.Order
     {
         private readonly List<OrderItem> _orderItems = new();
         public Guid CustomerId { get; private set; }
+        public BasketId BasketId { get; private set; }
         public OrderStatus Status { get; private set; }
         public DateTime OrderDate { get; set; }
         public decimal TotalPrice { get; private set; }
-        public Address Address { get; private set; }
+        public Address Address { get; private set; }       
         public IEnumerable<OrderItem> OrderItems => _orderItems.AsReadOnly();
         protected Order() { }
-        internal Order(OrderId id, Guid customerId, string creditCard, int creditCardTypeID, int cardExpMo, int cardExpYr, Address address) : this()
+        internal Order(OrderId id, BasketId basketId, Guid customerId, string creditCard, int creditCardTypeID, int cardExpMo, int cardExpYr, Address address) : this()
         {
             Id = id;
+            BasketId = basketId;
             CustomerId = customerId;
             Status = OrderStatus.Pending;
             Address = address;
             AddDomainEvent(new OrderPlacedEvent(customerId, id, creditCard, creditCardTypeID, cardExpMo, cardExpYr, address));
         }
-        public static Order Create(OrderId id, Guid customerId, string creditCard, int creditCardTypeID, int cardExpMo, int cardExpYr, Address address)
+        public static Order Create(OrderId id, BasketId basketId, Guid customerId, string creditCard, int creditCardTypeID, int cardExpMo, int cardExpYr, Address address)
         {
-            return new Order(id, customerId, creditCard, creditCardTypeID, cardExpMo, cardExpYr, address);
+            return new Order(id, basketId,customerId, creditCard, creditCardTypeID, cardExpMo, cardExpYr, address);
         }
+      
         public void AddOrderItems(Guid productId, string productName, string pictureUrl, int quantity,
             decimal price)
         {

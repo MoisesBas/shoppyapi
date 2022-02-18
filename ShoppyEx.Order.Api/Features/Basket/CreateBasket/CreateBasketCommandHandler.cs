@@ -32,9 +32,12 @@ namespace ShoppyEx.Order.Api.Features.Basket.CreateBasket
 
             foreach (var item in command.Items)
             {
-                var product = await _productGrpcClient.GetProductByIdAsync(new GetProductByIdQuery { Id = item.ProductId.ToString() }, cancellationToken: cancellationToken);
-                if (product == null) throw new Exception($"Product Not exists {product.Name}");
-                basket.AddItem(product.Name, Guid.Parse(product.Id), item.Price, item.Quantity, product.PictureUrl, product.ProductBrand, product.ProductType);
+                try
+                {
+                    var product = await _productGrpcClient.GetProductByIdAsync(new GetProductByIdQuery { Id = item.ProductId.ToString() }, cancellationToken: cancellationToken);
+                    if (product == null) throw new Exception($"Product Not exists {product.Name}");
+                    basket.AddItem(product.Name, Guid.Parse(product.Id), item.Price, item.Quantity, product.PictureUrl, product.ProductBrand, product.ProductType);
+                }catch(Exception ex) { }
             }
             basket.TotalPrice();
 

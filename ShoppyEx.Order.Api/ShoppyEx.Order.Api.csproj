@@ -9,17 +9,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Features\OrderItem\**" />
-    <Compile Remove="Features\Order\**" />
-    <Content Remove="Features\OrderItem\**" />
-    <Content Remove="Features\Order\**" />
-    <EmbeddedResource Remove="Features\OrderItem\**" />
-    <EmbeddedResource Remove="Features\Order\**" />
-    <None Remove="Features\OrderItem\**" />
-    <None Remove="Features\Order\**" />
-  </ItemGroup>
-
-  <ItemGroup>
     <None Remove="Features\Basket\CreateBasket\CreateBasketCommandHandler.cs~RF77fded1.TMP" />
     <None Remove="Protos\address.proto" />
     <None Remove="Protos\basket.proto" />

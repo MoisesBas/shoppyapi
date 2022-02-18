@@ -1,11 +1,11 @@
 using HealthChecks.UI.Client;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Microsoft.EntityFrameworkCore;
-using ShoppyEx.Order.Api.Services;
-using ShoppyEx.Order.Api.Utility;
-using ShoppyEx.Order.Infrastructure.IoC;
-using ShoppyEx.Order.Infrastructure.Persistence;
-using ShoppyEx.SharedKernel.SeedWork;
+using ShoppyEx.Product.Api.Services;
+using ShoppyEx.Product.Api.Utility;
+using ShoppyEx.Product.Infrastructure.DataSeed;
+using ShoppyEx.Product.Infrastructure.IoC;
+using ShoppyEx.Product.Infrastructure.Persistence;
 using ShoppyEx.SharedKernel.SeedWork.Extensions;
 using ShoppyEx.SharedKernel.SeedWork.FluentValidation;
 using ShoppyEx.SharedKernel.SeedWork.MediatR;
@@ -21,32 +21,31 @@ var builder = WebApplication.CreateBuilder(new WebApplicationOptions()
 builder.Services.AddDbContext<ApplicationDbContext>(X =>
 {
     X.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+    X.EnableSensitiveDataLogging();
 });
 
 builder.Services
        .AddGrpc()
-      
        .Services
        .AddAutoMapper(Assembly.GetExecutingAssembly())
        .AddCustomMediatR<Program>()
        .AddCustomValidators<Program>()
        .AddSingleton(typeof(ILogger<>), typeof(Logger<>))
-       .AddOptions()
-       .Configure<UrlsConfig>(builder.Configuration.GetSection("urls"))
-       .AddGrpcServices()
        .RegisterServices();
-builder.Services.AddHealthChecks();
+      builder.Services.AddHealthChecks();
 
 //builder.WebHost.AddKestrel(builder.Configuration);
 var app = builder.Build();
-app.Services.Run<ApplicationDbContext>(false);
-//app.Services.SeedOrderApi(false);
+app.Services.Run<ApplicationDbContext>(true);
+app.Services.SeedProductApi(true);
 
 app.UseRouting();
 app.UseEndpoints(endpoint =>
 {
-    endpoint.MapGrpcService<BasketService>();
-    endpoint.MapGrpcService<OrderService>();
+    endpoint.MapGrpcService<ProductService>();
+    endpoint.MapGrpcService<ProductBrandService>();
+    endpoint.MapGrpcService<ProductTypeService>();
+
     endpoint.MapHealthChecks("/hc", new HealthCheckOptions()
     {
         Predicate = _ => true,

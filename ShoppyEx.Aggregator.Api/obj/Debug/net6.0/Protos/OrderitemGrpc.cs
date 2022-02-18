@@ -7,7 +7,7 @@
 
 using grpc = global::Grpc.Core;
 
-namespace ShoppyEx {
+namespace ShoppyEx.Aggregator.Api {
   public static partial class OrderItemGrpc
   {
     static readonly string __ServiceName = "protos.package.OrderItemGrpc";
@@ -16,7 +16,7 @@ namespace ShoppyEx {
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
-      get { return global::ShoppyEx.OrderitemReflection.Descriptor.Services[0]; }
+      get { return global::ShoppyEx.Aggregator.Api.OrderitemReflection.Descriptor.Services[0]; }
     }
 
     /// <summary>Client for OrderItemGrpc</summary>

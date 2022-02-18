@@ -53,6 +53,8 @@ namespace ShoppyEx.Order.Api {
     static readonly grpc::Marshaller<global::ShoppyEx.Order.Api.CreateBasketCommand> __Marshaller_protos_package_CreateBasketCommand = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ShoppyEx.Order.Api.CreateBasketCommand.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::ShoppyEx.Order.Api.GetCurrentBasketCommand> __Marshaller_protos_package_GetCurrentBasketCommand = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ShoppyEx.Order.Api.GetCurrentBasketCommand.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::ShoppyEx.Order.Api.GetCurrentBasketCustomerResponse> __Marshaller_protos_package_GetCurrentBasketCustomerResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ShoppyEx.Order.Api.GetCurrentBasketCustomerResponse.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::ShoppyEx.Order.Api.ChangeBasketCommand, global::ShoppyEx.Order.Api.BasketIdReponse> __Method_ChangeBasket = new grpc::Method<global::ShoppyEx.Order.Api.ChangeBasketCommand, global::ShoppyEx.Order.Api.BasketIdReponse>(
@@ -71,12 +73,12 @@ namespace ShoppyEx.Order.Api {
         __Marshaller_protos_package_BasketIdReponse);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::ShoppyEx.Order.Api.GetCurrentBasketCommand, global::ShoppyEx.Order.Api.BasketIdReponse> __Method_GetCurrentBasket = new grpc::Method<global::ShoppyEx.Order.Api.GetCurrentBasketCommand, global::ShoppyEx.Order.Api.BasketIdReponse>(
+    static readonly grpc::Method<global::ShoppyEx.Order.Api.GetCurrentBasketCommand, global::ShoppyEx.Order.Api.GetCurrentBasketCustomerResponse> __Method_GetCurrentBasket = new grpc::Method<global::ShoppyEx.Order.Api.GetCurrentBasketCommand, global::ShoppyEx.Order.Api.GetCurrentBasketCustomerResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "GetCurrentBasket",
         __Marshaller_protos_package_GetCurrentBasketCommand,
-        __Marshaller_protos_package_BasketIdReponse);
+        __Marshaller_protos_package_GetCurrentBasketCustomerResponse);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -101,7 +103,7 @@ namespace ShoppyEx.Order.Api {
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::ShoppyEx.Order.Api.BasketIdReponse> GetCurrentBasket(global::ShoppyEx.Order.Api.GetCurrentBasketCommand request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::ShoppyEx.Order.Api.GetCurrentBasketCustomerResponse> GetCurrentBasket(global::ShoppyEx.Order.Api.GetCurrentBasketCommand request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -128,7 +130,7 @@ namespace ShoppyEx.Order.Api {
     {
       serviceBinder.AddMethod(__Method_ChangeBasket, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::ShoppyEx.Order.Api.ChangeBasketCommand, global::ShoppyEx.Order.Api.BasketIdReponse>(serviceImpl.ChangeBasket));
       serviceBinder.AddMethod(__Method_CreateBasket, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::ShoppyEx.Order.Api.CreateBasketCommand, global::ShoppyEx.Order.Api.BasketIdReponse>(serviceImpl.CreateBasket));
-      serviceBinder.AddMethod(__Method_GetCurrentBasket, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::ShoppyEx.Order.Api.GetCurrentBasketCommand, global::ShoppyEx.Order.Api.BasketIdReponse>(serviceImpl.GetCurrentBasket));
+      serviceBinder.AddMethod(__Method_GetCurrentBasket, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::ShoppyEx.Order.Api.GetCurrentBasketCommand, global::ShoppyEx.Order.Api.GetCurrentBasketCustomerResponse>(serviceImpl.GetCurrentBasket));
     }
 
   }

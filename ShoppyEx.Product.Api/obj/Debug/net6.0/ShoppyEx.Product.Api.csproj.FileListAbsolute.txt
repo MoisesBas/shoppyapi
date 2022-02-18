@@ -93,3 +93,4 @@ E:\ShoppyEx\API\ShoppyEx.Product.Api\obj\Debug\net6.0\ShoppyEx.Product.Api.dll
 E:\ShoppyEx\API\ShoppyEx.Product.Api\obj\Debug\net6.0\ref\ShoppyEx.Product.Api.dll
 E:\ShoppyEx\API\ShoppyEx.Product.Api\obj\Debug\net6.0\ShoppyEx.Product.Api.pdb
 E:\ShoppyEx\API\ShoppyEx.Product.Api\obj\Debug\net6.0\ShoppyEx.Product.Api.genruntimeconfig.cache
+E:\ShoppyEx\API\ShoppyEx.Product.Api\bin\Debug\net6.0\Program.cs

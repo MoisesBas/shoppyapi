@@ -46,7 +46,7 @@ message OrderCreateResponseMessage {
     google.protobuf.StringValue Region = 7;
     google.protobuf.StringValue PostalCode = 8;
     google.protobuf.StringValue Country = 9;
-    repeated OrderItemResponseMessage    OrderItems = 10;
+    repeated OrderItemResponseMessage  OrderItems = 10;
 }
 
 message OrderIdRequestMessage {    

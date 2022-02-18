@@ -13,6 +13,7 @@ namespace ShoppyEx.Aggregator.Api.Controllers
         {
             _orderGrpcClient = productGrpcClient;
         }
+
         [HttpGet]
         [Route(AspNet.Mvc.ActionTemplate)]
         [MapToApiVersion(Swagger.Versions.v1_0)]
@@ -31,7 +32,7 @@ namespace ShoppyEx.Aggregator.Api.Controllers
             return Ok(await _orderGrpcClient.GetOrderByCustomerIdAsync(new GetOrderByCustomerIdRequestMessage { CustomerId = customerId.ToString() }, cancellationToken: cancellationToken));
         }
 
-        [HttpGet]
+        [HttpPost]
         [Route(AspNet.Mvc.ActionTemplate)]
         [MapToApiVersion(Swagger.Versions.v1_0)]
         [ApiExplorerSettings(GroupName = Swagger.DocVersions.v1_0)]

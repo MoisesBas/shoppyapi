@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace ShoppyEx {
+namespace ShoppyEx.Aggregator.Api {
 
   /// <summary>Holder for reflection information generated from Protos/user.proto</summary>
   public static partial class UserReflection {
@@ -36,14 +36,14 @@ namespace ShoppyEx {
             "EhoucHJvdG9zLnBhY2thZ2UuTG9naW5RdWVyeRodLnByb3Rvcy5wYWNrYWdl",
             "LkxvZ2luUmVzcG9uc2UiABJPCghSZWdpc3RlchIfLnByb3Rvcy5wYWNrYWdl",
             "LlJlZ2lzdGVyQ29tbWFuZBogLnByb3Rvcy5wYWNrYWdlLlJlZ2lzdGVyUmVz",
-            "cG9uc2UiAEILqgIIU2hvcHB5RXhiBnByb3RvMw=="));
+            "cG9uc2UiAEIaqgIXU2hvcHB5RXguQWdncmVnYXRvci5BcGliBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::ShoppyEx.RegisterResponse), global::ShoppyEx.RegisterResponse.Parser, new[]{ "Id" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::ShoppyEx.LoginResponse), global::ShoppyEx.LoginResponse.Parser, new[]{ "AccessToken" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::ShoppyEx.RegisterCommand), global::ShoppyEx.RegisterCommand.Parser, new[]{ "Email", "Password", "PasswordConfirm", "FirstName", "LastName", "Address", "City", "Region", "PostalCode", "Country" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::ShoppyEx.LoginQuery), global::ShoppyEx.LoginQuery.Parser, new[]{ "Email", "Password" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::ShoppyEx.Aggregator.Api.RegisterResponse), global::ShoppyEx.Aggregator.Api.RegisterResponse.Parser, new[]{ "Id" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ShoppyEx.Aggregator.Api.LoginResponse), global::ShoppyEx.Aggregator.Api.LoginResponse.Parser, new[]{ "AccessToken" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ShoppyEx.Aggregator.Api.RegisterCommand), global::ShoppyEx.Aggregator.Api.RegisterCommand.Parser, new[]{ "Email", "Password", "PasswordConfirm", "FirstName", "LastName", "Address", "City", "Region", "PostalCode", "Country" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ShoppyEx.Aggregator.Api.LoginQuery), global::ShoppyEx.Aggregator.Api.LoginQuery.Parser, new[]{ "Email", "Password" }, null, null, null, null)
           }));
     }
     #endregion
@@ -64,7 +64,7 @@ namespace ShoppyEx {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::ShoppyEx.UserReflection.Descriptor.MessageTypes[0]; }
+      get { return global::ShoppyEx.Aggregator.Api.UserReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -253,7 +253,7 @@ namespace ShoppyEx {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::ShoppyEx.UserReflection.Descriptor.MessageTypes[1]; }
+      get { return global::ShoppyEx.Aggregator.Api.UserReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -442,7 +442,7 @@ namespace ShoppyEx {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::ShoppyEx.UserReflection.Descriptor.MessageTypes[2]; }
+      get { return global::ShoppyEx.Aggregator.Api.UserReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -964,7 +964,7 @@ namespace ShoppyEx {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::ShoppyEx.UserReflection.Descriptor.MessageTypes[3]; }
+      get { return global::ShoppyEx.Aggregator.Api.UserReflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

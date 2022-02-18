@@ -1,4 +1,3 @@
-using Google.Protobuf.Collections;
 using Grpc.Core;
 using MediatR;
 using ShoppyEx.Order.Api.Features.Order;
@@ -6,7 +5,6 @@ using ShoppyEx.Order.Api.Features.Order.AddOrder;
 using ShoppyEx.Order.Api.Features.Order.GetOrderByCustomerId;
 using ShoppyEx.Order.Api.Features.Order.GetOrderById;
 using ShoppyEx.Order.Api.Features.OrderItem;
-using ShoppyEx.SharedKernel.SeedWork.CQRS.Query;
 
 namespace ShoppyEx.Order.Api.Services
 {

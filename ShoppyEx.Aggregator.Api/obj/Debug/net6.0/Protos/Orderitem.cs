@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace ShoppyEx {
+namespace ShoppyEx.Aggregator.Api {
 
   /// <summary>Holder for reflection information generated from Protos/orderitem.proto</summary>
   public static partial class OrderitemReflection {
@@ -35,12 +35,13 @@ namespace ShoppyEx {
             "LwoJUHJvZHVjdElkGAEgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1Zh",
             "bHVlEi0KCFF1YW50aXR5GAIgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkludDMy",
             "VmFsdWUSKwoFUHJpY2UYAyABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5n",
-            "VmFsdWUyDwoNT3JkZXJJdGVtR3JwY0ILqgIIU2hvcHB5RXhiBnByb3RvMw=="));
+            "VmFsdWUyDwoNT3JkZXJJdGVtR3JwY0IaqgIXU2hvcHB5RXguQWdncmVnYXRv",
+            "ci5BcGliBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::ShoppyEx.OrderItemResponseMessage), global::ShoppyEx.OrderItemResponseMessage.Parser, new[]{ "Id", "OrderId", "ProductId", "Quantity", "Price" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::ShoppyEx.OrderItemRequestMessage), global::ShoppyEx.OrderItemRequestMessage.Parser, new[]{ "ProductId", "Quantity", "Price" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::ShoppyEx.Aggregator.Api.OrderItemResponseMessage), global::ShoppyEx.Aggregator.Api.OrderItemResponseMessage.Parser, new[]{ "Id", "OrderId", "ProductId", "Quantity", "Price" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ShoppyEx.Aggregator.Api.OrderItemRequestMessage), global::ShoppyEx.Aggregator.Api.OrderItemRequestMessage.Parser, new[]{ "ProductId", "Quantity", "Price" }, null, null, null, null)
           }));
     }
     #endregion
@@ -61,7 +62,7 @@ namespace ShoppyEx {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::ShoppyEx.OrderitemReflection.Descriptor.MessageTypes[0]; }
+      get { return global::ShoppyEx.Aggregator.Api.OrderitemReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -438,7 +439,7 @@ namespace ShoppyEx {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::ShoppyEx.OrderitemReflection.Descriptor.MessageTypes[1]; }
+      get { return global::ShoppyEx.Aggregator.Api.OrderitemReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

@@ -7,7 +7,7 @@
 
 using grpc = global::Grpc.Core;
 
-namespace ShoppyEx {
+namespace ShoppyEx.Aggregator.Api {
   public static partial class ProductBrandGrpc
   {
     static readonly string __ServiceName = "protos.package.ProductBrandGrpc";
@@ -46,12 +46,12 @@ namespace ShoppyEx {
     }
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::ShoppyEx.GetProductBrandQuery> __Marshaller_protos_package_GetProductBrandQuery = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ShoppyEx.GetProductBrandQuery.Parser));
+    static readonly grpc::Marshaller<global::ShoppyEx.Aggregator.Api.GetProductBrandQuery> __Marshaller_protos_package_GetProductBrandQuery = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ShoppyEx.Aggregator.Api.GetProductBrandQuery.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::ShoppyEx.ProductBrandListMessage> __Marshaller_protos_package_ProductBrandListMessage = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ShoppyEx.ProductBrandListMessage.Parser));
+    static readonly grpc::Marshaller<global::ShoppyEx.Aggregator.Api.ProductBrandListMessage> __Marshaller_protos_package_ProductBrandListMessage = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ShoppyEx.Aggregator.Api.ProductBrandListMessage.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::ShoppyEx.GetProductBrandQuery, global::ShoppyEx.ProductBrandListMessage> __Method_GetProductBrandAll = new grpc::Method<global::ShoppyEx.GetProductBrandQuery, global::ShoppyEx.ProductBrandListMessage>(
+    static readonly grpc::Method<global::ShoppyEx.Aggregator.Api.GetProductBrandQuery, global::ShoppyEx.Aggregator.Api.ProductBrandListMessage> __Method_GetProductBrandAll = new grpc::Method<global::ShoppyEx.Aggregator.Api.GetProductBrandQuery, global::ShoppyEx.Aggregator.Api.ProductBrandListMessage>(
         grpc::MethodType.Unary,
         __ServiceName,
         "GetProductBrandAll",
@@ -61,7 +61,7 @@ namespace ShoppyEx {
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
-      get { return global::ShoppyEx.ProductbrandReflection.Descriptor.Services[0]; }
+      get { return global::ShoppyEx.Aggregator.Api.ProductbrandReflection.Descriptor.Services[0]; }
     }
 
     /// <summary>Client for ProductBrandGrpc</summary>
@@ -92,22 +92,22 @@ namespace ShoppyEx {
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::ShoppyEx.ProductBrandListMessage GetProductBrandAll(global::ShoppyEx.GetProductBrandQuery request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::ShoppyEx.Aggregator.Api.ProductBrandListMessage GetProductBrandAll(global::ShoppyEx.Aggregator.Api.GetProductBrandQuery request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetProductBrandAll(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::ShoppyEx.ProductBrandListMessage GetProductBrandAll(global::ShoppyEx.GetProductBrandQuery request, grpc::CallOptions options)
+      public virtual global::ShoppyEx.Aggregator.Api.ProductBrandListMessage GetProductBrandAll(global::ShoppyEx.Aggregator.Api.GetProductBrandQuery request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_GetProductBrandAll, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::ShoppyEx.ProductBrandListMessage> GetProductBrandAllAsync(global::ShoppyEx.GetProductBrandQuery request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::ShoppyEx.Aggregator.Api.ProductBrandListMessage> GetProductBrandAllAsync(global::ShoppyEx.Aggregator.Api.GetProductBrandQuery request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetProductBrandAllAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::ShoppyEx.ProductBrandListMessage> GetProductBrandAllAsync(global::ShoppyEx.GetProductBrandQuery request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::ShoppyEx.Aggregator.Api.ProductBrandListMessage> GetProductBrandAllAsync(global::ShoppyEx.Aggregator.Api.GetProductBrandQuery request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetProductBrandAll, null, options, request);
       }

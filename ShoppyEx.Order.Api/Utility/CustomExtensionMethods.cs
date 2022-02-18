@@ -1,5 +1,7 @@
 ﻿
 using Microsoft.AspNetCore.Server.Kestrel.Core;
+using Microsoft.Extensions.Options;
+using ShoppyEx.SharedKernel.SeedWork;
 using System.Net;
 
 namespace ShoppyEx.Order.Api.Utility
@@ -7,7 +9,24 @@ namespace ShoppyEx.Order.Api.Utility
     public static class CustomExtensionMethods
     {
         public static IServiceCollection AddGrpcServices(this IServiceCollection services)
-        {         
+        {
+            #region Product
+
+            services.AddGrpcClient<ProductGrpc.ProductGrpcClient>((services, options) =>
+            {
+                var catalogApi = services.GetRequiredService<IOptions<UrlsConfig>>().Value.GrpcProduct;
+                options.Address = new Uri(catalogApi);
+            });
+
+
+            #endregion
+            #region Customer
+            services.AddGrpcClient<CustomerGrpc.CustomerGrpcClient>((services, options) =>
+            {
+                var customerApi = services.GetRequiredService<IOptions<UrlsConfig>>().Value.GrpcCustomer;
+                options.Address = new Uri(customerApi);
+            });
+            #endregion
 
             return services;
         }

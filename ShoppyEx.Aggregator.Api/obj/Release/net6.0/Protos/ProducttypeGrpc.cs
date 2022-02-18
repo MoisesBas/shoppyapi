@@ -7,7 +7,7 @@
 
 using grpc = global::Grpc.Core;
 
-namespace ShoppyEx {
+namespace ShoppyEx.Aggregator.Api {
   public static partial class ProductTypeGrpc
   {
     static readonly string __ServiceName = "protos.package.ProductTypeGrpc";
@@ -46,12 +46,12 @@ namespace ShoppyEx {
     }
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::ShoppyEx.GetProductTypeQuery> __Marshaller_protos_package_GetProductTypeQuery = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ShoppyEx.GetProductTypeQuery.Parser));
+    static readonly grpc::Marshaller<global::ShoppyEx.Aggregator.Api.GetProductTypeQuery> __Marshaller_protos_package_GetProductTypeQuery = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ShoppyEx.Aggregator.Api.GetProductTypeQuery.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::ShoppyEx.ProductTypeListMessage> __Marshaller_protos_package_ProductTypeListMessage = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ShoppyEx.ProductTypeListMessage.Parser));
+    static readonly grpc::Marshaller<global::ShoppyEx.Aggregator.Api.ProductTypeListMessage> __Marshaller_protos_package_ProductTypeListMessage = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ShoppyEx.Aggregator.Api.ProductTypeListMessage.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::ShoppyEx.GetProductTypeQuery, global::ShoppyEx.ProductTypeListMessage> __Method_GetProductTypeAll = new grpc::Method<global::ShoppyEx.GetProductTypeQuery, global::ShoppyEx.ProductTypeListMessage>(
+    static readonly grpc::Method<global::ShoppyEx.Aggregator.Api.GetProductTypeQuery, global::ShoppyEx.Aggregator.Api.ProductTypeListMessage> __Method_GetProductTypeAll = new grpc::Method<global::ShoppyEx.Aggregator.Api.GetProductTypeQuery, global::ShoppyEx.Aggregator.Api.ProductTypeListMessage>(
         grpc::MethodType.Unary,
         __ServiceName,
         "GetProductTypeAll",
@@ -61,7 +61,7 @@ namespace ShoppyEx {
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
-      get { return global::ShoppyEx.ProducttypeReflection.Descriptor.Services[0]; }
+      get { return global::ShoppyEx.Aggregator.Api.ProducttypeReflection.Descriptor.Services[0]; }
     }
 
     /// <summary>Client for ProductTypeGrpc</summary>
@@ -92,22 +92,22 @@ namespace ShoppyEx {
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::ShoppyEx.ProductTypeListMessage GetProductTypeAll(global::ShoppyEx.GetProductTypeQuery request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::ShoppyEx.Aggregator.Api.ProductTypeListMessage GetProductTypeAll(global::ShoppyEx.Aggregator.Api.GetProductTypeQuery request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetProductTypeAll(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::ShoppyEx.ProductTypeListMessage GetProductTypeAll(global::ShoppyEx.GetProductTypeQuery request, grpc::CallOptions options)
+      public virtual global::ShoppyEx.Aggregator.Api.ProductTypeListMessage GetProductTypeAll(global::ShoppyEx.Aggregator.Api.GetProductTypeQuery request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_GetProductTypeAll, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::ShoppyEx.ProductTypeListMessage> GetProductTypeAllAsync(global::ShoppyEx.GetProductTypeQuery request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::ShoppyEx.Aggregator.Api.ProductTypeListMessage> GetProductTypeAllAsync(global::ShoppyEx.Aggregator.Api.GetProductTypeQuery request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetProductTypeAllAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::ShoppyEx.ProductTypeListMessage> GetProductTypeAllAsync(global::ShoppyEx.GetProductTypeQuery request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::ShoppyEx.Aggregator.Api.ProductTypeListMessage> GetProductTypeAllAsync(global::ShoppyEx.Aggregator.Api.GetProductTypeQuery request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetProductTypeAll, null, options, request);
       }
